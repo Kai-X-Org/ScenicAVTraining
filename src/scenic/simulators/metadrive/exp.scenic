@@ -24,25 +24,15 @@ car2_dir = -90
 param ego_y = VerifaiRange(255, 265)
 param car2_x = VerifaiRange(290, 306)
 
-# ego car is in the lane with the slight curve
-# moves in -y direction, or in +y???
-# (311, 255, 0) good test position
 ego = new Car on (312, globalParameters.ego_y, 0), facing car1_dir deg,
                                 with name "agent0",
                                 with goal (311, 235, 0),
-                                # with behavior FollowLaneBehavior(),
 
-# moves in +x
-# (300, 246, 0) good testing position 
 car2 = new Car on (globalParameters.car2_x, 247, 0), facing car2_dir deg, 
                                 with name "agent1",
                                 with goal (320, 246, 0),
-                                # with behavior FollowLaneBehavior(),
 
 monitor Reward(car1, car2):
-    # TODO, will there be race conditions when adding to the reward?
-    # TODO the timing of the variable setting in the grand scheme of things needs to be ascertained
-
     done = False
     car1_success = False
     car2_success = False
@@ -54,9 +44,6 @@ monitor Reward(car1, car2):
     drive_dir_2 = car2_dir * pi/180
 
     while True:
-        # if done:
-            # print(f"LAST REWARD: {(car1.reward, car2.reward)}")
-            # terminate
 
         car1.zero_reward()
         car2.zero_reward()
@@ -89,20 +76,13 @@ monitor Reward(car1, car2):
         if car1_success and car2_success:
             done = True
         
-        # can do this since the cars can only crash with each other if they do crash
         if car1.metaDriveActor.crash_vehicle or car2.metaDriveActor.crash_vehicle:
             car1.add_reward(crash_penalty)
             car2.add_reward(crash_penalty)
             done = True
 
-        # if done:
-            # print(f"LAST REWARD: {(car1.reward, car2.reward)}")
-            # terminate
-        # print(f"SCENIC PROGRAM REWARD {(car1.reward, car2.reward)}")
         if done:
-            # print(f"LAST REWARD: {(car1.reward, car2.reward)}")
             terminate
         wait
-   
 
 require monitor Reward(ego, car2)
