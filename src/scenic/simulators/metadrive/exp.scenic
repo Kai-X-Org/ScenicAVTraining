@@ -54,17 +54,8 @@ monitor Reward(car1, car2):
         car1.add_reward(driving_reward * (-1) * (current_long_1 - last_long_1)) # times -1 since car1 is going in -y direction
         car2.add_reward(driving_reward * (current_long_2 - last_long_2))
         
-        last_long_1 = current_long_1
-        last_long_2 = current_long_2
+        # ...Other reward terms...
 
-        car1.add_reward(speed_reward * car1.speed_km_h/car1.max_speed_km_h) 
-        car2.add_reward(speed_reward * car2.speed_km_h/car2.max_speed_km_h)
-        
-        angle_rescale = lambda angle: angle + 2 * pi if angle < 0 else angle # makes sure angles are in [0, 2*pi)
-
-        car1.add_reward(-abs(angle_rescale(car1.yaw) - angle_rescale(drive_dir_1)))
-        car2.add_reward(-abs(angle_rescale(car2.yaw) - angle_rescale(drive_dir_2)))
-        
         if (distance from car1 to car1.goal) < 1:
             car1_success = True
             car1.add_reward(success_reward)
