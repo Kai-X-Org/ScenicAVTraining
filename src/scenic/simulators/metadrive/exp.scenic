@@ -5,7 +5,7 @@ import os
 import random
 from math import pi
 root_user = os.path.expanduser("~")
-param verifaiSamplerType = 'ce'
+# param verifaiSamplerType = 'ce'
 param map = localPath(root_user + '/ScenicGymClean/assets/maps/CARLA/Town04.xodr')
 param carla_map = 'Town04'
 param time_step = 1.0/10
@@ -23,8 +23,10 @@ car2_dir = -90
 ego_x = 312
 car2_y = 247
 
-param ego_y = VerifaiRange(255, 265)
-param car2_x = VerifaiRange(290, 306)
+# param ego_y = VerifaiRange(255, 265)
+# param car2_x = VerifaiRange(290, 306)
+param ego_y = Range(255, 265)
+param car2_x = Range(290, 306)
 
 # ego car is in the lane with the slight curve
 # moves in -y direction, or in +y???

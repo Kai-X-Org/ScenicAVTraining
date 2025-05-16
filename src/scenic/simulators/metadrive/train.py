@@ -577,7 +577,7 @@ def main() -> None:
             )
             # Save model every 10 updates
             # print(f"SAVING MODEL")
-            torch.save(model.state_dict(), f"{args.model_dir}/ppo_adv_check_3_model.pth")
+            torch.save(model.state_dict(), f"{args.model_dir}/ppo_baseline_check_3_model.pth")
             # if avg_reward >= 20:
                 # torch.save(model.state_dict(), f"{args.model_dir}/ppo_{env_name}_model_real_good.pth")
 
