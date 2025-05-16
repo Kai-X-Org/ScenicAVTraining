@@ -34,7 +34,7 @@ class Args:
     # Number of parallel processes for data collection
     num_workers: int = 16
     # Total timesteps for training
-    total_timesteps: int = 600_000
+    total_timesteps: int = 150_000
     # Timesteps collected by each worker per iteration
     steps_per_worker: int = 256
     # Number of optimization epochs per PPO iteration
@@ -60,7 +60,7 @@ class Args:
     # Directory to save models
     model_dir: str = "models"
     
-    use_pretrained: bool = True
+    use_pretrained: bool = False
     
     checkpoint_model: str = "models/start_point_3.pth"
 
@@ -432,10 +432,13 @@ def main() -> None:
     obs_dim = np.prod(obs_space_shape) if isinstance(obs_space_shape, tuple) else obs_space_shape[0]
     # env.close()
     # print(f"OBS_DIM {obs_dim}")
-    checkpoint = torch.load(args.checkpoint_model, weights_only=True)
-    model = ActorCritic(obs_dim, action_space) 
-    model.load_state_dict(checkpoint)
-    model = model.to(device)
+    if args.use_pretrained:
+        checkpoint = torch.load(args.checkpoint_model, weights_only=True)
+        model = ActorCritic(obs_dim, action_space) 
+        model.load_state_dict(checkpoint)
+        model = model.to(device)
+    else:
+        model = ActorCritic(obs_dim, action_space).to(device)
 
     # model = ActorCritic(obs_dim, action_space).to(device)
     # print(f"GLOBAL MODEL {model}")
@@ -577,7 +580,7 @@ def main() -> None:
             )
             # Save model every 10 updates
             # print(f"SAVING MODEL")
-            torch.save(model.state_dict(), f"{args.model_dir}/ppo_adv_check_3_model.pth")
+            torch.save(model.state_dict(), f"{args.model_dir}/ppo_halton_train.pth")
             # if avg_reward >= 20:
                 # torch.save(model.state_dict(), f"{args.model_dir}/ppo_{env_name}_model_real_good.pth")
 
