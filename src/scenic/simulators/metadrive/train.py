@@ -34,7 +34,7 @@ class Args:
     # Number of parallel processes for data collection
     num_workers: int = 16
     # Total timesteps for training
-    total_timesteps: int = 300_000
+    total_timesteps: int = 600_000
     # Timesteps collected by each worker per iteration
     steps_per_worker: int = 256
     # Number of optimization epochs per PPO iteration
@@ -62,7 +62,7 @@ class Args:
     
     use_pretrained: bool = True
     
-    checkpoint_model: str = "models/start_point.pth"
+    checkpoint_model: str = "models/start_point_3.pth"
 
 
 LOG_STD_MAX = 2
@@ -577,7 +577,7 @@ def main() -> None:
             )
             # Save model every 10 updates
             # print(f"SAVING MODEL")
-            torch.save(model.state_dict(), f"{args.model_dir}/ppo_{env_name}_model.pth")
+            torch.save(model.state_dict(), f"{args.model_dir}/ppo_adv_check_3_model.pth")
             # if avg_reward >= 20:
                 # torch.save(model.state_dict(), f"{args.model_dir}/ppo_{env_name}_model_real_good.pth")
 
