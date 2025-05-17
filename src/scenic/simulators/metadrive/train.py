@@ -60,9 +60,9 @@ class Args:
     # Directory to save models
     model_dir: str = "models"
     
-    use_pretrained: bool = False
+    use_pretrained: bool = True
     
-    checkpoint_model: str = "models/start_point_3.pth"
+    checkpoint_model: str = "models/ppo_random_train.pth"
 
 
 LOG_STD_MAX = 2
@@ -580,14 +580,14 @@ def main() -> None:
             )
             # Save model every 10 updates
             # print(f"SAVING MODEL")
-            torch.save(model.state_dict(), f"{args.model_dir}/ppo_random_train.pth")
+            torch.save(model.state_dict(), f"{args.model_dir}/adversarial_random_continue_5_16_2000.pth")
             # if avg_reward >= 20:
                 # torch.save(model.state_dict(), f"{args.model_dir}/ppo_{env_name}_model_real_good.pth")
 
     end_time = time.time()
     logger.info("Training finished in %.2f seconds.", end_time - start_time)
 
-    torch.save(model.state_dict(), f"{args.model_dir}/ppo_{env_name}_model.pth")
+    torch.save(model.state_dict(), f"{args.model_dir}/adversarial_random_continue_5_16_2000.pth")
     logger.info("Model saved to ppo_%s_model.pth", env_name)
 
 
