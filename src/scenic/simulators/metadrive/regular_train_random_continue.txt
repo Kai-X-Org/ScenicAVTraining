@@ -1,0 +1,938 @@
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__main__:Starting PPO training...
+INFO:__main__:Environment: exp, Workers: 16, Total Timesteps: 150000
+INFO:__main__:Hyperparameters: gamma=0.9, lambda=0.9, clip_eps=0.2, lr=0.0003
+INFO:__main__:Batch Size (Workers * Steps): 4096
+INFO:__main__:Total PPO Updates: 36
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__main__:Update: 1/36, Timesteps: 4096/150000, FPS: 64, Episodes: 160, Avg Reward (Last 100): 14.16, Avg Length (Last 100): 47.30
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__main__:Update: 2/36, Timesteps: 8192/150000, FPS: 65, Episodes: 320, Avg Reward (Last 100): 13.28, Avg Length (Last 100): 48.06
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+Process Process-38:
+Process Process-47:
+Process Process-48:
+Process Process-36:
+Process Process-41:
+Process Process-44:
+Process Process-33:
+Process Process-46:
+Process Process-37:
+Process Process-34:
+Process Process-45:
+Process Process-35:
+Process Process-39:
+Process Process-42:
+Traceback (most recent call last):
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/train.py", line 216, in worker_fn
+    x_t = normal.rsample()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/torch/distributions/normal.py", line 76, in rsample
+    shape = self._extended_shape(sample_shape)
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/torch/distributions/distribution.py", line 272, in _extended_shape
+    return torch.Size(sample_shape + self._batch_shape + self._event_shape)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/train.py", line 254, in worker_fn
+    obs, _ = env.reset()
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 106, in reset
+    observation, info = self.loop.throw(ResetException())
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 51, in _make_run_loop
+    with self.simulator.simulateStepped(scene, maxSteps=self.max_steps) as simulation:
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 218, in simulateStepped
+    simulation = self.createSimulation(
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 60, in createSimulation
+    return MetaDriveSimulation(
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 120, in __init__
+    super().__init__(scene, timestep=timestep, **kwargs)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 415, in __init__
+    self.setup()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 151, in setup
+    super().setup()
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 620, in setup
+    self._createObject(obj)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 658, in _createObject
+    self.createObjectInSimulator(obj)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 196, in createObjectInSimulator
+    self.observation, self.info = self.client.reset()
+  File "/home/kxu/metadrive/metadrive/envs/base_env.py", line 523, in reset
+    self.lazy_init()  # it only works the first time when reset() is called to avoid the error when render
+  File "/home/kxu/metadrive/metadrive/envs/base_env.py", line 417, in lazy_init
+    self.setup_engine()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/utils.py", line 113, in setup_engine
+    "map_manager", SumoMapManager(self.config["sumo_map"])
+  File "/home/kxu/metadrive/metadrive/manager/sumo_map_manager.py", line 18, in __init__
+    self.graph = RoadLaneJunctionGraph(sumo_map_path)
+  File "/home/kxu/metadrive/metadrive/utils/sumo/map_utils.py", line 258, in __init__
+    lane_dividers, edge_dividers = self._compute_traffic_dividers()
+  File "/home/kxu/metadrive/metadrive/utils/sumo/map_utils.py", line 295, in _compute_traffic_dividers
+    if np.linalg.norm(edge_border_i - edge_border_j) < threshold:
+KeyboardInterrupt
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/train.py", line 254, in worker_fn
+    obs, _ = env.reset()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/train.py", line 254, in worker_fn
+    obs, _ = env.reset()
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 106, in reset
+    observation, info = self.loop.throw(ResetException())
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 106, in reset
+    observation, info = self.loop.throw(ResetException())
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 51, in _make_run_loop
+    with self.simulator.simulateStepped(scene, maxSteps=self.max_steps) as simulation:
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 51, in _make_run_loop
+    with self.simulator.simulateStepped(scene, maxSteps=self.max_steps) as simulation:
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 218, in simulateStepped
+    simulation = self.createSimulation(
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 218, in simulateStepped
+    simulation = self.createSimulation(
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 60, in createSimulation
+    return MetaDriveSimulation(
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 60, in createSimulation
+    return MetaDriveSimulation(
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 120, in __init__
+    super().__init__(scene, timestep=timestep, **kwargs)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 120, in __init__
+    super().__init__(scene, timestep=timestep, **kwargs)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 415, in __init__
+    self.setup()
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 415, in __init__
+    self.setup()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 151, in setup
+    super().setup()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 151, in setup
+    super().setup()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 620, in setup
+    self._createObject(obj)
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 620, in setup
+    self._createObject(obj)
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 658, in _createObject
+    self.createObjectInSimulator(obj)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/train.py", line 254, in worker_fn
+    obs, _ = env.reset()
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 658, in _createObject
+    self.createObjectInSimulator(obj)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/train.py", line 254, in worker_fn
+    obs, _ = env.reset()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 196, in createObjectInSimulator
+    self.observation, self.info = self.client.reset()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 196, in createObjectInSimulator
+    self.observation, self.info = self.client.reset()
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 106, in reset
+    observation, info = self.loop.throw(ResetException())
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 106, in reset
+    observation, info = self.loop.throw(ResetException())
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/kxu/metadrive/metadrive/envs/base_env.py", line 532, in reset
+    reset_info = self.engine.reset()
+  File "/home/kxu/metadrive/metadrive/envs/base_env.py", line 532, in reset
+    reset_info = self.engine.reset()
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 51, in _make_run_loop
+    with self.simulator.simulateStepped(scene, maxSteps=self.max_steps) as simulation:
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 51, in _make_run_loop
+    with self.simulator.simulateStepped(scene, maxSteps=self.max_steps) as simulation:
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/kxu/metadrive/metadrive/engine/base_engine.py", line 365, in reset
+    new_step_infos = manager.reset()
+  File "/home/kxu/metadrive/metadrive/engine/base_engine.py", line 365, in reset
+    new_step_infos = manager.reset()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/train.py", line 254, in worker_fn
+    obs, _ = env.reset()
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 218, in simulateStepped
+    simulation = self.createSimulation(
+  File "/home/kxu/metadrive/metadrive/manager/sumo_map_manager.py", line 41, in reset
+    self.current_map = ScenarioMap(map_index=0, map_data=self.map_feature, need_lane_localization=True)
+  File "/home/kxu/metadrive/metadrive/manager/sumo_map_manager.py", line 41, in reset
+    self.current_map = ScenarioMap(map_index=0, map_data=self.map_feature, need_lane_localization=True)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 218, in simulateStepped
+    simulation = self.createSimulation(
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 106, in reset
+    observation, info = self.loop.throw(ResetException())
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 60, in createSimulation
+    return MetaDriveSimulation(
+  File "/home/kxu/metadrive/metadrive/component/map/scenario_map.py", line 21, in __init__
+    super(ScenarioMap, self).__init__(dict(id=self.map_index), random_seed=random_seed)
+  File "/home/kxu/metadrive/metadrive/component/map/scenario_map.py", line 21, in __init__
+    super(ScenarioMap, self).__init__(dict(id=self.map_index), random_seed=random_seed)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 60, in createSimulation
+    return MetaDriveSimulation(
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 51, in _make_run_loop
+    with self.simulator.simulateStepped(scene, maxSteps=self.max_steps) as simulation:
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 120, in __init__
+    super().__init__(scene, timestep=timestep, **kwargs)
+  File "/home/kxu/metadrive/metadrive/component/map/base_map.py", line 63, in __init__
+    self._generate()
+Traceback (most recent call last):
+  File "/home/kxu/metadrive/metadrive/component/map/base_map.py", line 63, in __init__
+    self._generate()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 120, in __init__
+    super().__init__(scene, timestep=timestep, **kwargs)
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 415, in __init__
+    self.setup()
+  File "/home/kxu/metadrive/metadrive/component/map/scenario_map.py", line 38, in _generate
+    block.construct_block(self.engine.worldNP, self.engine.physics_world, attach_to_world=True)
+  File "/home/kxu/metadrive/metadrive/component/map/scenario_map.py", line 38, in _generate
+    block.construct_block(self.engine.worldNP, self.engine.physics_world, attach_to_world=True)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 415, in __init__
+    self.setup()
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 218, in simulateStepped
+    simulation = self.createSimulation(
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 151, in setup
+    super().setup()
+  File "/home/kxu/metadrive/metadrive/component/block/base_block.py", line 124, in construct_block
+    self._create_in_world()
+  File "/home/kxu/metadrive/metadrive/component/block/base_block.py", line 124, in construct_block
+    self._create_in_world()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 151, in setup
+    super().setup()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 60, in createSimulation
+    return MetaDriveSimulation(
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 620, in setup
+    self._createObject(obj)
+  File "/home/kxu/metadrive/metadrive/component/block/base_block.py", line 226, in _create_in_world
+    self.create_in_world()
+  File "/home/kxu/metadrive/metadrive/component/block/base_block.py", line 226, in _create_in_world
+    self.create_in_world()
+  File "/home/kxu/metadrive/metadrive/component/scenario_block/scenario_block.py", line 52, in create_in_world
+    self._construct_lane(lane, lane_index=id)
+Traceback (most recent call last):
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 620, in setup
+    self._createObject(obj)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 120, in __init__
+    super().__init__(scene, timestep=timestep, **kwargs)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 658, in _createObject
+    self.createObjectInSimulator(obj)
+  File "/home/kxu/metadrive/metadrive/component/scenario_block/scenario_block.py", line 69, in create_in_world
+    self._construct_broken_line(
+  File "/home/kxu/metadrive/metadrive/component/block/base_block.py", line 463, in _construct_lane
+    shape.addPoint(LPoint3f(*point_up))
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 658, in _createObject
+    self.createObjectInSimulator(obj)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 415, in __init__
+    self.setup()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 196, in createObjectInSimulator
+    self.observation, self.info = self.client.reset()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 196, in createObjectInSimulator
+    self.observation, self.info = self.client.reset()
+  File "/home/kxu/metadrive/metadrive/component/scenario_block/scenario_block.py", line 94, in _construct_broken_line
+    node_path_list = self._construct_lane_line_segment(
+KeyboardInterrupt
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 151, in setup
+    super().setup()
+  File "/home/kxu/metadrive/metadrive/envs/base_env.py", line 532, in reset
+    reset_info = self.engine.reset()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/kxu/metadrive/metadrive/envs/base_env.py", line 532, in reset
+    reset_info = self.engine.reset()
+  File "/home/kxu/metadrive/metadrive/component/block/base_block.py", line 513, in _construct_lane_line_segment
+    body_np.setPos(panda_vector(middle, PGDrivableAreaProperty.LANE_LINE_GHOST_HEIGHT / 2))
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 620, in setup
+    self._createObject(obj)
+Traceback (most recent call last):
+  File "/home/kxu/metadrive/metadrive/engine/base_engine.py", line 365, in reset
+    new_step_infos = manager.reset()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/kxu/metadrive/metadrive/engine/base_engine.py", line 365, in reset
+    new_step_infos = manager.reset()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/train.py", line 254, in worker_fn
+    obs, _ = env.reset()
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 658, in _createObject
+    self.createObjectInSimulator(obj)
+KeyboardInterrupt
+  File "/home/kxu/metadrive/metadrive/manager/sumo_map_manager.py", line 41, in reset
+    self.current_map = ScenarioMap(map_index=0, map_data=self.map_feature, need_lane_localization=True)
+  File "/home/kxu/metadrive/metadrive/manager/sumo_map_manager.py", line 41, in reset
+    self.current_map = ScenarioMap(map_index=0, map_data=self.map_feature, need_lane_localization=True)
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 106, in reset
+    observation, info = self.loop.throw(ResetException())
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 196, in createObjectInSimulator
+    self.observation, self.info = self.client.reset()
+  File "/home/kxu/metadrive/metadrive/component/map/scenario_map.py", line 21, in __init__
+    super(ScenarioMap, self).__init__(dict(id=self.map_index), random_seed=random_seed)
+  File "/home/kxu/metadrive/metadrive/envs/base_env.py", line 532, in reset
+    reset_info = self.engine.reset()
+  File "/home/kxu/metadrive/metadrive/component/map/scenario_map.py", line 21, in __init__
+    super(ScenarioMap, self).__init__(dict(id=self.map_index), random_seed=random_seed)
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 51, in _make_run_loop
+    with self.simulator.simulateStepped(scene, maxSteps=self.max_steps) as simulation:
+  File "/home/kxu/metadrive/metadrive/component/map/base_map.py", line 63, in __init__
+    self._generate()
+  File "/home/kxu/metadrive/metadrive/engine/base_engine.py", line 365, in reset
+    new_step_infos = manager.reset()
+  File "/home/kxu/metadrive/metadrive/component/map/base_map.py", line 63, in __init__
+    self._generate()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+Traceback (most recent call last):
+  File "/home/kxu/metadrive/metadrive/component/map/scenario_map.py", line 38, in _generate
+    block.construct_block(self.engine.worldNP, self.engine.physics_world, attach_to_world=True)
+  File "/home/kxu/metadrive/metadrive/manager/sumo_map_manager.py", line 41, in reset
+    self.current_map = ScenarioMap(map_index=0, map_data=self.map_feature, need_lane_localization=True)
+  File "/home/kxu/metadrive/metadrive/component/map/scenario_map.py", line 38, in _generate
+    block.construct_block(self.engine.worldNP, self.engine.physics_world, attach_to_world=True)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 218, in simulateStepped
+    simulation = self.createSimulation(
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/kxu/metadrive/metadrive/component/block/base_block.py", line 124, in construct_block
+    self._create_in_world()
+  File "/home/kxu/metadrive/metadrive/component/map/scenario_map.py", line 21, in __init__
+    super(ScenarioMap, self).__init__(dict(id=self.map_index), random_seed=random_seed)
+  File "/home/kxu/metadrive/metadrive/component/block/base_block.py", line 226, in _create_in_world
+    self.create_in_world()
+  File "/home/kxu/metadrive/metadrive/component/block/base_block.py", line 124, in construct_block
+    self._create_in_world()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 60, in createSimulation
+    return MetaDriveSimulation(
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/kxu/metadrive/metadrive/component/map/base_map.py", line 63, in __init__
+    self._generate()
+  File "/home/kxu/metadrive/metadrive/component/scenario_block/scenario_block.py", line 69, in create_in_world
+    self._construct_broken_line(
+  File "/home/kxu/metadrive/metadrive/component/block/base_block.py", line 226, in _create_in_world
+    self.create_in_world()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 120, in __init__
+    super().__init__(scene, timestep=timestep, **kwargs)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/train.py", line 254, in worker_fn
+    obs, _ = env.reset()
+  File "/home/kxu/metadrive/metadrive/component/map/scenario_map.py", line 38, in _generate
+    block.construct_block(self.engine.worldNP, self.engine.physics_world, attach_to_world=True)
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 106, in reset
+    observation, info = self.loop.throw(ResetException())
+  File "/home/kxu/metadrive/metadrive/component/block/base_block.py", line 124, in construct_block
+    self._create_in_world()
+  File "/home/kxu/metadrive/metadrive/component/scenario_block/scenario_block.py", line 94, in _construct_broken_line
+    node_path_list = self._construct_lane_line_segment(
+  File "/home/kxu/metadrive/metadrive/component/scenario_block/scenario_block.py", line 52, in create_in_world
+    self._construct_lane(lane, lane_index=id)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 415, in __init__
+    self.setup()
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 51, in _make_run_loop
+    with self.simulator.simulateStepped(scene, maxSteps=self.max_steps) as simulation:
+  File "/home/kxu/metadrive/metadrive/component/block/base_block.py", line 226, in _create_in_world
+    self.create_in_world()
+  File "/home/kxu/metadrive/metadrive/component/block/base_block.py", line 517, in _construct_lane_line_segment
+    body_np.setQuat(LQuaternionf(math.cos(theta / 2), 0, 0, math.sin(theta / 2)))
+  File "/home/kxu/metadrive/metadrive/component/block/base_block.py", line 462, in _construct_lane
+    point_up = LPoint3f(*point, 0.0)
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 151, in setup
+    super().setup()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/kxu/metadrive/metadrive/component/scenario_block/scenario_block.py", line 69, in create_in_world
+    self._construct_broken_line(
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+KeyboardInterrupt
+KeyboardInterrupt
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/train.py", line 254, in worker_fn
+    obs, _ = env.reset()
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 620, in setup
+    self._createObject(obj)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 218, in simulateStepped
+    simulation = self.createSimulation(
+  File "/home/kxu/metadrive/metadrive/component/scenario_block/scenario_block.py", line 94, in _construct_broken_line
+    node_path_list = self._construct_lane_line_segment(
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/train.py", line 254, in worker_fn
+    obs, _ = env.reset()
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 106, in reset
+    observation, info = self.loop.throw(ResetException())
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 106, in reset
+    observation, info = self.loop.throw(ResetException())
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 658, in _createObject
+    self.createObjectInSimulator(obj)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 60, in createSimulation
+    return MetaDriveSimulation(
+  File "/home/kxu/metadrive/metadrive/component/block/base_block.py", line 479, in _construct_lane_line_segment
+    middle = (start_point + end_point) / 2
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 51, in _make_run_loop
+    with self.simulator.simulateStepped(scene, maxSteps=self.max_steps) as simulation:
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 51, in _make_run_loop
+    with self.simulator.simulateStepped(scene, maxSteps=self.max_steps) as simulation:
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 196, in createObjectInSimulator
+    self.observation, self.info = self.client.reset()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 120, in __init__
+    super().__init__(scene, timestep=timestep, **kwargs)
+  File "/home/kxu/metadrive/metadrive/envs/base_env.py", line 532, in reset
+    reset_info = self.engine.reset()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/kxu/metadrive/metadrive/engine/base_engine.py", line 365, in reset
+    new_step_infos = manager.reset()
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 415, in __init__
+    self.setup()
+KeyboardInterrupt
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 218, in simulateStepped
+    simulation = self.createSimulation(
+  File "/home/kxu/metadrive/metadrive/manager/sumo_map_manager.py", line 41, in reset
+    self.current_map = ScenarioMap(map_index=0, map_data=self.map_feature, need_lane_localization=True)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 151, in setup
+    super().setup()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 60, in createSimulation
+    return MetaDriveSimulation(
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/kxu/metadrive/metadrive/component/map/scenario_map.py", line 21, in __init__
+    super(ScenarioMap, self).__init__(dict(id=self.map_index), random_seed=random_seed)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 620, in setup
+    self._createObject(obj)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 120, in __init__
+    super().__init__(scene, timestep=timestep, **kwargs)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 658, in _createObject
+    self.createObjectInSimulator(obj)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 218, in simulateStepped
+    simulation = self.createSimulation(
+  File "/home/kxu/metadrive/metadrive/component/map/base_map.py", line 63, in __init__
+    self._generate()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 60, in createSimulation
+    return MetaDriveSimulation(
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 415, in __init__
+    self.setup()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 120, in __init__
+    super().__init__(scene, timestep=timestep, **kwargs)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 151, in setup
+    super().setup()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 196, in createObjectInSimulator
+    self.observation, self.info = self.client.reset()
+  File "/home/kxu/metadrive/metadrive/component/map/scenario_map.py", line 38, in _generate
+    block.construct_block(self.engine.worldNP, self.engine.physics_world, attach_to_world=True)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 415, in __init__
+    self.setup()
+  File "/home/kxu/metadrive/metadrive/component/block/base_block.py", line 121, in construct_block
+    success = self._sample_topology()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 151, in setup
+    super().setup()
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 620, in setup
+    self._createObject(obj)
+  File "/home/kxu/metadrive/metadrive/envs/base_env.py", line 532, in reset
+    reset_info = self.engine.reset()
+  File "/home/kxu/metadrive/metadrive/component/scenario_block/scenario_block.py", line 29, in _sample_topology
+    lane = ScenarioLane(object_id, self.map_data, self.need_lane_localization)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 620, in setup
+    self._createObject(obj)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 658, in _createObject
+    self.createObjectInSimulator(obj)
+  File "/home/kxu/metadrive/metadrive/engine/base_engine.py", line 365, in reset
+    new_step_infos = manager.reset()
+  File "/home/kxu/metadrive/metadrive/component/lane/scenario_lane.py", line 41, in __init__
+    super(ScenarioLane, self).__init__(
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 658, in _createObject
+    self.createObjectInSimulator(obj)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 196, in createObjectInSimulator
+    self.observation, self.info = self.client.reset()
+  File "/home/kxu/metadrive/metadrive/manager/sumo_map_manager.py", line 41, in reset
+    self.current_map = ScenarioMap(map_index=0, map_data=self.map_feature, need_lane_localization=True)
+  File "/home/kxu/metadrive/metadrive/component/lane/point_lane.py", line 39, in __init__
+    InterpolatingLine.__init__(self, center_line_points)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 196, in createObjectInSimulator
+    self.observation, self.info = self.client.reset()
+  File "/home/kxu/metadrive/metadrive/utils/interpolating_line.py", line 14, in __init__
+    self.segment_property, self._start_points, self._end_points = self._get_properties(points)
+  File "/home/kxu/metadrive/metadrive/envs/base_env.py", line 532, in reset
+    reset_info = self.engine.reset()
+  File "/home/kxu/metadrive/metadrive/component/map/scenario_map.py", line 21, in __init__
+    super(ScenarioMap, self).__init__(dict(id=self.map_index), random_seed=random_seed)
+  File "/home/kxu/metadrive/metadrive/envs/base_env.py", line 532, in reset
+    reset_info = self.engine.reset()
+  File "/home/kxu/metadrive/metadrive/utils/interpolating_line.py", line 123, in _get_properties
+    seg_property = {
+  File "/home/kxu/metadrive/metadrive/engine/base_engine.py", line 365, in reset
+    new_step_infos = manager.reset()
+  File "/home/kxu/metadrive/metadrive/engine/base_engine.py", line 365, in reset
+    new_step_infos = manager.reset()
+  File "/home/kxu/metadrive/metadrive/component/map/base_map.py", line 63, in __init__
+    self._generate()
+  File "/home/kxu/metadrive/metadrive/manager/sumo_map_manager.py", line 41, in reset
+    self.current_map = ScenarioMap(map_index=0, map_data=self.map_feature, need_lane_localization=True)
+  File "/home/kxu/metadrive/metadrive/manager/sumo_map_manager.py", line 41, in reset
+    self.current_map = ScenarioMap(map_index=0, map_data=self.map_feature, need_lane_localization=True)
+  File "/home/kxu/metadrive/metadrive/component/map/scenario_map.py", line 38, in _generate
+    block.construct_block(self.engine.worldNP, self.engine.physics_world, attach_to_world=True)
+  File "/home/kxu/metadrive/metadrive/component/map/scenario_map.py", line 21, in __init__
+    super(ScenarioMap, self).__init__(dict(id=self.map_index), random_seed=random_seed)
+  File "/home/kxu/metadrive/metadrive/component/map/scenario_map.py", line 21, in __init__
+    super(ScenarioMap, self).__init__(dict(id=self.map_index), random_seed=random_seed)
+KeyboardInterrupt
+  File "/home/kxu/metadrive/metadrive/component/map/base_map.py", line 63, in __init__
+    self._generate()
+  File "/home/kxu/metadrive/metadrive/component/block/base_block.py", line 121, in construct_block
+    success = self._sample_topology()
+  File "/home/kxu/metadrive/metadrive/component/map/base_map.py", line 63, in __init__
+    self._generate()
+Traceback (most recent call last):
+  File "/home/kxu/metadrive/metadrive/component/map/scenario_map.py", line 38, in _generate
+    block.construct_block(self.engine.worldNP, self.engine.physics_world, attach_to_world=True)
+  File "/home/kxu/metadrive/metadrive/component/scenario_block/scenario_block.py", line 29, in _sample_topology
+    lane = ScenarioLane(object_id, self.map_data, self.need_lane_localization)
+  File "/home/kxu/metadrive/metadrive/component/map/scenario_map.py", line 38, in _generate
+    block.construct_block(self.engine.worldNP, self.engine.physics_world, attach_to_world=True)
+Traceback (most recent call last):
+  File "/home/kxu/metadrive/metadrive/component/block/base_block.py", line 121, in construct_block
+    success = self._sample_topology()
+  File "/home/kxu/metadrive/metadrive/component/lane/scenario_lane.py", line 41, in __init__
+    super(ScenarioLane, self).__init__(
+  File "/home/kxu/metadrive/metadrive/component/block/base_block.py", line 121, in construct_block
+    success = self._sample_topology()
+  File "/home/kxu/metadrive/metadrive/component/scenario_block/scenario_block.py", line 29, in _sample_topology
+    lane = ScenarioLane(object_id, self.map_data, self.need_lane_localization)
+  File "/home/kxu/metadrive/metadrive/component/lane/point_lane.py", line 39, in __init__
+    InterpolatingLine.__init__(self, center_line_points)
+  File "/home/kxu/metadrive/metadrive/component/scenario_block/scenario_block.py", line 29, in _sample_topology
+    lane = ScenarioLane(object_id, self.map_data, self.need_lane_localization)
+  File "/home/kxu/metadrive/metadrive/component/lane/scenario_lane.py", line 41, in __init__
+    super(ScenarioLane, self).__init__(
+  File "/home/kxu/metadrive/metadrive/utils/interpolating_line.py", line 14, in __init__
+    self.segment_property, self._start_points, self._end_points = self._get_properties(points)
+  File "/home/kxu/metadrive/metadrive/component/lane/scenario_lane.py", line 41, in __init__
+    super(ScenarioLane, self).__init__(
+  File "/home/kxu/metadrive/metadrive/component/lane/point_lane.py", line 39, in __init__
+    InterpolatingLine.__init__(self, center_line_points)
+  File "/home/kxu/metadrive/metadrive/component/lane/point_lane.py", line 39, in __init__
+    InterpolatingLine.__init__(self, center_line_points)
+  File "/home/kxu/metadrive/metadrive/utils/interpolating_line.py", line 127, in _get_properties
+    "heading": self.points_heading(p_start, p_end),
+Traceback (most recent call last; use -b to show Scenic internals):
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/train.py", line 599, in <module>
+    main()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/train.py", line 492, in main
+    traj_data = data_queue.get()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/queues.py", line 103, in get
+    res = self._recv_bytes()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt
+  File "/home/kxu/metadrive/metadrive/utils/interpolating_line.py", line 14, in __init__
+    self.segment_property, self._start_points, self._end_points = self._get_properties(points)
+  File "/home/kxu/metadrive/metadrive/utils/interpolating_line.py", line 14, in __init__
+    self.segment_property, self._start_points, self._end_points = self._get_properties(points)
+  File "/home/kxu/metadrive/metadrive/utils/interpolating_line.py", line 165, in points_heading
+    return math.atan2(end_p[1] - start_p[1], end_p[0] - start_p[0])
+  File "/home/kxu/metadrive/metadrive/utils/interpolating_line.py", line 113, in _get_properties
+    if norm(_p[0], _p[1]) > 1:
+  File "/home/kxu/metadrive/metadrive/utils/interpolating_line.py", line 123, in _get_properties
+    seg_property = {
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/train.py", line 254, in worker_fn
+    obs, _ = env.reset()
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 106, in reset
+    observation, info = self.loop.throw(ResetException())
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 51, in _make_run_loop
+    with self.simulator.simulateStepped(scene, maxSteps=self.max_steps) as simulation:
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 218, in simulateStepped
+    simulation = self.createSimulation(
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 60, in createSimulation
+    return MetaDriveSimulation(
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 120, in __init__
+    super().__init__(scene, timestep=timestep, **kwargs)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 415, in __init__
+    self.setup()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 151, in setup
+    super().setup()
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 620, in setup
+    self._createObject(obj)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 658, in _createObject
+    self.createObjectInSimulator(obj)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 196, in createObjectInSimulator
+    self.observation, self.info = self.client.reset()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/kxu/metadrive/metadrive/envs/base_env.py", line 532, in reset
+    reset_info = self.engine.reset()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/kxu/metadrive/metadrive/engine/base_engine.py", line 365, in reset
+    new_step_infos = manager.reset()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/train.py", line 254, in worker_fn
+    obs, _ = env.reset()
+  File "/home/kxu/metadrive/metadrive/manager/sumo_map_manager.py", line 41, in reset
+    self.current_map = ScenarioMap(map_index=0, map_data=self.map_feature, need_lane_localization=True)
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 106, in reset
+    observation, info = self.loop.throw(ResetException())
+  File "/home/kxu/metadrive/metadrive/component/map/scenario_map.py", line 21, in __init__
+    super(ScenarioMap, self).__init__(dict(id=self.map_index), random_seed=random_seed)
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 51, in _make_run_loop
+    with self.simulator.simulateStepped(scene, maxSteps=self.max_steps) as simulation:
+  File "/home/kxu/metadrive/metadrive/component/map/base_map.py", line 63, in __init__
+    self._generate()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/kxu/metadrive/metadrive/component/map/scenario_map.py", line 38, in _generate
+    block.construct_block(self.engine.worldNP, self.engine.physics_world, attach_to_world=True)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 218, in simulateStepped
+    simulation = self.createSimulation(
+  File "/home/kxu/metadrive/metadrive/component/block/base_block.py", line 121, in construct_block
+    success = self._sample_topology()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 60, in createSimulation
+    return MetaDriveSimulation(
+  File "/home/kxu/metadrive/metadrive/component/scenario_block/scenario_block.py", line 29, in _sample_topology
+    lane = ScenarioLane(object_id, self.map_data, self.need_lane_localization)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 120, in __init__
+    super().__init__(scene, timestep=timestep, **kwargs)
+  File "/home/kxu/metadrive/metadrive/component/lane/scenario_lane.py", line 41, in __init__
+    super(ScenarioLane, self).__init__(
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 415, in __init__
+    self.setup()
+  File "/home/kxu/metadrive/metadrive/component/lane/point_lane.py", line 39, in __init__
+    InterpolatingLine.__init__(self, center_line_points)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 151, in setup
+    super().setup()
+  File "/home/kxu/metadrive/metadrive/utils/interpolating_line.py", line 14, in __init__
+    self.segment_property, self._start_points, self._end_points = self._get_properties(points)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 620, in setup
+    self._createObject(obj)
+  File "/home/kxu/metadrive/metadrive/utils/interpolating_line.py", line 126, in _get_properties
+    "lateral_direction": np.asarray(self.points_lateral_direction(p_start, p_end)),
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 658, in _createObject
+    self.createObjectInSimulator(obj)
+  File "/home/kxu/metadrive/metadrive/utils/interpolating_line.py", line 161, in points_lateral_direction
+    return np.asarray(get_vertical_vector(end_p - start_p)[1])
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 196, in createObjectInSimulator
+    self.observation, self.info = self.client.reset()
+  File "/home/kxu/metadrive/metadrive/utils/math.py", line 44, in get_vertical_vector
+    length = norm(vector[0], vector[1])
+  File "/home/kxu/metadrive/metadrive/envs/base_env.py", line 532, in reset
+    reset_info = self.engine.reset()
+  File "/home/kxu/metadrive/metadrive/utils/math.py", line 50, in norm
+    return math.sqrt(x**2 + y**2)
+  File "/home/kxu/metadrive/metadrive/engine/base_engine.py", line 365, in reset
+    new_step_infos = manager.reset()
+KeyboardInterrupt
+  File "/home/kxu/metadrive/metadrive/manager/sumo_map_manager.py", line 41, in reset
+    self.current_map = ScenarioMap(map_index=0, map_data=self.map_feature, need_lane_localization=True)
+  File "/home/kxu/metadrive/metadrive/component/map/scenario_map.py", line 21, in __init__
+    super(ScenarioMap, self).__init__(dict(id=self.map_index), random_seed=random_seed)
+  File "/home/kxu/metadrive/metadrive/component/map/base_map.py", line 63, in __init__
+    self._generate()
+  File "/home/kxu/metadrive/metadrive/component/map/scenario_map.py", line 38, in _generate
+    block.construct_block(self.engine.worldNP, self.engine.physics_world, attach_to_world=True)
+  File "/home/kxu/metadrive/metadrive/component/block/base_block.py", line 121, in construct_block
+    success = self._sample_topology()
+  File "/home/kxu/metadrive/metadrive/component/scenario_block/scenario_block.py", line 29, in _sample_topology
+    lane = ScenarioLane(object_id, self.map_data, self.need_lane_localization)
+  File "/home/kxu/metadrive/metadrive/component/lane/scenario_lane.py", line 41, in __init__
+    super(ScenarioLane, self).__init__(
+  File "/home/kxu/metadrive/metadrive/component/lane/point_lane.py", line 39, in __init__
+    InterpolatingLine.__init__(self, center_line_points)
+  File "/home/kxu/metadrive/metadrive/utils/interpolating_line.py", line 14, in __init__
+    self.segment_property, self._start_points, self._end_points = self._get_properties(points)
+  File "/home/kxu/metadrive/metadrive/utils/interpolating_line.py", line 126, in _get_properties
+    "lateral_direction": np.asarray(self.points_lateral_direction(p_start, p_end)),
+  File "/home/kxu/metadrive/metadrive/utils/interpolating_line.py", line 161, in points_lateral_direction
+    return np.asarray(get_vertical_vector(end_p - start_p)[1])
+  File "/home/kxu/metadrive/metadrive/utils/math.py", line 44, in get_vertical_vector
+    length = norm(vector[0], vector[1])
+  File "/home/kxu/metadrive/metadrive/utils/math.py", line 50, in norm
+    return math.sqrt(x**2 + y**2)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 232, in simulateStepped
+    yield simulation
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 89, in _make_run_loop
+    actions = yield observation, reward, done(), truncated(), info
+scenic.zoo.envs.scenic_zoo.ResetException: Resetting
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/train.py", line 254, in worker_fn
+    obs, _ = env.reset()
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 106, in reset
+    observation, info = self.loop.throw(ResetException())
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 90, in _make_run_loop
+    simulation.actions = actions # TODO add action dict to simulation interfaces
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 239, in simulateStepped
+    simulation.cleanup()
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 598, in cleanup
+    self.destroy()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 303, in destroy
+    self.client.close()
+  File "/home/kxu/metadrive/metadrive/envs/base_env.py", line 647, in close
+    close_engine()
+  File "/home/kxu/metadrive/metadrive/engine/engine_utils.py", line 58, in close_engine
+    BaseEngine.singleton.close()
+  File "/home/kxu/metadrive/metadrive/engine/base_engine.py", line 513, in close
+    manager.destroy()
+  File "/home/kxu/metadrive/metadrive/manager/sumo_map_manager.py", line 25, in destroy
+    self.current_map.destroy()
+  File "/home/kxu/metadrive/metadrive/component/map/scenario_map.py", line 54, in destroy
+    super(ScenarioMap, self).destroy()
+  File "/home/kxu/metadrive/metadrive/component/map/base_map.py", line 107, in destroy
+    self.detach_from_world()
+  File "/home/kxu/metadrive/metadrive/component/map/base_map.py", line 92, in detach_from_world
+    block.detach_from_world(self.engine.physics_world or physics_world)
+  File "/home/kxu/metadrive/metadrive/component/block/base_block.py", line 144, in detach_from_world
+    super(BaseBlock, self).detach_from_world(physics_world)
+  File "/home/kxu/metadrive/metadrive/base_class/base_object.py", line 250, in detach_from_world
+    self.static_nodes.detach_from_physics_world(physics_world.static_world)
+  File "/home/kxu/metadrive/metadrive/base_class/base_object.py", line 89, in detach_from_physics_world
+    bullet_world.remove(node)
+KeyboardInterrupt
+Process Process-40:
+Traceback (most recent call last):
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 232, in simulateStepped
+    yield simulation
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 89, in _make_run_loop
+    actions = yield observation, reward, done(), truncated(), info
+scenic.zoo.envs.scenic_zoo.ResetException: Resetting
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/train.py", line 254, in worker_fn
+    obs, _ = env.reset()
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 106, in reset
+    observation, info = self.loop.throw(ResetException())
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 90, in _make_run_loop
+    simulation.actions = actions # TODO add action dict to simulation interfaces
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 239, in simulateStepped
+    simulation.cleanup()
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 598, in cleanup
+    self.destroy()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 303, in destroy
+    self.client.close()
+  File "/home/kxu/metadrive/metadrive/envs/base_env.py", line 647, in close
+    close_engine()
+  File "/home/kxu/metadrive/metadrive/engine/engine_utils.py", line 58, in close_engine
+    BaseEngine.singleton.close()
+  File "/home/kxu/metadrive/metadrive/engine/base_engine.py", line 531, in close
+    self.close_engine()
+  File "/home/kxu/metadrive/metadrive/engine/core/engine_core.py", line 478, in close_engine
+    gc.collect()
+KeyboardInterrupt
+Process Process-43:
+Traceback (most recent call last):
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 232, in simulateStepped
+    yield simulation
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 89, in _make_run_loop
+    actions = yield observation, reward, done(), truncated(), info
+scenic.zoo.envs.scenic_zoo.ResetException: Resetting
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/train.py", line 254, in worker_fn
+    obs, _ = env.reset()
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 106, in reset
+    observation, info = self.loop.throw(ResetException())
+  File "/home/kxu/ScenicGymClean/src/scenic/zoo/envs/scenic_zoo.py", line 90, in _make_run_loop
+    simulation.actions = actions # TODO add action dict to simulation interfaces
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 239, in simulateStepped
+    simulation.cleanup()
+  File "/home/kxu/ScenicGymClean/src/scenic/core/simulators.py", line 598, in cleanup
+    self.destroy()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/simulator.py", line 303, in destroy
+    self.client.close()
+  File "/home/kxu/metadrive/metadrive/envs/base_env.py", line 647, in close
+    close_engine()
+  File "/home/kxu/metadrive/metadrive/engine/engine_utils.py", line 58, in close_engine
+    BaseEngine.singleton.close()
+  File "/home/kxu/metadrive/metadrive/engine/base_engine.py", line 531, in close
+    self.close_engine()
+  File "/home/kxu/metadrive/metadrive/engine/core/engine_core.py", line 478, in close_engine
+    gc.collect()
+KeyboardInterrupt
