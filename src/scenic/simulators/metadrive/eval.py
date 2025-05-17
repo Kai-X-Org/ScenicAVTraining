@@ -62,7 +62,7 @@ class Args:
     
     use_pretrained: bool = True
     
-    checkpoint_model: str = "models/regular_random_continue_5_16_2130.pth"
+    checkpoint_model: str = "models/adversarial_random_continue_5_16_2000.pth"
 
 
 LOG_STD_MAX = 2
@@ -250,6 +250,7 @@ def worker_fn(worker_id: int,
 
         if done:
             # print(f'done reset')
+            print(f"MAX DEV: {env.max_deviation}")
             max_deviations.append(env.max_deviation)
             obs, _ = env.reset()
     
@@ -533,7 +534,7 @@ def main() -> None:
 
     end_time = time.time()
     final_eval_arr = np.array(all_episode_rewards)
-    np.save("eval_results_reg_rand_cont_with_dev", final_eval_arr) 
+    np.save("eval_results_adv_rand_cont_with_dev", final_eval_arr) 
     print(f"MEAN REWARD: {np.mean(final_eval_arr)}") 
     print(f"MEAN EPISODE DRIFT {total_drift/total_episodes}")
     logger.info("Eval finished in %.2f seconds.", end_time - start_time)
