@@ -450,6 +450,7 @@ def main() -> None:
     episode_rewards = deque(maxlen=100)
     episode_lengths = deque(maxlen=100)
     total_episodes = 0
+    total_drift = 0
 
     # Training Loop
     all_episode_rewards = []
@@ -512,16 +513,16 @@ def main() -> None:
                     current_episode_reward = 0
                     current_episode_length = 0
         
-        num_episodes = 0
-        total_dev = 0
+        # num_episodes = 0
+        # total_dev = 0
         for data in all_trajectory_data:
             max_dev = data["max_deviations"]
-            total_dev += np.sum(max_dev)
-            num_episodes += len(max_dev)
+            total_drift += np.sum(max_dev)
+            # num_episodes += len(max_dev)
 
-        episode_mean_max_dev = total_dev/num_episodes
+        # episode_mean_max_dev = total_dev/num_episodes
 
-        print(f"EPISODE MEAN MAX DEV: {episode_mean_max_dev}")
+        # print(f"EPISODE MEAN MAX DEV: {episode_mean_max_dev}")
 
 
         total_steps += batch_size
@@ -532,8 +533,9 @@ def main() -> None:
 
     end_time = time.time()
     final_eval_arr = np.array(all_episode_rewards)
-    np.save("eval_results_reg_rand_cont", final_eval_arr) 
+    np.save("eval_results_reg_rand_cont_with_dev", final_eval_arr) 
     print(f"MEAN REWARD: {np.mean(final_eval_arr)}") 
+    print(f"MEAN EPISODE DRIFT {total_drift/total_episodes}")
     logger.info("Eval finished in %.2f seconds.", end_time - start_time)
 
 
