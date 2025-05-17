@@ -33,8 +33,8 @@ class Args:
     scenic_file: str = "exp.scenic"
     # Number of parallel processes for data collection
     num_workers: int = 16
-    # Total timesteps for training
-    total_timesteps: int = 150_000
+    # Total timesteps for eval
+    total_timesteps: int = 30000
     # Timesteps collected by each worker per iteration
     steps_per_worker: int = 256
     # Number of optimization epochs per PPO iteration
@@ -412,14 +412,6 @@ def main() -> None:
     logger.info("Environment: %s, Workers: %s, Total Timesteps: %s", env_name, args.num_workers, args.total_timesteps)
     logger.info("Hyperparameters: gamma=%s, lambda=%s, clip_eps=%s, lr=%s", args.gamma, args.gae_lambda, args.clip_epsilon, args.lr)
 
-    # temp env to get obs and action space
-    # env = ScenicZooEnv(
-        # env_name,
-        # MetaDriveSimulator(timestep=0.05, sumo_map=pathlib.Path("../maps/Town06.net.xml"), render=False, real_time=False),
-        # observation_space=spaces.Box(low=-np.inf, high=np.inf, shape=(5, 7)),
-        # action_space=spaces.Box(low=-1, high=1, shape=(2,)),
-        # max_steps=700,
-    # )
     obs_space_dict = {"agent0" :  gym.spaces.Box(-0.0, 1.0 , (252,), dtype=np.float32),
                      "agent1": gym.spaces.Box(-0.0, 1.0 , (252,), dtype=np.float32)}
 
@@ -442,7 +434,6 @@ def main() -> None:
 
     # model = ActorCritic(obs_dim, action_space).to(device)
     # print(f"GLOBAL MODEL {model}")
-    optimizer = optim.Adam(model.parameters(), lr=args.lr)
 
     batch_size = args.num_workers * args.steps_per_worker
     num_updates = args.total_timesteps // batch_size
@@ -458,6 +449,8 @@ def main() -> None:
     total_episodes = 0
 
     # Training Loop
+    all_episode_rewards = []
+
     for update in range(1, num_updates + 1):
         update_start_time = time.time()
         model.eval()
@@ -509,6 +502,7 @@ def main() -> None:
                 current_episode_reward += reward
                 current_episode_length += 1
                 if done:
+                    all_episode_rewards.append(current_episode_reward)
                     episode_rewards.append(current_episode_reward)
                     episode_lengths.append(current_episode_length)
                     total_episodes += 1
@@ -521,12 +515,9 @@ def main() -> None:
         avg_reward = np.mean(episode_rewards) if episode_rewards else 0 # need this
         avg_length = np.mean(episode_lengths) if episode_lengths else 0
 
-
     end_time = time.time()
-    logger.info("Training finished in %.2f seconds.", end_time - start_time)
-
-    torch.save(model.state_dict(), f"{args.model_dir}/ppo_{env_name}_model.pth")
-    logger.info("Model saved to ppo_%s_model.pth", env_name)
+    np.save("eval_results", np.array(all_episode_rewards)) 
+    logger.info("Eval finished in %.2f seconds.", end_time - start_time)
 
 
 if __name__ == "__main__":
