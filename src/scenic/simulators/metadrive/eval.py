@@ -34,7 +34,7 @@ class Args:
     # Number of parallel processes for data collection
     num_workers: int = 16
     # Total timesteps for eval
-    total_timesteps: int = 100000
+    total_timesteps: int = 30_000 
     # Timesteps collected by each worker per iteration
     steps_per_worker: int = 256
     # Number of optimization epochs per PPO iteration
@@ -62,7 +62,7 @@ class Args:
     
     use_pretrained: bool = True
     
-    checkpoint_model: str = "models/ppo_halton_train.pth"
+    checkpoint_model: str = "models/ppo_adv_check_3_model.pth"
 
 
 LOG_STD_MAX = 2
@@ -516,7 +516,7 @@ def main() -> None:
         avg_length = np.mean(episode_lengths) if episode_lengths else 0
 
     end_time = time.time()
-    np.save("eval_results_halton", np.array(all_episode_rewards)) 
+    np.save("eval_results_adv", np.array(all_episode_rewards)) 
     logger.info("Eval finished in %.2f seconds.", end_time - start_time)
 
 
