@@ -83,6 +83,7 @@ class ScenicZooEnv(ParallelEnv):
                                                        -np.max(np.array(result.records['car2_drift'])[:, 1]) - reward['agent1'],)
                             # Note: the yield statement really is the last part to be executed in this run
                             # in an episode. Shouldn't put code after it
+                            # print("SETTING MAX DEV")
                             self.max_deviation = max(np.max(np.array(result.records['ego_drift'])[:, 1]),
                                                        np.max(np.array(result.records['car2_drift'])[:, 1]))
                             actions = yield observation, reward, done(), truncated(), info 
