@@ -501,28 +501,8 @@ def main() -> None:
             # print("joined")
         logger.debug("Update %s: All workers finished.", update)
 
-        batch_obs_list = []
-        batch_actions_list = []
-        batch_log_probs_list = []
-        batch_advantages_list = []
-        batch_returns_list = []
 
         for data in all_trajectory_data:
-            advantages, returns = compute_gae(
-                data["rewards"],
-                data["values"],
-                data["dones"],
-                data["last_value"],
-                data["last_done"],
-                args.gamma,
-                args.gae_lambda,
-            )
-            batch_advantages_list.append(advantages)
-            batch_returns_list.append(returns)
-            batch_obs_list.append(data["observations"])
-            batch_actions_list.append(data["actions"])
-            batch_log_probs_list.append(data["log_probs"])
-
             current_episode_reward = 0
             current_episode_length = 0
             for reward, done in zip(data["rewards"], data["dones"]):
@@ -535,54 +515,12 @@ def main() -> None:
                     current_episode_reward = 0
                     current_episode_length = 0
 
-        batch_obs = torch.tensor(np.concatenate(batch_obs_list), dtype=torch.float32).to(device)
-        batch_actions = torch.tensor(np.concatenate(batch_actions_list), dtype=torch.float32).to(device)
-        batch_log_probs_old = torch.tensor(np.concatenate(batch_log_probs_list), dtype=torch.float32).to(device)
-        batch_advantages = torch.tensor(np.concatenate(batch_advantages_list), dtype=torch.float32).to(device)
-        batch_returns = torch.tensor(np.concatenate(batch_returns_list), dtype=torch.float32).to(device)
-
-        model.train()
-        # print("updating")
-        ppo_update(
-            model,
-            optimizer,
-            batch_obs,
-            batch_actions,
-            batch_log_probs_old,
-            batch_advantages,
-            batch_returns,
-            args.num_epochs,
-            args.minibatch_size,
-            args.clip_epsilon,
-            args.entropy_coef,
-            args.value_loss_coef,
-            args.max_grad_norm,
-            rng,
-        )
-
         total_steps += batch_size
         update_end_time = time.time()
         fps = int(batch_size / (update_end_time - update_start_time))
-        avg_reward = np.mean(episode_rewards) if episode_rewards else 0
+        avg_reward = np.mean(episode_rewards) if episode_rewards else 0 # need this
         avg_length = np.mean(episode_lengths) if episode_lengths else 0
 
-        if update % 1 == 0 or update == 1:
-            logger.info(
-                "Update: %s/%s, Timesteps: %s/%s, FPS: %s, Episodes: %s, Avg Reward (Last 100): %.2f, Avg Length (Last 100): %.2f",
-                update,
-                num_updates,
-                total_steps,
-                args.total_timesteps,
-                fps,
-                total_episodes,
-                avg_reward,
-                avg_length,
-            )
-            # Save model every 10 updates
-            # print(f"SAVING MODEL")
-            torch.save(model.state_dict(), f"{args.model_dir}/ppo_halton_train.pth")
-            # if avg_reward >= 20:
-                # torch.save(model.state_dict(), f"{args.model_dir}/ppo_{env_name}_model_real_good.pth")
 
     end_time = time.time()
     logger.info("Training finished in %.2f seconds.", end_time - start_time)
