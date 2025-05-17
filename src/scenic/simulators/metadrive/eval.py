@@ -62,7 +62,7 @@ class Args:
     
     use_pretrained: bool = True
     
-    checkpoint_model: str = "models/ppo_adv_check_3_model.pth"
+    checkpoint_model: str = "models/adversarial_random_continue_5_16_2000.pth"
 
 
 LOG_STD_MAX = 2
@@ -516,7 +516,9 @@ def main() -> None:
         avg_length = np.mean(episode_lengths) if episode_lengths else 0
 
     end_time = time.time()
-    np.save("eval_results_adv", np.array(all_episode_rewards)) 
+    final_eval_arr = np.array(all_episode_rewards)
+    np.save("eval_results_adv_rand_cont", final_eval_arr) 
+    print(f"MEAN REWARD: {np.mean(final_eval_arr)}") 
     logger.info("Eval finished in %.2f seconds.", end_time - start_time)
 
 
