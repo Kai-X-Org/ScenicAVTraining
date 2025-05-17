@@ -64,6 +64,8 @@ class Args:
     
     checkpoint_model: str = "models/ppo_random_train.pth"
 
+    save_model_name: str = "regular_random_continue_5_16_2130"
+
 
 LOG_STD_MAX = 2
 LOG_STD_MIN = -5
@@ -582,14 +584,14 @@ def main() -> None:
             time_reward_list.append([total_steps, avg_reward, avg_length])
             # Save model every 10 updates
             # print(f"SAVING MODEL")
-            torch.save(model.state_dict(), f"{args.model_dir}/adversarial_random_continue_5_16_2000.pth")
+            torch.save(model.state_dict(), f"{args.model_dir}/{args.save_model_name}")
             # if avg_reward >= 20:
                 # torch.save(model.state_dict(), f"{args.model_dir}/ppo_{env_name}_model_real_good.pth")
     np.save("train_info_adv", np.array(time_reward_list))
     end_time = time.time()
     logger.info("Training finished in %.2f seconds.", end_time - start_time)
 
-    torch.save(model.state_dict(), f"{args.model_dir}/adversarial_random_continue_5_16_2000.pth")
+    torch.save(model.state_dict(), f"{args.model_dir}/{args.save_model_name}")
     logger.info("Model saved to ppo_%s_model.pth", env_name)
 
 
