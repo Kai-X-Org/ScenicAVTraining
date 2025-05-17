@@ -183,6 +183,7 @@ def worker_fn(worker_id: int,
     rewards = dict()
     dones = []
     values = dict() 
+    max_deviations = []
 
     for agent in agents:
         observations[agent] = [] 
@@ -249,6 +250,7 @@ def worker_fn(worker_id: int,
 
         if done:
             # print(f'done reset')
+            max_deviations.append(env.max_deviation)
             obs, _ = env.reset()
     
 
@@ -273,6 +275,7 @@ def worker_fn(worker_id: int,
             "values": np.array(values[agent], dtype=np.float32),
             "last_value": last_value,
             "last_done": done,
+            "max_deviations": max_deviations
         }
         # print(f"TRAJ DATA: {trajectory_data}")
 
@@ -508,6 +511,18 @@ def main() -> None:
                     total_episodes += 1
                     current_episode_reward = 0
                     current_episode_length = 0
+        
+        num_episodes = 0
+        total_dev = 0
+        for data in all_trajectory_data:
+            max_dev = data["max_deviations"]
+            total_dev += np.sum(max_dev)
+            num_episodes += len(max_dev)
+
+        episode_mean_max_dev = total_dev/num_episodes
+
+        print(f"EPISODE MEAN MAX DEV: {episode_mean_max_dev}")
+
 
         total_steps += batch_size
         update_end_time = time.time()
