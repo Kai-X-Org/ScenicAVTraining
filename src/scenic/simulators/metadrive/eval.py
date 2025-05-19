@@ -63,11 +63,11 @@ class Args:
     
     use_pretrained: bool = True
     
-    checkpoint_model: str = "models/ce_deviation_05_18_19_43.pth"
+    checkpoint_model: str = "models/ce_deviation_05_19_00_45.pth"
 
     eval_results_folder: str = "eval_results"
 
-    eval_result_file_name: str = "ce_deviation_05_18_19_43_eval"
+    eval_result_file_name: str = "ce_deviation_05_19_00_45"
 
 
 LOG_STD_MAX = 2
@@ -548,7 +548,7 @@ def main() -> None:
     episode_reward_stddev = np.std(final_eval_arr)
 
     print(f"MEAN REWARD: {episode_mean_reward}") 
-    print(f"MEAN EPISODE DRIFT {mean_episode_max_drift}")
+    print(f"MEAN EPISODE MAX DRIFT {mean_episode_max_drift}")
 
     all_eval_results = {"episode_rewards" : final_eval_arr,
                         "episode_mean_reward" : episode_mean_reward,
