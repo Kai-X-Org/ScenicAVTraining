@@ -31,6 +31,7 @@ class ScenicZooEnv(ParallelEnv):
         self.scenario = scenario
         self.simulation_results = []
         self.max_deviation = 0
+        self.cumulative_rewards = dict()
 
         self.feedback_result = None
         self.loop = None
@@ -50,6 +51,8 @@ class ScenicZooEnv(ParallelEnv):
                 # print(f"feedback result: {self.feedback_result}")
                 scene, _ = self.scenario.generate(feedback=self.feedback_result)
                 with self.simulator.simulateStepped(scene, maxSteps=self.max_steps) as simulation:
+                    self.cumulative_rewards['agent0'] = 0
+                    self.cumulative_rewards['agent1'] = 0
                     self.agents = simulation.learning_agents
                     steps_taken = 0
                     # this first block before the while loop is for the first reset call
@@ -68,6 +71,10 @@ class ScenicZooEnv(ParallelEnv):
                         observation = simulation.get_obs()
                         info = simulation.get_info()
                         reward = simulation.get_reward()
+
+                        self.cumulative_rewards['agent0'] = reward['agent0']
+                        self.cumulative_rewards['agent1'] = reward['agent1']
+
 
                         if done():
                             # print("DONE!")
