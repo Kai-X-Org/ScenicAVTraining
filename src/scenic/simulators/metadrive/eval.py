@@ -524,7 +524,7 @@ def main() -> None:
         for data in all_trajectory_data:
             max_dev = data["max_deviations"]
             all_max_devs.append(max_dev)
-            total_drift += np.sum(max_dev)
+            # total_drift += np.sum(max_dev)
             # num_episodes += len(max_dev)
 
         # episode_mean_max_dev = total_dev/num_episodes
@@ -540,14 +540,21 @@ def main() -> None:
 
     end_time = time.time()
     final_eval_arr = np.array(all_episode_rewards)
-    mean_episode_max_drift = total_drift/total_episodes
+    mean_episode_max_drift = np.mean(all_max_devs) 
+    stddev_episode_max_drift = np.std(all_max_devs)
+    episode_max_drift_stddev = np.std(all_max_devs)
     # np.save(args.eval_results_folder + "/" + args.eval_result_file_name, final_eval_arr)
     episode_mean_reward = np.mean(final_eval_arr)
+    episode_reward_stddev = np.std(final_eval_arr)
+
     print(f"MEAN REWARD: {episode_mean_reward}") 
     print(f"MEAN EPISODE DRIFT {mean_episode_max_drift}")
+
     all_eval_results = {"episode_rewards" : final_eval_arr,
                         "episode_mean_reward" : episode_mean_reward,
+                        "episode_reward_stddev" : episode_reward_stddev,
                         "mean_episode_drift" : mean_episode_max_drift,
+                        "stddev_episode_max_drift" : stddev_episode_max_drift,
                         "all_episode_max_dev" : all_max_devs}
 
     pickle_filename = args.eval_results_folder + "/" + args.eval_result_file_name + ".pkl"
