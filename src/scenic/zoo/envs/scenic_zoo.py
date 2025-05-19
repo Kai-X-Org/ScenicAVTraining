@@ -86,8 +86,11 @@ class ScenicZooEnv(ParallelEnv):
                             # print(f"ego drift: {result.records['ego_drift']}")
                             # print(f"ego drift: {np.array(result.records['ego_drift'])}")
 
-                            self.feedback_result = min(-np.max(np.array(result.records['ego_drift'])[:, 1]) - reward['agent0'],
-                                                       -np.max(np.array(result.records['car2_drift'])[:, 1]) - reward['agent1'],)
+                            cum_rew_0 = self.cumulative_rewards['agent0']
+                            cum_rew_1 = self.cumulative_rewards['agent1']
+
+                            self.feedback_result = min(-np.max(np.array(result.records['ego_drift'])[:, 1]) - cum_rew_0,
+                                                       -np.max(np.array(result.records['car2_drift'])[:, 1]) - cum_rew_1,)
                             # Note: the yield statement really is the last part to be executed in this run
                             # in an episode. Shouldn't put code after it
                             # print("SETTING MAX DEV")
