@@ -18,6 +18,7 @@ from gymnasium import spaces
 from scenic.zoo import ScenicZooEnv
 from scenic.simulators.metadrive import MetaDriveSimulator
 from torch import nn, optim
+import pickle
 
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -62,7 +63,11 @@ class Args:
     
     use_pretrained: bool = True
     
-    checkpoint_model: str = "models/adversarial_random_continue_5_16_2000.pth"
+    checkpoint_model: str = "models/ce_deviation_05_18_19_43.pth"
+
+    eval_results_folder: str = "eval_results"
+
+    eval_result_file_name: str = "ce_deviation_05_18_19_43_eval"
 
 
 LOG_STD_MAX = 2
@@ -391,6 +396,8 @@ def main() -> None:
     """Run the PPO training."""
     args = tyro.cli(Args)
 
+    all_max_devs = []
+
     # Ensure model directory exists
     if not pathlib.Path.exists(pathlib.Path(args.model_dir)):
         pathlib.Path.mkdir(pathlib.Path(args.model_dir))
@@ -412,9 +419,7 @@ def main() -> None:
     logger = logging.getLogger(__name__)
     logging.basicConfig(level=logging.DEBUG)
 
-    logger.info("Starting PPO training...")
     logger.info("Environment: %s, Workers: %s, Total Timesteps: %s", env_name, args.num_workers, args.total_timesteps)
-    logger.info("Hyperparameters: gamma=%s, lambda=%s, clip_eps=%s, lr=%s", args.gamma, args.gae_lambda, args.clip_epsilon, args.lr)
 
     obs_space_dict = {"agent0" :  gym.spaces.Box(-0.0, 1.0 , (252,), dtype=np.float32),
                      "agent1": gym.spaces.Box(-0.0, 1.0 , (252,), dtype=np.float32)}
@@ -518,6 +523,7 @@ def main() -> None:
         # total_dev = 0
         for data in all_trajectory_data:
             max_dev = data["max_deviations"]
+            all_max_devs.append(max_dev)
             total_drift += np.sum(max_dev)
             # num_episodes += len(max_dev)
 
@@ -534,10 +540,22 @@ def main() -> None:
 
     end_time = time.time()
     final_eval_arr = np.array(all_episode_rewards)
-    np.save("eval_results_adv_rand_cont_with_dev", final_eval_arr) 
-    print(f"MEAN REWARD: {np.mean(final_eval_arr)}") 
-    print(f"MEAN EPISODE DRIFT {total_drift/total_episodes}")
-    logger.info("Eval finished in %.2f seconds.", end_time - start_time)
+    mean_episode_max_drift = total_drift/total_episodes
+    # np.save(args.eval_results_folder + "/" + args.eval_result_file_name, final_eval_arr)
+    episode_mean_reward = np.mean(final_eval_arr)
+    print(f"MEAN REWARD: {episode_mean_reward}") 
+    print(f"MEAN EPISODE DRIFT {mean_episode_drift}")
+    all_eval_results = {"episode_rewards" : final_eval_arr,
+                        "episode_mean_reward" : episode_mean_reward,
+                        "mean_episode_drift" : mean_episode_max_drift,
+                        "all_episode_max_dev" : all_max_devs}
+
+    pickle_filename = args.eval_results_folder + "/" + args.eval_result_file_name + ".pkl"
+
+    with open(pickle_filename, 'wb') as file:
+        pickle.dump(all_eval_results, file)
+
+    logger.info(f"Eval finished in {end_time - start_time} seconds. Eval results pickled to {pickle_filename}")
 
 
 if __name__ == "__main__":
