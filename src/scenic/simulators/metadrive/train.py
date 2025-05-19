@@ -67,7 +67,7 @@ class Args:
     
     checkpoint_model: str = "models/ppo_random_train.pth"
 
-    save_model_name: str = "unifrom_devation_baseline"
+    save_model_name: str = "uniform_deviation_baseline"
 
 
 

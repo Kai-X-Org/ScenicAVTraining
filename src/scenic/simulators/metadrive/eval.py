@@ -63,11 +63,11 @@ class Args:
     
     use_pretrained: bool = True
     
-    checkpoint_model: str = "models/ce_deviation_05_19_00_45.pth"
+    checkpoint_model: str = "models/uniform_deviation_baseline_05_19_02_33.pth"
 
     eval_results_folder: str = "eval_results"
 
-    eval_result_file_name: str = "ce_deviation_05_19_00_45"
+    eval_result_file_name: str = "uniform_deviation_baseline_05_19_02_33"
 
 
 LOG_STD_MAX = 2
