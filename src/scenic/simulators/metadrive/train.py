@@ -31,7 +31,7 @@ class Args:
     """Hyperparameters and configuration for the PPO training."""
 
     # Environment/scenic file to use
-    scenic_file: str = "exp_ce.scenic"
+    scenic_file: str = "exp_uniform.scenic"
     # Number of parallel processes for data collection
     num_workers: int = 16
     # Total timesteps for training
@@ -67,7 +67,7 @@ class Args:
     
     checkpoint_model: str = "models/ppo_random_train.pth"
 
-    save_model_name: str = "ce_deviation"
+    save_model_name: str = "unifrom_devation_baseline"
 
 
 
