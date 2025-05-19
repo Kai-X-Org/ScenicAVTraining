@@ -89,8 +89,8 @@ class ScenicZooEnv(ParallelEnv):
                             actions = yield observation, reward, done(), truncated(), info 
 
                             break # a little unclean right here
-
-                        actions = yield observation, reward, done(), truncated(), info
+                        
+                        actions = yield observation, reward, done(), done(), info
                         simulation.actions = actions # TODO add action dict to simulation interfaces
 
             except ResetException:
