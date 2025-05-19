@@ -395,7 +395,6 @@ def main() -> None:
     model_file_name = args.save_model_name + "_" + timestamp + ".pth"
     training_profile_name = args.save_model_name + "_" + timestamp
 
-    logger.info(f"Training started at: {timestamp}")
 
     # Ensure model directory exists
     if not pathlib.Path.exists(pathlib.Path(args.model_dir)):
@@ -422,6 +421,7 @@ def main() -> None:
     logger.info("Environment: %s, Workers: %s, Total Timesteps: %s", env_name, args.num_workers, args.total_timesteps)
     logger.info("Hyperparameters: gamma=%s, lambda=%s, clip_eps=%s, lr=%s", args.gamma, args.gae_lambda, args.clip_epsilon, args.lr)
 
+    logger.info(f"Training started at: {timestamp}")
     # temp env to get obs and action space
     # env = ScenicZooEnv(
         # env_name,
@@ -601,7 +601,7 @@ def main() -> None:
     torch.save(model.state_dict(), f"{args.model_dir}/{model_file_name}")
     logger.info("Model saved to ppo_%s_model.pth", env_name)
 
-    print(f"Done at: {datetime.datetime.now().strftime("%m_%d_%H_%M")}"
+    print(f"Done at: {datetime.datetime.now().strftime('%m_%d_%H_%M')}")
 
 if __name__ == "__main__":
     main()

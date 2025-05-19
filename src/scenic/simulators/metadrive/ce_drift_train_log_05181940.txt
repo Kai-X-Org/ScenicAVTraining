@@ -1,0 +1,8 @@
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+Traceback (most recent call last; use -b to show Scenic internals):
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/train.py", line 607, in <module>
+    main()
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/train.py", line 398, in main
+    logger.info(f"Training started at: {timestamp}")
+UnboundLocalError: local variable 'logger' referenced before assignment
