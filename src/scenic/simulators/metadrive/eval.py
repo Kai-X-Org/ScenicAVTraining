@@ -255,7 +255,7 @@ def worker_fn(worker_id: int,
 
         if done:
             # print(f'done reset')
-            print(f"MAX DEV: {env.max_deviation}")
+            # print(f"MAX DEV: {env.max_deviation}")
             max_deviations.append(env.max_deviation)
             obs, _ = env.reset()
     
@@ -544,7 +544,7 @@ def main() -> None:
     # np.save(args.eval_results_folder + "/" + args.eval_result_file_name, final_eval_arr)
     episode_mean_reward = np.mean(final_eval_arr)
     print(f"MEAN REWARD: {episode_mean_reward}") 
-    print(f"MEAN EPISODE DRIFT {mean_episode_drift}")
+    print(f"MEAN EPISODE DRIFT {mean_episode_max_drift}")
     all_eval_results = {"episode_rewards" : final_eval_arr,
                         "episode_mean_reward" : episode_mean_reward,
                         "mean_episode_drift" : mean_episode_max_drift,
