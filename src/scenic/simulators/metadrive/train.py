@@ -18,6 +18,7 @@ from gymnasium import spaces
 from scenic.zoo import ScenicZooEnv
 from scenic.simulators.metadrive import MetaDriveSimulator
 from torch import nn, optim
+import datetime
 
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -30,7 +31,7 @@ class Args:
     """Hyperparameters and configuration for the PPO training."""
 
     # Environment/scenic file to use
-    scenic_file: str = "exp.scenic"
+    scenic_file: str = "exp_ce.scenic"
     # Number of parallel processes for data collection
     num_workers: int = 16
     # Total timesteps for training
@@ -64,7 +65,7 @@ class Args:
     
     checkpoint_model: str = "models/ppo_random_train.pth"
 
-    save_model_name: str = "regular_random_continue_5_16_2130.pth"
+    save_model_name: str = "ce_deviation"
 
 
 LOG_STD_MAX = 2
@@ -389,6 +390,12 @@ def main() -> None:
     """Run the PPO training."""
     args = tyro.cli(Args)
     time_reward_list = []
+    now = datetime.datetime.now()
+    timestamp = now.strftime("%m_%d_%H_%M")
+    model_file_name = args.save_model_name + "_" + timestamp + ".pth"
+    training_profile_name = args.save_model_name + "_" + timestamp
+
+    logger.info(f"Training started at: {timestamp}")
 
     # Ensure model directory exists
     if not pathlib.Path.exists(pathlib.Path(args.model_dir)):
@@ -584,16 +591,17 @@ def main() -> None:
             time_reward_list.append([total_steps, avg_reward, avg_length])
             # Save model every 10 updates
             # print(f"SAVING MODEL")
-            torch.save(model.state_dict(), f"{args.model_dir}/{args.save_model_name}")
+            torch.save(model.state_dict(), f"{args.model_dir}/{model_file_name}")
             # if avg_reward >= 20:
                 # torch.save(model.state_dict(), f"{args.model_dir}/ppo_{env_name}_model_real_good.pth")
-    np.save("train_info_regular", np.array(time_reward_list))
+    np.save(training_profile_name, np.array(time_reward_list))
     end_time = time.time()
     logger.info("Training finished in %.2f seconds.", end_time - start_time)
 
-    torch.save(model.state_dict(), f"{args.model_dir}/{args.save_model_name}")
+    torch.save(model.state_dict(), f"{args.model_dir}/{model_file_name}")
     logger.info("Model saved to ppo_%s_model.pth", env_name)
 
+    print(f"Done at: {datetime.datetime.now().strftime("%m_%d_%H_%M")}"
 
 if __name__ == "__main__":
     main()
