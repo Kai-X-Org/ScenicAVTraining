@@ -72,8 +72,8 @@ class ScenicZooEnv(ParallelEnv):
                         info = simulation.get_info()
                         reward = simulation.get_reward()
 
-                        self.cumulative_rewards['agent0'] = reward['agent0']
-                        self.cumulative_rewards['agent1'] = reward['agent1']
+                        self.cumulative_rewards['agent0'] += reward['agent0']
+                        self.cumulative_rewards['agent1'] += reward['agent1']
 
 
                         if done():
