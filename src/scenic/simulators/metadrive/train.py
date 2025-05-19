@@ -60,6 +60,8 @@ class Args:
     seed: int = 4
     # Directory to save models
     model_dir: str = "models"
+
+    training_profile_dir: str = "train_profile"
     
     use_pretrained: bool = True
     
@@ -595,7 +597,7 @@ def main() -> None:
             torch.save(model.state_dict(), f"{args.model_dir}/{model_file_name}")
             # if avg_reward >= 20:
                 # torch.save(model.state_dict(), f"{args.model_dir}/ppo_{env_name}_model_real_good.pth")
-    np.save(training_profile_name, np.array(time_reward_list))
+    np.save(args.training_profile_dir + "/" + training_profile_name, np.array(time_reward_list))
     end_time = time.time()
     logger.info("Training finished in %.2f seconds.", end_time - start_time)
 
