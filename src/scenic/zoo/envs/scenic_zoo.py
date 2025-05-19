@@ -5,6 +5,13 @@ from gymnasium import spaces
 import random
 import numpy as np
 
+def compute_feedback(result):
+    reward0 = result.records["cum_reward_0"]
+    reward1 = result.records["cum_reward_1"]
+    return min(-np.max(np.array(result.records['ego_drift'])[:, 1]) - reward0,
+                -np.max(np.array(result.records['car2_drift'])[:, 1]) - reward1,)   
+
+
 class ResetException(Exception):
     def __init__(self):
         super().__init__("Resetting")
@@ -19,7 +26,8 @@ class ScenicZooEnv(ParallelEnv):
                  max_steps=1000,
                  observation_space : dict = dict(), 
                  action_space : dict = dict(),
-                 agents=[]): # empty string means just pure scenic???
+                 agents : list = [],
+                 compute_feedback : callable = compute_feedback): 
 
         assert render_mode is None or render_mode in self.metadata["render_modes"]
 
@@ -34,6 +42,8 @@ class ScenicZooEnv(ParallelEnv):
 
         self.feedback_result = None
         self.loop = None
+
+        self._compute_feedback = compute_feedback
 
         self.agents = agents
         self.possible_agents = agents
@@ -79,8 +89,7 @@ class ScenicZooEnv(ParallelEnv):
                             # print(f"ego drift: {result.records['ego_drift']}")
                             # print(f"ego drift: {np.array(result.records['ego_drift'])}")
 
-                            self.feedback_result = min(-np.max(np.array(result.records['ego_drift'])[:, 1]) - reward['agent0'],
-                                                       -np.max(np.array(result.records['car2_drift'])[:, 1]) - reward['agent1'],)
+                            self.feedback_result = self.compute_feedback(result)
                             # Note: the yield statement really is the last part to be executed in this run
                             # in an episode. Shouldn't put code after it
                             # print("SETTING MAX DEV")
@@ -132,4 +141,7 @@ class ScenicZooEnv(ParallelEnv):
     # @property
     def observation_space(self, agent):
         return self._observation_space[agent]
+
+    def compute_feedback(self, result):
+        return self._compute_feedback(result)
 
