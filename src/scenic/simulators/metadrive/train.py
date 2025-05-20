@@ -31,7 +31,7 @@ class Args:
     """Hyperparameters and configuration for the PPO training."""
 
     # Environment/scenic file to use
-    scenic_file: str = "exp_uniform.scenic"
+    scenic_file: str = "exp_ce.scenic"
     # Number of parallel processes for data collection
     num_workers: int = 16
     # Total timesteps for training
@@ -67,7 +67,7 @@ class Args:
     
     checkpoint_model: str = "models/ppo_random_train.pth"
 
-    save_model_name: str = "uniform_deviation_baseline"
+    save_model_name: str = "ce_reward_feedback"
 
 
 
@@ -602,7 +602,7 @@ def main() -> None:
     logger.info("Training finished in %.2f seconds.", end_time - start_time)
 
     torch.save(model.state_dict(), f"{args.model_dir}/{model_file_name}")
-    logger.info("Model saved to ppo_%s_model.pth", env_name)
+    logger.info(f"Model saved to {args.model_dir}/{model_file_name}")
 
     print(f"Done at: {datetime.datetime.now().strftime('%m_%d_%H_%M')}")
 
