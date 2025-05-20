@@ -67,7 +67,7 @@ class Args:
     
     checkpoint_model: str = "models/ppo_random_train.pth"
 
-    save_model_name: str = "ce_reward_feedback"
+    save_model_name: str = "ce_reward_feedback_300k_continue"
 
 
 
@@ -577,11 +577,12 @@ def main() -> None:
         update_end_time = time.time()
         fps = int(batch_size / (update_end_time - update_start_time))
         avg_reward = np.mean(episode_rewards) if episode_rewards else 0
+        std_reward = np.std(episode_rewards) if episode_rewards else 0
         avg_length = np.mean(episode_lengths) if episode_lengths else 0
 
         if update % 1 == 0 or update == 1:
             logger.info(
-                "Update: %s/%s, Timesteps: %s/%s, FPS: %s, Episodes: %s, Avg Reward (Last 100): %.2f, Avg Length (Last 100): %.2f",
+                "Update: %s/%s Timesteps: %s/%s FPS: %s Episodes: %s Avg Reward (Last 100): %.2f Std Reward (Last 100): %.2f Avg Length (Last 100): %.2f",
                 update,
                 num_updates,
                 total_steps,
@@ -589,6 +590,7 @@ def main() -> None:
                 fps,
                 total_episodes,
                 avg_reward,
+                std_reward,
                 avg_length,
             )
             time_reward_list.append([total_steps, avg_reward, avg_length])
