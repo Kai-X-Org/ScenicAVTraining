@@ -63,11 +63,11 @@ class Args:
     
     use_pretrained: bool = True
     
-    checkpoint_model: str = "models/ppo_random_train.pth"
+    checkpoint_model: str = "models/ce_reward_feedback_300k_continue_05_19_21_55.pth"
 
     eval_results_folder: str = "eval_results"
 
-    eval_result_file_name: str = "ppo_random_train"
+    eval_result_file_name: str = "ce_reward_feedback_300k_continue_05_19_21_55"
 
 
 LOG_STD_MAX = 2
