@@ -56,4 +56,4 @@ if __name__ == '__main__':
             for agent in vec_env.agents
         }
         observations, rewards, terminations, truncations, infos = vec_env.step(actions)
-        print(f"OBS {observations}")
+        print(f"rew {rewards}")
