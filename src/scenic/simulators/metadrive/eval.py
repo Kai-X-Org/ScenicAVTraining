@@ -237,7 +237,7 @@ def worker_fn(worker_id: int,
         
         next_obs, reward, terminated, truncated, _ = env.step(step_action_dict)
         # print(f"STEPPING")
-        done = terminated or truncated
+        done = terminated['agent0'] or truncated['agent1']
         dones.append(done)
 
         # TODO figure out if these go inside the loop over agents
