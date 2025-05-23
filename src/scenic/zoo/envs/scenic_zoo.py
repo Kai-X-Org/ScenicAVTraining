@@ -37,6 +37,8 @@ class ScenicZooEnv(ParallelEnv):
         self.loop = None
 
         self.agents = agents
+        assert self.agents != []
+
         self.possible_agents = agents
 
         self.terminations = {}
@@ -99,11 +101,17 @@ class ScenicZooEnv(ParallelEnv):
                             self.max_deviation = max(np.max(np.array(result.records['ego_drift'])[:, 1]),
                                                        np.max(np.array(result.records['car2_drift'])[:, 1]))
 
-                            actions = yield observation, reward, done(), truncated(), info 
+                            episode_done = done()
+                            done_dict = {agent: episode_done for agent in self.agents}
+                            truncated_dict = {agent: truncated() for agent in self.agents}
+                            actions = yield observation, reward, done_dict, truncated_dict, info 
 
                             break # a little unclean right here
-                        
-                        actions = yield observation, reward, done(), done(), info
+
+                        episode_done = done()
+                        done_dict = {agent: episode_done for agent in self.agents}
+
+                        actions = yield observation, reward, done_dict, done_dict, info
                         simulation.actions = actions # TODO add action dict to simulation interfaces
 
             except ResetException:
