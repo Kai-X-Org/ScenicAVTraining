@@ -13,14 +13,14 @@ def make_env():
         agents = ['agent0', 'agent1']
 
         root_user = os.path.expanduser("~")
-        sumo_map = root_user + "/ScenicGymClean/assets/maps/CARLA/Town04.net.xml"
+        sumo_map = root_user + "/ScenicGym/assets/maps/CARLA/Town04.net.xml"
         obs_space_dict = {"agent0" :  gym.spaces.Box(-0.0, 1.0 , (252,), dtype=np.float32),
                          "agent1": gym.spaces.Box(-0.0, 1.0 , (252,), dtype=np.float32)}
         # print(f"local decpared obs shape: {obs_space_dict['agent0'].shape}")
         action_space_dict = {'agent0': gym.spaces.Box(-1.0, 1.0, (2,), np.float32),
                              'agent1': gym.spaces.Box(-1.0, 1.0, (2,), np.float32)}
 
-        scenic_file = "exp_uniform.scenic"
+        scenic_file = "exp_local.scenic"
         print("Making Scenario")
        
         scenario = scenic.scenarioFromFile(scenic_file,
