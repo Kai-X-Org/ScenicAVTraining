@@ -170,3 +170,4 @@ if __name__ == '__main__':
             loss = agent.learn(experiences)
 
         agent.steps[-1] += steps
+    agent.save_chekpoint("models/ippo_uniform_05_23_23_23")
