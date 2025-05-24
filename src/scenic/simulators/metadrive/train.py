@@ -11,7 +11,7 @@ from tqdm import trange
 from agilerl.algorithms import IPPO
 from agilerl.utils.algo_utils import obs_channels_to_first
 
-num_envs = 16
+num_envs = 15
 
 def make_env():
     def thunk():
@@ -51,7 +51,7 @@ if __name__ == '__main__':
     env = AsyncPettingZooVecEnv(
           [
               make_env()
-              for _ in range(num_envs - 1)
+              for _ in range(num_envs)
           ]
       )
 
@@ -110,7 +110,7 @@ if __name__ == '__main__':
                     shared_id = agent.get_homo_id(agent_id)
                     actor_idx = agent.shared_agent_ids.index(shared_id)
                     agent_space = agent.action_space[agent_id]
-                    if isinstance(agent_space, spaces.Box):
+                    if isinstance(agent_space, gym.spaces.Box):
                         if agent.actors[actor_idx].squash_output:
                             clipped_agent_action = agent.actors[actor_idx].scale_action(agent_action)
                         else:
