@@ -6,6 +6,10 @@ import scenic
 import gymnasium as gym
 import torch
 import numpy as np
+from tqdm import trange
+
+from agilerl.algorithms import IPPO
+from agilerl.utils.algo_utils import obs_channels_to_first
 
 num_envs = 16
 
