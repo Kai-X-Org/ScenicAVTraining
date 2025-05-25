@@ -55,7 +55,7 @@ class ScenicZooEnv(ParallelEnv):
                 with self.simulator.simulateStepped(scene, maxSteps=self.max_steps) as simulation:
                     self.cumulative_rewards['agent0'] = 0
                     self.cumulative_rewards['agent1'] = 0
-                    self.agents = simulation.learning_agents
+                    # self.agents = simulation.learning_agents
                     steps_taken = 0
                     # this first block before the while loop is for the first reset call
                     done = lambda: not (simulation.result is None) # TODO maybe call this terminated in the future
@@ -109,6 +109,7 @@ class ScenicZooEnv(ParallelEnv):
                             break # a little unclean right here
 
                         episode_done = done()
+                        print(f"ZOO AGENTS: {self.agents}")
                         done_dict = {agent: episode_done for agent in self.agents}
 
                         actions = yield observation, reward, done_dict, done_dict, info
@@ -138,6 +139,7 @@ class ScenicZooEnv(ParallelEnv):
         # print(f"STEP_RESULT {step_result}")
         observation, reward, terminated, truncated, info = self.loop.send(action)
         # observation, reward, terminated, truncated, info = step_result 
+        print(f"ZOO TERM {terminated}")
         return observation, reward, terminated, truncated, info
 
     def render(self): # TODO figure out if this function has to be implemented here or if super() has default implementation

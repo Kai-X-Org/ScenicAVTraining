@@ -123,6 +123,7 @@ if __name__ == '__main__':
                 # Act in environment
                 next_state, reward, termination, truncation, info = env.step(clipped_action)
                 scores += np.array(list(reward.values())).transpose()
+                print(f"FIRS termination: {termination}")
 
                 steps += num_envs
 
@@ -143,8 +144,9 @@ if __name__ == '__main__':
                     }
 
                 # Find which agents are "done" - i.e. terminated or truncated
+                print(f"TERMINATION: {termination}")
                 dones = {
-                    agent_id: termination[agent_id] | truncation[agent_id]
+                    agent_id: termination[agent_id] or truncation[agent_id]
                     for agent_id in agent.agent_ids
                 }
 
