@@ -11,7 +11,7 @@ from tqdm import trange
 from agilerl.algorithms import IPPO
 from agilerl.utils.algo_utils import obs_channels_to_first
 
-num_envs = 15
+num_envs = 3
 
 def make_env():
     def thunk():
@@ -128,6 +128,8 @@ if __name__ == '__main__':
                 steps += num_envs
 
                 next_done = {}
+                print(f"TRAIN DONES: {dones}")
+                print(f"TRAIN REWARDS {rewards}")
                 for agent_id in agent.agent_ids:
                     states[agent_id].append(state[agent_id])
                     actions[agent_id].append(action[agent_id])
@@ -144,9 +146,9 @@ if __name__ == '__main__':
                     }
 
                 # Find which agents are "done" - i.e. terminated or truncated
-                print(f"TERMINATION: {termination}")
+                # print(f"TERMINATION: {termination}")
                 dones = {
-                    agent_id: termination[agent_id] or truncation[agent_id]
+                    agent_id: termination[agent_id] | truncation[agent_id]
                     for agent_id in agent.agent_ids
                 }
 
