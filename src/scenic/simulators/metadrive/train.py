@@ -147,13 +147,14 @@ if __name__ == '__main__':
 
                 # Find which agents are "done" - i.e. terminated or truncated
                 # print(f"TERMINATION: {termination}")
-                dones = {
-                    agent_id: termination[agent_id] | truncation[agent_id]
-                    for agent_id in agent.agent_ids
-                }
+                # temp_dones = {
+                    # agent_id: [termination[agent_id] | truncation[agent_id]]
+                    # for agent_id in agent.agent_ids
+                # }
 
                 # Calculate scores for completed episodes
                 for idx, agent_dones in enumerate(zip(*dones.values())):
+                    print(f"AGENT_DONES {agent_dones}")
                     if all(agent_dones):
                         completed_score = list(scores[idx])
                         completed_episode_scores.append(completed_score)
