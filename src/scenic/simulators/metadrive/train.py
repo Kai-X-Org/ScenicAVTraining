@@ -26,13 +26,13 @@ def make_env():
                              'agent1': gym.spaces.Box(-1.0, 1.0, (2,), np.float32)}
 
         scenic_file = "exp_uniform.scenic"
-        print("Making Scenario")
+        # print("Making Scenario")
        
         scenario = scenic.scenarioFromFile(scenic_file,
                                        model="scenic.simulators.metadrive.model",
                                    mode2D=True)
         
-        print("Made Scenario")
+        # print("Made Scenario")
         env = ScenicZooEnv(scenario, 
                            MetaDriveSimulator(sumo_map=sumo_map, render=False, real_time=False),
                            None, 
@@ -123,13 +123,13 @@ if __name__ == '__main__':
                 # Act in environment
                 next_state, reward, termination, truncation, info = env.step(clipped_action)
                 scores += np.array(list(reward.values())).transpose()
-                print(f"FIRS termination: {termination}")
+                # print(f"FIRS termination: {termination}")
 
                 steps += num_envs
 
                 next_done = {}
-                print(f"TRAIN DONES: {dones}")
-                print(f"TRAIN REWARDS {rewards}")
+                # print(f"TRAIN DONES: {dones}")
+                # print(f"TRAIN REWARDS {rewards}")
                 for agent_id in agent.agent_ids:
                     states[agent_id].append(state[agent_id])
                     actions[agent_id].append(action[agent_id])
@@ -147,14 +147,14 @@ if __name__ == '__main__':
 
                 # Find which agents are "done" - i.e. terminated or truncated
                 # print(f"TERMINATION: {termination}")
-                # temp_dones = {
-                    # agent_id: [termination[agent_id] | truncation[agent_id]]
-                    # for agent_id in agent.agent_ids
-                # }
+                temp_dones = {
+                    agent_id: termination[agent_id] | truncation[agent_id]
+                    for agent_id in agent.agent_ids
+                }
 
                 # Calculate scores for completed episodes
-                for idx, agent_dones in enumerate(zip(*dones.values())):
-                    print(f"AGENT_DONES {agent_dones}")
+                for idx, agent_dones in enumerate(zip(*temp_dones.values())):
+                    # print(f"AGENT_DONES {agent_dones}")
                     if all(agent_dones):
                         completed_score = list(scores[idx])
                         completed_episode_scores.append(completed_score)
