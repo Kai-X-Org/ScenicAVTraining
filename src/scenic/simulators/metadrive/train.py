@@ -11,7 +11,7 @@ from tqdm import trange
 from agilerl.algorithms import IPPO
 from agilerl.utils.algo_utils import obs_channels_to_first
 
-num_envs = 3
+num_envs = 16
 
 def make_env():
     def thunk():
@@ -46,7 +46,10 @@ def make_env():
 
 
 if __name__ == '__main__':
+    
+    torch.manual_seed(0)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    # torch.manual_seed(4)
 
     env = AsyncPettingZooVecEnv(
           [
@@ -75,7 +78,7 @@ if __name__ == '__main__':
 
     # Define training loop parameters
     max_steps = 150_000  # Max steps
-
+    # total_steps = 0
     while agent.steps[-1] < max_steps:
         state, info  = env.reset() # Reset environment at start of episode
         scores = np.zeros((num_envs, len(agent.shared_agent_ids)))
@@ -178,5 +181,17 @@ if __name__ == '__main__':
             # Learn according to agent's RL algorithm
             loss = agent.learn(experiences)
 
+
         agent.steps[-1] += steps
-    agent.save_chekpoint("models/ippo_uniform_05_23_23_23")
+        print(f"{agent.steps[-1]}, {np.mean(completed_score)}")
+        # print(f"Global steps {agent.steps[-1]} ---")
+        # print(f"Steps {[agent.steps[-1] for agent in pop]}")
+        # print(f"Scores: {mean_scores}")
+        # print(f'Fitnesses: {["%.2f"%fitness for fitness in fitnesses]}')
+        # print(
+            # f'5 fitness avgs: {["%.2f"%np.mean(agent.fitness[-5:]) for agent in pop]}'
+        # )
+
+
+    agent.save_chekpoint("models/ippo_uniform_05_23_23_23.pth")
+    env.close()
