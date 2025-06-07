@@ -109,7 +109,7 @@ class ScenicZooEnv(ParallelEnv):
                             break # a little unclean right here
 
                         episode_done = done()
-                        print(f"ZOO AGENTS: {self.agents}")
+                        # print(f"ZOO AGENTS: {self.agents}")
                         done_dict = {agent: episode_done for agent in self.agents}
 
                         actions = yield observation, reward, done_dict, done_dict, info
@@ -139,7 +139,7 @@ class ScenicZooEnv(ParallelEnv):
         # print(f"STEP_RESULT {step_result}")
         observation, reward, terminated, truncated, info = self.loop.send(action)
         # observation, reward, terminated, truncated, info = step_result 
-        print(f"ZOO TERM {terminated}")
+        # print(f"ZOO TERM {terminated}")
         return observation, reward, terminated, truncated, info
 
     def render(self): # TODO figure out if this function has to be implemented here or if super() has default implementation
