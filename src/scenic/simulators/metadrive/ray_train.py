@@ -1,7 +1,7 @@
 import gymnasium as gym
 from scenic.zoo import ScenicZooEnv
 from ray.rllib.algorithms.ppo import PPOConfig
-from ray.rllib.env.wrappers.pettingzoo_env import PettingZooEnv
+from ray.rllib.env.wrappers.pettingzoo_env import ParallelPettingZooEnv
 from ray.tune.registry import register_env
 from pprint import pprint
 import os
@@ -72,12 +72,15 @@ def scenic_env():
     return env
 
 
+register_env("scenic", lambda cfg: ParallelPettingZooEnv(scenic_env()))
+
 if __name__ == "__main__":
 
-    register_env("scenic", lambda cfg: scenic_env())
+    # register_env("scenic", lambda cfg: scenic_env())
 
     config = (PPOConfig()
-              .environment("scenic", env_config={})
+              # .get_default_config()
+              .environment("scenic")
               .multi_agent(
                   policies = {"p0"},
                   policy_mapping_fn = (lambda aid, *args, **kwargs: "p0"),
@@ -85,7 +88,7 @@ if __name__ == "__main__":
               .training(lr=0.0002,
                 train_batch_size_per_learner=2000,
                 num_epochs=2,)
-              .rl_module()
+              # .rl_module()
               .env_runners(num_env_runners=3)
 
             )
