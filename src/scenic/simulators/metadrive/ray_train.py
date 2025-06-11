@@ -94,8 +94,11 @@ if __name__ == "__main__":
             )
 
     ppo = config.build_algo()
-    ppo.save_to_path("ray_models/ray_train_1.pth")
+    # print("FINISHED ALGO BUILD!")
+    # ppo.save_to_path("ray_models/")
+    ppo.save_to_path()
     pprint(ppo.train())
+    ppo.save_to_path()
     
 
     # for _ in range(4):
