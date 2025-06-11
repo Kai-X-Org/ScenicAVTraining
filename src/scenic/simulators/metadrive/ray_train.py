@@ -68,7 +68,7 @@ def scenic_env():
                        observation_space = obs_space_dict, 
                        action_space = action_space_dict, 
                        agents=agents)
-    print("ENV CREATED!!!!!")
+    # print("ENV CREATED!!!!!")
     return env
 
 
@@ -86,15 +86,18 @@ if __name__ == "__main__":
                   policy_mapping_fn = (lambda aid, *args, **kwargs: "p0"),
               )
               .training(lr=0.0002,
-                train_batch_size_per_learner=2000,
-                num_epochs=2,)
+                train_batch_size_per_learner=256,
+                num_epochs=10,)
               # .rl_module()
-              .env_runners(num_env_runners=3)
+              .env_runners(num_env_runners=12)
 
             )
 
     ppo = config.build_algo()
+    ppo.save_to_path("ray_models/ray_train_1.pth")
+    pprint(ppo.train())
+    
 
-    for _ in range(4):
-        pass
-        # pprint(ppo.train())
+    # for _ in range(4):
+        # pass
+        # # pprint(ppo.train())
