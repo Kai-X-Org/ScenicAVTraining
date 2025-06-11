@@ -114,10 +114,10 @@ if __name__ == "__main__":
     # ppo.save_to_path("ray_models/")
     current_dir = os.getcwd()
     # checkpoint_dir = ppo.save_to_path(current_dir + f"/ray_models/test_checkpoints_{now}")
-    for i in range(3):
-        pprint(f"Training result \n {ppo.train()}\n END TRAINING RESULT")
+    for i in range(20):
+        pprint(f"Checkpoint info: \n {ppo.train()} \n")
         checkpoint_dir = ppo.save_to_path(current_dir + f"/ray_models/test_checkpoints_{now}_{i}")
-        pprint(f"CHECKPOINT SAVED TO PATH: {checkpoint_dir}")
+        pprint(f"CHECKPOINT SAVED TO PATH: {checkpoint_dir}\n\n")
     # ppo.save_to_path()
     
 
