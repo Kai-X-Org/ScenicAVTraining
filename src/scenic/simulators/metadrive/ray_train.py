@@ -8,6 +8,7 @@ import os
 import numpy as np
 import scenic
 from scenic.simulators.metadrive import MetaDriveSimulator
+import datetime
 # def make_env() -> callable:
     # def thunk() -> gym.Env:
         # ... # create the envioronments
@@ -77,6 +78,8 @@ register_env("scenic", lambda cfg: ParallelPettingZooEnv(scenic_env()))
 if __name__ == "__main__":
 
     # register_env("scenic", lambda cfg: scenic_env())
+    now = datetime.datetime.now()    
+    now = now.strftime("%m_%d_%H_%M")
 
     config = (PPOConfig()
               # .get_default_config()
@@ -85,20 +88,37 @@ if __name__ == "__main__":
                   policies = {"p0"},
                   policy_mapping_fn = (lambda aid, *args, **kwargs: "p0"),
               )
-              .training(lr=0.0002,
-                train_batch_size_per_learner=256,
-                num_epochs=10,)
+              # .training(lr=0.0002,
+                # train_batch_size_per_learner=256,
+                # num_epochs=10,)
               # .rl_module()
               .env_runners(num_env_runners=12)
 
             )
 
+    config.evaluation(
+        # Run one evaluation round every iteration.
+        evaluation_interval=1,
+
+        # Create 2 eval EnvRunners in the extra EnvRunnerGroup.
+        evaluation_num_env_runners=2,
+
+        # Run evaluation for exactly 10 episodes. Note that because you have
+        # 2 EnvRunners, each one runs through 5 episodes.
+        evaluation_duration_unit="episodes",
+        evaluation_duration=10,
+    )
+
     ppo = config.build_algo()
     # print("FINISHED ALGO BUILD!")
     # ppo.save_to_path("ray_models/")
-    ppo.save_to_path()
-    pprint(ppo.train())
-    ppo.save_to_path()
+    current_dir = os.getcwd()
+    # checkpoint_dir = ppo.save_to_path(current_dir + f"/ray_models/test_checkpoints_{now}")
+    for i in range(3):
+        pprint(f"Training result \n {ppo.train()}\n END TRAINING RESULT")
+        checkpoint_dir = ppo.save_to_path(current_dir + f"/ray_models/test_checkpoints_{now}_{i}")
+        pprint(f"CHECKPOINT SAVED TO PATH: {checkpoint_dir}")
+    # ppo.save_to_path()
     
 
     # for _ in range(4):
