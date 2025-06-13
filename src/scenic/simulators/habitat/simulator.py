@@ -401,7 +401,8 @@ class HabitatSimulation(Simulation):
 
     def destroy(self):
         print("FINISH SCENE, DESTROYING...")
-        self.env.reset()
+        # FIXME probably now need to destroy objects now???
+        # self.env.reset()
         self.env.close()
         # print("closed env")
         # # self.env.reset()
