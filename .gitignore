@@ -136,6 +136,7 @@ scenic.venv/
 dmypy.json
 
 *.cproject
+*.mp4
 
 # generated parser
 src/scenic/syntax/parser.py
