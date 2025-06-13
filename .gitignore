@@ -140,4 +140,6 @@ dmypy.json
 # generated parser
 src/scenic/syntax/parser.py
 
+src/scenic/simulators/habitat/data
+
 simulation.gif
