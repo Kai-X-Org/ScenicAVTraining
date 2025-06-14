@@ -21,5 +21,5 @@ box_region = RectangularRegion((0.12, -5.5, 0.61), 0, 0.2, 0.2)
 # box = new GelatinBox on (0.12, -5.5, 0.61)
 box = new GelatinBox on box_region
 # spot = new SpotRobot at (-0.9, -5.5, 0), with behavior GrabAndNav()
-spot = new SpotRobot at (-3.7, -5.0, 0), with yaw 90 deg, with behavior GrabAndNav()
+spot = new SpotRobot at (-3.7, -5.0, 0), with yaw 90 deg
 # fetch = new FetchRobot at (-3.7, Range(-2.5, -5.0), 0), with yaw 90 deg, with behavior Traverse()

@@ -242,9 +242,16 @@ class HabitatSimulation(Simulation):
         print(f"MAX STEPS {self.env._max_episode_steps}")
         print(f"MAX STEPS {self.env._max_episode_seconds}")
         utils.add_scene_camera(self.env, agent_id=None)        
+        # utils.add_scene_camera(self.env, name='scene_camera_rgb_2', 
+                               # camera_pos=mn.Vector3(2.0, 1.0, 6.5),
+                               # orientation=mn.Vector3(mn.Vector3(0, +1.57, 0)), agent_id=None)
+        # scenic z = habitat y, scenic x = habitat z, scenic y = habitat x
+        # increasing x moves it to the window in bedroom
+        # increasing z moves it to the back of the bedroom wall
+        # changing x angle moves camera up and down
         utils.add_scene_camera(self.env, name='scene_camera_rgb_2', 
-                               camera_pos=mn.Vector3(2.0, 0.5, 6.5),
-                               orientation=mn.Vector3(mn.Vector3(0, +1.57, 0)), agent_id=None)
+                               camera_pos=mn.Vector3(2.0, 1.9, 1.5),
+                               orientation=mn.Vector3(mn.Vector3(-1.57, 0, 0)), agent_id=None)
 
         utils.add_scene_camera(self.env, name='scene_camera_rgb_3', 
                                camera_pos=mn.Vector3(0, 0.5, 6.5),
