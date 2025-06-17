@@ -81,7 +81,7 @@ def get_action_dict(obj):
     if obj_type == 'SpotRobot':
         return {
             name + "_oracle_magic_grasp_action": cfg.ArmActionConfig(type="MagicGraspAction"),
-            name + "_base_velocity_action": cfg.BaseVelocityActionConfig(),
+            name + "_base_vel": cfg.BaseVelocityActionConfig(),
             name + "_oracle_coord_action": cfg.OracleNavActionConfig(type="OracleNavCoordinateAction",
                                                                           spawn_max_dist_to_obj=1.0)
         }
@@ -98,7 +98,7 @@ def get_action_dict(obj):
     elif obj_type == 'FetchRobot':
         return {
             name + "_oracle_magic_grasp_action": cfg.ArmActionConfig(type="MagicGraspAction"),
-            name + "_base_velocity_action": cfg.BaseVelocityActionConfig(),
+            name + "_base_vel": cfg.BaseVelocityActionConfig(),
             name + "_oracle_coord_action": cfg.OracleNavActionConfig(type="OracleNavCoordinateAction",
                                                                           spawn_max_dist_to_obj=1.0),
         }
@@ -365,8 +365,8 @@ class HabitatSimulation(Simulation):
         # from sensors added after env is created, for some reason
         # temp_param = self.env.action_space["agent_0_base_velocity_action"].sample()
         # print(f"VELOCITY ACTION PARAM: {temp_param}")
-        self.step_action_dict["action"] += tuple(["agent_0_base_velocity_action"])
-        self.step_action_dict["action_args"]["agent_0_base_velocity_action"] = [0, 1]
+        self.step_action_dict["action"] += tuple(["agent_0_base_vel"])
+        self.step_action_dict["action_args"]["agent_0_base_vel"] = [1, 0]
         # breakpoint()
         self.env_observations.append(self.env.step(self.step_action_dict))
         # try:
