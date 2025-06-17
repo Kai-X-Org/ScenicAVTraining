@@ -46,12 +46,30 @@ from scenic.syntax.veneer import verbosePrint
 # TODO: Import Robot-specific library
 
 def get_sensor_dict(obj):
+    """
+    Note on sensors:
+    Sensors will only be in the correct position if they actually fit on the agent
+    e.g. spot has no head, so putting a head rgb on it will make the camera spawn
+    in a weird position. 
+    To check what sensor fits on which kind of robot, look at the robot's agent class
+    in the habitat-lab repo
+    """
     obj_type = obj.object_type
-    _sim_sensors = { # TODO temporary
-        "third_rgb": cfg.ThirdRGBSensorConfig(width=1024, height=1024),
-        "head_rgb": cfg.HeadRGBSensorConfig(#orientation=[0.0, -1.57, 0.0]
-                                            ),
-    }
+    if obj_type == "SpotRobot":
+        _sim_sensors = { # TODO temporary
+            "third_rgb": cfg.ThirdRGBSensorConfig(width=1024, height=1024),
+            # "head_rgb": cfg.HeadRGBSensorConfig(#orientation=[0.0, -1.57, 0.0]
+                                                # ),
+            "articulated_agent_arm_rgb": cfg.ArmRGBSensorConfig(),
+            "articulated_agent_jaw_rgb": cfg.JawRGBSensorConfig(),
+            # "head_stereo_left_depth"
+        }
+    else:
+        _sim_sensors = { # TODO temporary
+            "third_rgb": cfg.ThirdRGBSensorConfig(width=1024, height=1024),
+            "head_rgb": cfg.HeadRGBSensorConfig(#orientation=[0.0, -1.57, 0.0]
+                                                ),
+        }
     # print(f"sensor pos: {_sim_sensors['head_rgb'].position}")
     return _sim_sensors
 
@@ -345,7 +363,6 @@ class HabitatSimulation(Simulation):
         # appending observations from self.sim.get_sensor_observations() is
         # necessary since env.step(...) does not return observation
         # from sensors added after env is created, for some reason
-        # breakpoint()
         # temp_param = self.env.action_space["agent_0_base_velocity_action"].sample()
         # print(f"VELOCITY ACTION PARAM: {temp_param}")
         try:
@@ -355,7 +372,7 @@ class HabitatSimulation(Simulation):
         # self.env_observations.append(self.env.step(self.step_action_dict))
         # print(f"ENV OBS: {self.env_observations[-1]['agent_0_head_rgb']}")
         self.observations.append(self.sim.get_sensor_observations())  # for sim sensors (scene carmeras etc.)
-        breakpoint()
+        # breakpoint()
         
         # TODO call articulated_agent.update to update camera angles...wait, might not need it
         self.step_action_dict = {
@@ -461,11 +478,26 @@ class HabitatSimulation(Simulation):
                 open_vid=False,
             )
 
+            # vut.make_video(
+                # self.observations,
+                # "agent_0_head_rgb",
+                # "color",
+                # f"/home/kxu/ScenicGymClean/src/scenic/simulators/habitat/{folder_name}test_spot_head_{self.scenario_number}",
+                # open_vid=False,
+            # )
             vut.make_video(
                 self.observations,
-                "agent_0_head_rgb",
+                "agent_0_articulated_agent_arm_rgb",
                 "color",
-                f"/home/kxu/ScenicGymClean/src/scenic/simulators/habitat/{folder_name}test_spot_head_{self.scenario_number}",
+                f"/home/kxu/ScenicGymClean/src/scenic/simulators/habitat/{folder_name}test_spot_arm_{self.scenario_number}",
+                open_vid=False,
+            )
+
+            vut.make_video(
+                self.observations,
+                "agent_0_articulated_agent_jaw_rgb",
+                "color",
+                f"/home/kxu/ScenicGymClean/src/scenic/simulators/habitat/{folder_name}test_spot_jaw_{self.scenario_number}",
                 open_vid=False,
             )
 
