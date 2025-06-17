@@ -123,11 +123,11 @@ behavior HumanNav(x=0, y=0, z=0):
         take HumanoidNavAction(x, y, z)
     # terminate
 
-behavior Traverse():
+behavior Traverse(x, y, z, num_steps=100):
     while True:
         # x, y, z = point1
         # do RobotNav(x=x, y=y, z=z)
-        do GoRel(y=1.0)
+        do GoRel(x=x, y=y, z=z, num_steps=num_steps)
         do TurnAround()
-        do GoRel(y=-1.0)
+        do GoRel(x=-x, y=-y, z=-z, num_steps=num_steps)
         do TurnAround()
