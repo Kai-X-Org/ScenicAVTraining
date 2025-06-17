@@ -49,8 +49,10 @@ def get_sensor_dict(obj):
     obj_type = obj.object_type
     _sim_sensors = { # TODO temporary
         "third_rgb": cfg.ThirdRGBSensorConfig(width=1024, height=1024),
-        "head_rgb": cfg.HeadRGBSensorConfig(),
+        "head_rgb": cfg.HeadRGBSensorConfig(#orientation=[0.0, -1.57, 0.0]
+                                            ),
     }
+    # print(f"sensor pos: {_sim_sensors['head_rgb'].position}")
     return _sim_sensors
 
 
@@ -250,7 +252,7 @@ class HabitatSimulation(Simulation):
         # increasing z moves it to the back of the bedroom wall
         # changing x angle moves camera up and down
         utils.add_scene_camera(self.env, name='scene_camera_rgb_2', 
-                               camera_pos=mn.Vector3(2.0, 1.9, 1.5),
+                               camera_pos=mn.Vector3(2.0, 1.9, 0.5),
                                orientation=mn.Vector3(mn.Vector3(-1.57, 0, 0)), agent_id=None)
 
         utils.add_scene_camera(self.env, name='scene_camera_rgb_3', 
@@ -344,12 +346,17 @@ class HabitatSimulation(Simulation):
         # necessary since env.step(...) does not return observation
         # from sensors added after env is created, for some reason
         # breakpoint()
+        # temp_param = self.env.action_space["agent_0_base_velocity_action"].sample()
+        # print(f"VELOCITY ACTION PARAM: {temp_param}")
         try:
             self.env_observations.append(self.env.step(self.step_action_dict))
         except Exception as e:
             raise HabitatSimRuntimeError(f"Fail to step, an error has occured{e}", e)
         # self.env_observations.append(self.env.step(self.step_action_dict))
-        self.observations.append(self.sim.get_sensor_observations()) 
+        # print(f"ENV OBS: {self.env_observations[-1]['agent_0_head_rgb']}")
+        self.observations.append(self.sim.get_sensor_observations())  # for sim sensors (scene carmeras etc.)
+        breakpoint()
+        
         # TODO call articulated_agent.update to update camera angles...wait, might not need it
         self.step_action_dict = {
             "action": tuple(),
@@ -406,6 +413,9 @@ class HabitatSimulation(Simulation):
 
         return d
 
+    def get_obs(self):
+        return self.observations[-1]
+
     def destroy(self):
         print("FINISH SCENE, DESTROYING...")
         # FIXME probably now need to destroy objects now???
@@ -443,13 +453,30 @@ class HabitatSimulation(Simulation):
                 open_vid=False,
             )
 
-            # vut.make_video(
-                # self.observations,
-                # "agent_0_third_rgb",
-                # "color",
-                # f"/home/kxu/ScenicGymClean/src/scenic/simulators/habitat/{folder_name}test_spot_{self.scenario_number}",
-                # open_vid=False,
-            # )
+            vut.make_video(
+                self.observations,
+                "agent_0_third_rgb",
+                "color",
+                f"/home/kxu/ScenicGymClean/src/scenic/simulators/habitat/{folder_name}test_spot_{self.scenario_number}",
+                open_vid=False,
+            )
+
+            vut.make_video(
+                self.observations,
+                "agent_0_head_rgb",
+                "color",
+                f"/home/kxu/ScenicGymClean/src/scenic/simulators/habitat/{folder_name}test_spot_head_{self.scenario_number}",
+                open_vid=False,
+            )
+
+            vut.make_video(
+                self.observations,
+                "agent_1_head_rgb",
+                "color",
+                f"/home/kxu/ScenicGymClean/src/scenic/simulators/habitat/{folder_name}test_fetch_head_{self.scenario_number}",
+                open_vid=False,
+            )
+
 
             # vut.make_video(
                 # self.observations,
