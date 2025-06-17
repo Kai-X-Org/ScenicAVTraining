@@ -363,16 +363,21 @@ class HabitatSimulation(Simulation):
         # appending observations from self.sim.get_sensor_observations() is
         # necessary since env.step(...) does not return observation
         # from sensors added after env is created, for some reason
-        temp_param = self.env.action_space["agent_0_base_velocity_action"].sample()
-        print(f"VELOCITY ACTION PARAM: {temp_param}")
-        try:
-            self.env_observations.append(self.env.step(self.step_action_dict))
-        except Exception as e:
-            raise HabitatSimRuntimeError(f"Fail to step, an error has occured{e}", e)
+        # temp_param = self.env.action_space["agent_0_base_velocity_action"].sample()
+        # print(f"VELOCITY ACTION PARAM: {temp_param}")
+        self.step_action_dict["action"] += tuple(["agent_0_base_velocity_action"])
+        self.step_action_dict["action_args"]["agent_0_base_velocity_action"] = [0, 1]
+        # breakpoint()
+        self.env_observations.append(self.env.step(self.step_action_dict))
+        # try:
+            # self.env_observations.append(self.env.step(self.step_action_dict))
+        # except Exception as e:
+            # print("FAIL")
+            # raise HabitatSimRuntimeError(f"Fail to step, an error has occured{e}", e)
         # self.env_observations.append(self.env.step(self.step_action_dict))
         # print(f"ENV OBS: {self.env_observations[-1]['agent_0_head_rgb']}")
         self.observations.append(self.sim.get_sensor_observations())  # for sim sensors (scene carmeras etc.)
-        breakpoint()
+        # breakpoint()
         
         # TODO call articulated_agent.update to update camera angles...wait, might not need it
         self.step_action_dict = {
