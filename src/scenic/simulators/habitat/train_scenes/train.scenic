@@ -9,5 +9,5 @@ from scenic.core.vectors import Vector
 import math
 import time
 
-spot = new SpotRobot at (-3.7, -5.0, 0), with yaw 90 deg
-fetch = new FetchRobot at (-3.7, -2.5, 0), with yaw 0 deg
+spot = new SpotRobot at (-3.2, -5.0, 0), with yaw 90 deg, with behavior GoRel(y=1.0)
+fetch = new FetchRobot at (-4.7, -2.5, 0), with yaw 0 deg, with behavior Traverse()
