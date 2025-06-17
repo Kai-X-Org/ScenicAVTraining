@@ -365,9 +365,13 @@ class HabitatSimulation(Simulation):
         # from sensors added after env is created, for some reason
         # temp_param = self.env.action_space["agent_0_base_velocity_action"].sample()
         # print(f"VELOCITY ACTION PARAM: {temp_param}")
+        # this action space is gym.spaces.dict.Dict(agent_0_base_vel:Box(-20.0, 20.0, (2,), float32))
+        # might want to make it smaller than this. say +/- 1 for each. and need to figure out conversion
+        # to x y z vel from r, theta
+        # observation space for the jaw camera is Box(0, 255, (256, 256, 3), uint8)
         self.step_action_dict["action"] += tuple(["agent_0_base_vel"])
         self.step_action_dict["action_args"]["agent_0_base_vel"] = [1, 0]
-        # breakpoint()
+        breakpoint()
         self.env_observations.append(self.env.step(self.step_action_dict))
         # try:
             # self.env_observations.append(self.env.step(self.step_action_dict))
