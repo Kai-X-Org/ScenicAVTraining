@@ -157,7 +157,12 @@ class HabitatSimulator(Simulator):
         self.scenario_number = 0
 
         # TODO Decide the form of your client
-        self.client = dict()
+        self.client = None 
+        self.env = None
+        self.sim = None
+        self.agent_dict = dict()
+        self.habitat_agents = list()
+        self.object_counter = 0
 
     def createSimulation(self, scene, timestep, **kwargs):
         if timestep is not None and timestep != self.timestep:
@@ -165,6 +170,9 @@ class HabitatSimulator(Simulator):
                 "cannot customize timestep for individual Habitat simulations; "
                 "set timestep when creating the HabitatSimulator instead"
             )
+        if not self.client:
+            self.setup_env(scene)
+
         self.scenario_number += 1
 
         return HabitatSimulation(
@@ -181,44 +189,19 @@ class HabitatSimulator(Simulator):
         # TODO add code to be run when Scenic runs terminates, if needed
         super().destroy()
 
+    def setup_env(self, scene):
+        # self.agent_dict = dict()
+        # self.sim = None
+        # self.habitat_agents = list()
+        # self.object_counter = 0 # needed to keep track of ojbect id's
 
-class HabitatSimulation(Simulation):
-    """
-    Simulation class for Habitat-Scenic
-    """
-
-    def __init__(self, scene, client, render, record, timestep=0.1, scenario_number=0, **kwargs):
-        print('initializing!')
-        self.client = client
-        self.render = True
-        self.record = record
-        self.timestep = timestep
-        if 'cfg' in kwargs:
-            self.cfg = kwargs['cfg']
-        self.agent_dict = dict()
-        self.sim = None
-        self.observations = list()
-        self.env_observations = list()
-        # self.ego = None
-        self.habitat_agents = list()
-        self.scenario_number = scenario_number  # used for naming of videos
-        self.device = torch.device('cuda') 
-        self.step_action_dict = {
-            "action": tuple(),
-            "action_args": dict()
-        }
-        self.object_counter = 0 # needed to keep track of ojbect id's
-
-        super().__init__(scene, timestep=timestep, **kwargs)
-
-    def setup(self):
         agent_count = 0
         agent_names = []
         
         # getting the agent configs
         action_dict = dict()
         lab_sensor_dict = dict()
-        for obj in self.scene.objects:
+        for obj in scene.objects:
             if obj.is_agent:
                 print("Setting up agent: ", obj.object_type)
                 self.habitat_agents.append(obj)
@@ -251,17 +234,14 @@ class HabitatSimulation(Simulation):
                 action_dict.update(get_action_dict(obj))
                 lab_sensor_dict.update(obj._lab_sensors)
         
-        # print(f"Current Action Dict: {action_dict}")
-        
         # FIXME line below may cause problem. Defaulting dicts to dict(), but that might not be the default
         # of all the Configs???
         self.action_dict = action_dict
         self.env = utils.init_rearrange_env(self.agent_dict, action_dict, lab_sensor_dict, timestep=self.timestep) 
         self.sim = self.env.sim
-        # self.env.reset() 
-        print(f"MAX STEPS {self.env._max_episode_steps}")
-        print(f"MAX STEPS {self.env._max_episode_seconds}")
+
         utils.add_scene_camera(self.env, agent_id=None)        
+
         # utils.add_scene_camera(self.env, name='scene_camera_rgb_2', 
                                # camera_pos=mn.Vector3(2.0, 1.0, 6.5),
                                # orientation=mn.Vector3(mn.Vector3(0, +1.57, 0)), agent_id=None)
@@ -269,6 +249,7 @@ class HabitatSimulation(Simulation):
         # increasing x moves it to the window in bedroom
         # increasing z moves it to the back of the bedroom wall
         # changing x angle moves camera up and down
+
         utils.add_scene_camera(self.env, name='scene_camera_rgb_2', 
                                camera_pos=mn.Vector3(2.0, 1.9, 0.5),
                                orientation=mn.Vector3(mn.Vector3(-1.57, 0, 0)), agent_id=None)
@@ -277,17 +258,60 @@ class HabitatSimulation(Simulation):
                                camera_pos=mn.Vector3(0, 0.5, 6.5),
                                orientation=mn.Vector3(mn.Vector3(0, -1.57, 0)), agent_id=None)
 
-        self.obj_attr_mgr = self.sim.get_object_template_manager()
-        self.prim_attr_mgr = self.sim.get_asset_template_manager()
-        self.stage_attr_mgr = self.sim.get_stage_template_manager()
-        self.rigid_obj_mgr = self.sim.get_rigid_object_manager()
-        self.agents_mgr = self.sim.agents_mgr
-        # self.ik_helper = print("IK HELPER:", self.agents_mgr[1].ik_helper)
-        # print("IK HELPER:", self.agents_mgr[1].ik_helper)
-        # self.ik_helper = self.agents_mgr[1].ik_helper
+        obj_attr_mgr = self.sim.get_object_template_manager()
+        prim_attr_mgr = self.sim.get_asset_template_manager()
+        stage_attr_mgr = self.sim.get_stage_template_manager()
+        rigid_obj_mgr = self.sim.get_rigid_object_manager()
+        agents_mgr = self.sim.agents_mgr
 
-        # obs = self.env.step({"action": (), "action_args": {}})
+        self.client = {
+            "env" : self.env,
+            "sim" : self.sim,
+            "obj_attr_mgr" : obj_attr_mgr,
+            "prim_attr_mgr" : prim_attr_mgr,
+            "stage_attr_mgr" : stage_attr_mgr,
+            "rigid_obj_mgr" : rigid_obj_mgr,
+            "agents_mgr" : agents_mgr,
+        }
         
+
+class HabitatSimulation(Simulation):
+    """
+    Simulation class for Habitat-Scenic
+    """
+
+    def __init__(self, scene, client, render, record, timestep=0.1, scenario_number=0, **kwargs):
+        print('initializing!')
+        self.client = client # FIXME, fix this
+        self.render = True
+        self.record = record
+        self.timestep = timestep
+        if 'cfg' in kwargs:
+            self.cfg = kwargs['cfg']
+
+        self.sim = client["sim"]
+        self.env = client["env"]
+        self.obj_attr_mgr = client["obj_attr_mgr"]
+        self.prim_attr_mgr = client["prim_attr_mgr"]
+        self.stage_attr_mgr = client["stage_attr_mgr"] 
+        self.rigid_obj_mgr = client["rigid_obj_mgr"] 
+        self.agents_mgr = client["agents_mgr"] 
+
+
+        self.observations = list()
+        self.env_observations = list()
+        # self.habitat_agents = list()
+        self.scenario_number = scenario_number  # used for naming of videos
+        # self.device = torch.device('cuda') 
+        self.step_action_dict = {
+            "action": tuple(),
+            "action_args": dict()
+        }
+        # self.object_counter = 0 # needed to keep track of ojbect id's
+
+        super().__init__(scene, timestep=timestep, **kwargs)
+
+    def setup(self):
         self.env.reset() 
         super().setup()  # Calls createObjectInSimulator for each object
         return
@@ -302,8 +326,9 @@ class HabitatSimulation(Simulation):
 
         Returns:
         Tuple(bool success, status_message)
-        8"""
-        print(f"CREATING {obj.name}")
+        """
+        # print(f"CREATING {obj.name}")
+
         for action_name, action_space in self.env.action_space.items():
             print(action_name, action_space)
         if obj.is_agent:
@@ -311,8 +336,10 @@ class HabitatSimulation(Simulation):
 
             obj._articulated_agent = art_agent
             if obj._articulated_agent_type == 'KinematicHumanoid':
-                print("CREATING HUMAN")
-                print('data_path:!!!', obj._motion_data_path)
+
+                # print("CREATING HUMAN")
+                # print('data_path:!!!', obj._motion_data_path)
+
                 art_agent.sim_obj.motion_type = MotionType.KINEMATIC 
                 art_agent._fixed_base = True  
                 obj._humanoid_controller = HumanoidRearrangeController(obj._motion_data_path)
