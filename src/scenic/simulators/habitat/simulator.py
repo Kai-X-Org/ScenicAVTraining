@@ -397,8 +397,10 @@ class HabitatSimulation(Simulation):
         # might want to make it smaller than this. say +/- 1 for each. and need to figure out conversion
         # to x y z vel from r, theta
         # observation space for the jaw camera is Box(0, 255, (256, 256, 3), uint8)
+
         self.step_action_dict["action"] += tuple(["agent_0_base_vel"])
         self.step_action_dict["action_args"]["agent_0_base_vel"] = [1, 0]
+
         # breakpoint()
         self.env_observations.append(self.env.step(self.step_action_dict))
         # try:
@@ -472,6 +474,11 @@ class HabitatSimulation(Simulation):
 
     def get_info(self):
         return None
+
+    def get_reward(self):
+        return self.scene
+        
+        
 
     def destroy(self):
         print("FINISH SCENE, DESTROYING...")
