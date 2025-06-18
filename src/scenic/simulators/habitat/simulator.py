@@ -258,7 +258,7 @@ class HabitatSimulation(Simulation):
         self.action_dict = action_dict
         self.env = utils.init_rearrange_env(self.agent_dict, action_dict, lab_sensor_dict, timestep=self.timestep) 
         self.sim = self.env.sim
-        self.env.reset() 
+        # self.env.reset() 
         print(f"MAX STEPS {self.env._max_episode_steps}")
         print(f"MAX STEPS {self.env._max_episode_seconds}")
         utils.add_scene_camera(self.env, agent_id=None)        
@@ -288,6 +288,7 @@ class HabitatSimulation(Simulation):
 
         # obs = self.env.step({"action": (), "action_args": {}})
         
+        self.env.reset() 
         super().setup()  # Calls createObjectInSimulator for each object
         return
 
@@ -371,7 +372,7 @@ class HabitatSimulation(Simulation):
         # observation space for the jaw camera is Box(0, 255, (256, 256, 3), uint8)
         self.step_action_dict["action"] += tuple(["agent_0_base_vel"])
         self.step_action_dict["action_args"]["agent_0_base_vel"] = [1, 0]
-        breakpoint()
+        # breakpoint()
         self.env_observations.append(self.env.step(self.step_action_dict))
         # try:
             # self.env_observations.append(self.env.step(self.step_action_dict))
@@ -445,7 +446,7 @@ class HabitatSimulation(Simulation):
     def destroy(self):
         print("FINISH SCENE, DESTROYING...")
         # FIXME probably now need to destroy objects now???
-        # self.env.reset()
+        self.env.reset()
         self.env.close()
         # print("closed env")
         # # self.env.reset()
