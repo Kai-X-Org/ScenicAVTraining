@@ -470,6 +470,9 @@ class HabitatSimulation(Simulation):
     def get_obs(self):
         return self.observations[-1]
 
+    def get_info(self):
+        return None
+
     def destroy(self):
         print("FINISH SCENE, DESTROYING...")
         # FIXME probably now need to destroy objects now???

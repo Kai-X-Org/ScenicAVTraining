@@ -17,6 +17,8 @@ class HabitatAgent():
     has_obs: True
     sensors : list()
     record_video : True
+    is_learning_agent: False
+    reward : 0
     _agent_id: None
     _only_agent: False
     #_object_id: self._articulated_agent.sim_obj.object_id
@@ -29,6 +31,7 @@ class HabitatAgent():
         # "head_rgb": cfg.HeadRGBSensorConfig(),
     # }
     _lab_sensors: dict()
+
 
     # @property
     # def _action_dict(self):
