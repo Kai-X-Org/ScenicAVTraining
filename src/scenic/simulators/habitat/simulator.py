@@ -332,6 +332,10 @@ class HabitatSimulation(Simulation):
         for action_name, action_space in self.env.action_space.items():
             print(action_name, action_space)
         if obj.is_agent:
+            # breakpoint()
+            if self.scenario_number == 2:
+                breakpoint()
+            print(f"SCENARIO NUMBER: {self.scenario_number}")
             art_agent = self.env.sim.agents_mgr[obj._agent_id].articulated_agent  
 
             obj._articulated_agent = art_agent
@@ -489,7 +493,7 @@ class HabitatSimulation(Simulation):
         # # self.env.reset()
         # super().destroy()
         # return
-        # make_vid = True
+        make_vid = False
         if make_vid:
             folder_name = "test_run_vids/"
 
