@@ -13,7 +13,7 @@ class HabitatAgent():
     name: 'agent'
     object_type: 'agent'
     is_agent: True
-    takes_obs: True
+    has_obs: True
     _agent_id: None
     _only_agent: False
     #_object_id: self._articulated_agent.sim_obj.object_id

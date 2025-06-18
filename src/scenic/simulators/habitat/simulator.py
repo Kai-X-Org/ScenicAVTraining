@@ -301,7 +301,7 @@ class HabitatSimulation(Simulation):
 
         Returns:
         Tuple(bool success, status_message)
-        """
+        8"""
         print(f"CREATING {obj.name}")
         for action_name, action_space in self.env.action_space.items():
             print(action_name, action_space)
