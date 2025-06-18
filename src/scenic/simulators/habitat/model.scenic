@@ -4,6 +4,7 @@ from scenic.simulators.habitat.simulator import HabitatSimulation, HabitatSimula
 import trimesh
 import habitat.config.default_structured_configs as cfg
 from scenic.simulators.habitat.utils import scenic_to_habitat_map, habitat_to_scenic_map
+from habitat_sim.utils import viz_utils as vut
 import magnum as mn
 
 simulator HabitatSimulator()
@@ -14,6 +15,8 @@ class HabitatAgent():
     object_type: 'agent'
     is_agent: True
     has_obs: True
+    sensors : list()
+    record_video : True
     _agent_id: None
     _only_agent: False
     #_object_id: self._articulated_agent.sim_obj.object_id
@@ -27,11 +30,21 @@ class HabitatAgent():
     # }
     _lab_sensors: dict()
 
-    
-
     # @property
     # def _action_dict(self):
         # return dict()
+
+    # def make_video(self, observations, sensors, video_dir):
+        # # TODO, does this set of arguments work for all kinds of cameras?
+        # for s in sensors:
+            # vut.make_video(
+                # observations,
+                # s,
+                # "color",
+                # video_dir
+                
+            # )
+        
 
 
 

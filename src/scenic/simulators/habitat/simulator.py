@@ -474,12 +474,12 @@ class HabitatSimulation(Simulation):
         print("FINISH SCENE, DESTROYING...")
         # FIXME probably now need to destroy objects now???
         self.env.reset()
-        self.env.close()
+        # self.env.close()
         # print("closed env")
         # # self.env.reset()
         # super().destroy()
         # return
-        make_vid = True
+        # make_vid = True
         if make_vid:
             folder_name = "test_run_vids/"
 
