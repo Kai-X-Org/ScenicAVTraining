@@ -15,12 +15,13 @@ goal_region = CircularRegion(goal_point, 0.7)
 
 spot_y = Range(-6.5, -4.0) # good value is -5.0
 # spot_y = -5.0 # good value is -5.0
-# fetch_x = Range(-5.5, -4.6) # good value is -4.7
-fetch_x = -4.7 # good value is -4.7
+fetch_x = Range(-5.5, -4.6) # good value is -4.7
+# fetch_x = -4.7 # good value is -4.7
+fetch_y = Range(-3.8, -2.0) # test value is -2.5
 
 # spot = new SpotRobot at (-3.2, spot_y, 0), with yaw 90 deg, with behavior GoRel(y=1.0), with is_learning_agent True
 spot = new SpotRobot at (-3.2, spot_y, 0), with yaw 90 deg, with is_learning_agent True
-fetch = new FetchRobot at (fetch_x, -2.5, 0), with yaw 0 deg, with behavior Traverse(1.5, 0, 0)
+fetch = new FetchRobot at (fetch_x, fetch_y, 0), with yaw 0 deg, with behavior Traverse(1.5, 0, 0)
 
 
 monitor Reward():

@@ -425,20 +425,8 @@ class HabitatSimulation(Simulation):
         # to x y z vel from r, theta
         # observation space for the jaw camera is Box(0, 255, (256, 256, 3), uint8)
 
-        # self.step_action_dict["action"] += tuple(["agent_0_base_vel"])
-        # self.step_action_dict["action_args"]["agent_0_base_vel"] = [1, 0]
-
-        # breakpoint()
         self.env_observations.append(self.env.step(self.step_action_dict))
-        # try:
-            # self.env_observations.append(self.env.step(self.step_action_dict))
-        # except Exception as e:
-            # print("FAIL")
-            # raise HabitatSimRuntimeError(f"Fail to step, an error has occured{e}", e)
-        # self.env_observations.append(self.env.step(self.step_action_dict))
-        # print(f"ENV OBS: {self.env_observations[-1]['agent_0_head_rgb']}")
         self.observations.append(self.sim.get_sensor_observations())  # for sim sensors (scene carmeras etc.)
-        # breakpoint()
         
         # TODO call articulated_agent.update to update camera angles...wait, might not need it
         self.step_action_dict = {
@@ -446,12 +434,7 @@ class HabitatSimulation(Simulation):
             "action_args": dict()
         } # clearing step_action_dict
 
-        # print(self.env_observations[-1].keys())
-        # print(self.env_observations[-1])
-
-
     def getProperties(self, obj, properties):
-        # print(self.sim.articulated_agent.base_pos)
         if obj.is_agent:
             if obj.object_type == 'SpotRobot':
                 ee_pos = obj._articulated_agent.ee_transform().translation
@@ -516,7 +499,7 @@ class HabitatSimulation(Simulation):
         # # self.env.reset()
         # super().destroy()
         # return
-        make_vid = False
+        make_vid = True
         if make_vid:
             folder_name = "test_run_vids/"
 
