@@ -319,6 +319,7 @@ class HabitatSimulation(Simulation):
         self.stage_attr_mgr = client["stage_attr_mgr"] 
         self.rigid_obj_mgr = client["rigid_obj_mgr"] 
         self.agents_mgr = client["agents_mgr"] 
+        self.actions = None
 
 
         self.observations = list()
@@ -424,9 +425,13 @@ class HabitatSimulation(Simulation):
         # might want to make it smaller than this. say +/- 1 for each. and need to figure out conversion
         # to x y z vel from r, theta
         # observation space for the jaw camera is Box(0, 255, (256, 256, 3), uint8)
+        if self.actions:
+            self.step_action_dict["action"] += tuple(["agent_0_base_vel"])
+            self.step_action_dict["action_args"]["agent_0_base_vel"] = self.actions 
 
         self.env_observations.append(self.env.step(self.step_action_dict))
         self.observations.append(self.sim.get_sensor_observations())  # for sim sensors (scene carmeras etc.)
+        # breakpoint()
         
         # TODO call articulated_agent.update to update camera angles...wait, might not need it
         self.step_action_dict = {
@@ -480,13 +485,16 @@ class HabitatSimulation(Simulation):
         return d
 
     def get_obs(self):
-        return self.observations[-1]
-
+        # use the env_observations rather than self.observations; the latter adds an extra dimension at -1 for some reason
+        return self.env_observations[-1]['agent_0_articulated_agent_jaw_rgb']
+        
     def get_info(self):
         return None
 
     def get_reward(self):
-        return self.scene
+        # for obj in self.scene.objects:
+            # if obj.name == "agent_0":
+        return self.scene.objects[0].reward
         
         
 
@@ -499,7 +507,7 @@ class HabitatSimulation(Simulation):
         # # self.env.reset()
         # super().destroy()
         # return
-        make_vid = True
+        make_vid = False
         if make_vid:
             folder_name = "test_run_vids/"
 
