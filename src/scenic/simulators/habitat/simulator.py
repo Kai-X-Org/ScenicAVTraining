@@ -358,7 +358,7 @@ class HabitatSimulation(Simulation):
             # breakpoint()
             # if self.scenario_number == 2:
                 # breakpoint()
-            print(f"SCENARIO NUMBER: {self.scenario_number}")
+            # print(f"SCENARIO NUMBER: {self.scenario_number}")
             art_agent = self.env.sim.agents_mgr[obj._agent_id].articulated_agent  
 
             obj._articulated_agent = art_agent
@@ -425,8 +425,8 @@ class HabitatSimulation(Simulation):
         # to x y z vel from r, theta
         # observation space for the jaw camera is Box(0, 255, (256, 256, 3), uint8)
 
-        self.step_action_dict["action"] += tuple(["agent_0_base_vel"])
-        self.step_action_dict["action_args"]["agent_0_base_vel"] = [1, 0]
+        # self.step_action_dict["action"] += tuple(["agent_0_base_vel"])
+        # self.step_action_dict["action_args"]["agent_0_base_vel"] = [1, 0]
 
         # breakpoint()
         self.env_observations.append(self.env.step(self.step_action_dict))
