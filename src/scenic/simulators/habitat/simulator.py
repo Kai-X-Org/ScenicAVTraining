@@ -356,8 +356,8 @@ class HabitatSimulation(Simulation):
             print(action_name, action_space)
         if obj.is_agent:
             # breakpoint()
-            if self.scenario_number == 2:
-                breakpoint()
+            # if self.scenario_number == 2:
+                # breakpoint()
             print(f"SCENARIO NUMBER: {self.scenario_number}")
             art_agent = self.env.sim.agents_mgr[obj._agent_id].articulated_agent  
 
