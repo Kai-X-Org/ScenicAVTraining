@@ -172,6 +172,8 @@ class HabitatSimulator(Simulator):
             )
         if not self.client:
             self.setup_env(scene)
+        else:
+            self.scene_reset(scene)
 
         self.scenario_number += 1
 
@@ -273,6 +275,27 @@ class HabitatSimulator(Simulator):
             "rigid_obj_mgr" : rigid_obj_mgr,
             "agents_mgr" : agents_mgr,
         }
+
+    def scene_reset(self, scene):
+        agent_count = 0
+        agent_names = []
+        
+        # getting the agent configs
+        action_dict = dict()
+        lab_sensor_dict = dict()
+        for obj in scene.objects:
+            if obj.is_agent:
+                obj._agent_id = agent_count
+
+                if not obj._only_agent:
+                    obj.name = 'agent_' + str(agent_count)
+                else: 
+                    obj.name = ""
+
+                agent_count += 1
+
+                if obj.name in agent_names:
+                    raise HabitatSimCreationError(f"Error: two agents have the same name: {obj.name}")
         
 
 class HabitatSimulation(Simulation):
