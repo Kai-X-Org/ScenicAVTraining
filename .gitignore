@@ -142,5 +142,6 @@ dmypy.json
 src/scenic/syntax/parser.py
 
 src/scenic/simulators/habitat/data
+src/scenic/simulators/habitat/ray_models
 
 simulation.gif
