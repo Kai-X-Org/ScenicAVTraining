@@ -30,7 +30,7 @@ def scenic_env():
     env = ScenicGymEnv(scenario, 
                        HabitatSimulator(),
                        render_mode=None, 
-                       max_steps=100, 
+                       max_steps=150, 
                        observation_space=obs_space, 
                        action_space=action_space
                        )
