@@ -64,7 +64,7 @@ if __name__ == "__main__":
                       head_fcnet_hiddens=[256],
                   )
               )
-              .env_runners(num_env_runners=12,
+              .env_runners(num_env_runners=1,
                            gym_env_vectorize_mode=("ASYNC"))
 
             )
