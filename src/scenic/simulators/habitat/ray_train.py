@@ -14,11 +14,10 @@ from ray.rllib.core.rl_module.default_model_config import DefaultModelConfig
 import datetime
 
 def scenic_env():
-    agents = ['agent0', 'agent1']
 
     root_user = os.path.expanduser("~")
     obs_space = gym.spaces.Box(0, 255, (256, 256, 3), np.uint8)
-    action_space = gym.spaces.Box(-5.0, 5.0, (2,), np.float32) # habitat uses +/- 20.0, but let's just use 5
+    action_space = gym.spaces.Box(-2.0, 2.0, (2,), np.float32) # habitat uses +/- 20.0, but let's just use 5
 
     scenic_file = "train_scenes/train.scenic"
     # print("Making Scenario")
@@ -35,14 +34,18 @@ def scenic_env():
                        observation_space=obs_space, 
                        action_space=action_space
                        )
+
     return env
 
 
 register_env("scenic", lambda cfg: scenic_env())
 
 if __name__ == "__main__":
+    # env = scenic_env()
+
 
     # register_env("scenic", lambda cfg: scenic_env())
+
     now = datetime.datetime.now()    
     now = now.strftime("%m_%d_%H_%M")
 
