@@ -425,7 +425,9 @@ class HabitatSimulation(Simulation):
         # might want to make it smaller than this. say +/- 1 for each. and need to figure out conversion
         # to x y z vel from r, theta
         # observation space for the jaw camera is Box(0, 255, (256, 256, 3), uint8)
+
         if self.actions:
+            print(f"Received Actions: {actions}")
             self.step_action_dict["action"] += tuple(["agent_0_base_vel"])
             self.step_action_dict["action_args"]["agent_0_base_vel"] = self.actions 
 
