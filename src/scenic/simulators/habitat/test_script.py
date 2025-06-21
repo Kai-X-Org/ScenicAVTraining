@@ -35,6 +35,9 @@ def scenic_env():
                        action_space=action_space
                        )
     return env
+action = [1,0]
+env = scenic_env()
+env.reset()
 
 for i in range(3):
     print("New episode")
