@@ -68,7 +68,7 @@ class ScenicGymEnv(gym.Env):
                             self.feedback_result = self.feedback_fn(simulation.result)
                             if self.record_scenic_sim_results:
                                 self.simulation_results.append(simulation.result)
-                            simulation.destroy() # FIXME...might redundant?
+                            # simulation.destroy() # FIXME...might redundant?
                             actions = yield observation, reward, done(), truncated(), info
                             break # a little unclean right here
 
