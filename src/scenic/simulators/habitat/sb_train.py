@@ -44,8 +44,9 @@ if __name__ == "__main__":
         print("New episode")
         for j in range(100):
             print(f"step number: {j}")
+            breakpoint()
             o, r, d, t, info = env.step(action)
-            if d or t:
+            if all(d) or all(t):
                 break
         env.reset()
         print("finished reset")
