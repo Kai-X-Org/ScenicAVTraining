@@ -10,6 +10,9 @@ import scenic
 from scenic.simulators.habitat import HabitatSimulator
 import datetime
 from stable_baselines3.common.vec_env import SubprocVecEnv
+from stable_baselines3 import PPO
+from stable_baselines3.common.callbacks import EvalCallback
+
 
 def scenic_env():
 
@@ -39,20 +42,13 @@ def scenic_env():
 if __name__ == "__main__":
     # env = gym.vector.AsyncVectorEnv([lambda: scenic_env() for _ in range(12)])
     env = SubprocVecEnv([scenic_env for _ in range(12)])
-    env.reset()
-    action = [[1,0] for _ in range(12)]
-    
-    for i in range(3):
-        print("New episode")
-        for j in range(100):
-            print(f"step number: {j}")
-            o, r, d, info = env.step(action)
-            # breakpoint()
-            if all(d):
-                break
+    eval_env = scenic_env()
 
-        env.reset()
-        print("finished reset")
-        
-        
+    eval_callback = EvalCallback(eval_env, best_model_save_path="./sb_models/",
+                             log_path="./sb_models/", eval_freq=500,
+                             deterministic=True, render=False)
+
+    model = PPO("CnnPolicy", env, verbose=1)
+    model.learn(total_timesteps=500_000, callback=eval_callback)
+    model.save("habitat_nav_test")
 

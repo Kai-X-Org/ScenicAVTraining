@@ -143,5 +143,6 @@ src/scenic/syntax/parser.py
 
 src/scenic/simulators/habitat/data
 src/scenic/simulators/habitat/ray_models
+src/scenic/simulators/habitat/sb_models
 
 simulation.gif
