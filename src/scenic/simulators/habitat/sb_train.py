@@ -9,6 +9,7 @@ import scenic
 # from scenic.simulators.metadrive import MetaDriveSimulator
 from scenic.simulators.habitat import HabitatSimulator
 import datetime
+from stable_baselines3.common.vec_env import SubprocVecEnv
 
 def scenic_env():
 
@@ -36,7 +37,8 @@ def scenic_env():
     return env
 
 if __name__ == "__main__":
-    env = gym.vector.AsyncVectorEnv([lambda: scenic_env() for _ in range(12)])
+    # env = gym.vector.AsyncVectorEnv([lambda: scenic_env() for _ in range(12)])
+    env = SubprocVecEnv([scenic_env for _ in range(12)])
     env.reset()
     action = [[1,0] for _ in range(12)]
     
