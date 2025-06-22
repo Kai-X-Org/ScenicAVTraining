@@ -40,23 +40,19 @@ def scenic_env():
     return env
 
 
-register_env("scenic", lambda cfg: scenic_env())
+# register_env("scenic", lambda cfg: scenic_env())
 
 if __name__ == "__main__":
     # env = scenic_env()
 
 
-    # register_env("scenic", lambda cfg: scenic_env())
+    register_env("habitat", lambda cfg: scenic_env())
 
     now = datetime.datetime.now()    
     now = now.strftime("%m_%d_%H_%M")
 
     config = (PPOConfig()
-              # .get_default_config()
-              .environment("scenic")
-              # .training(lr=0.0002,
-                # train_batch_size_per_learner=256,
-                # num_epochs=10,)
+              .environment("habitat")
               .rl_module(
                   model_config=DefaultModelConfig(
                       conv_filters = [
@@ -69,8 +65,11 @@ if __name__ == "__main__":
                       head_fcnet_hiddens=[256],
                   )
               )
-              .env_runners(num_env_runners=12,
-                           gym_env_vectorize_mode=("ASYNC"))
+              .env_runners(
+                  num_env_runners=12,
+                  # num_envs_per_env_runner = 6,
+                  # gym_env_vectorize_mode=("ASYNC")
+              )
 
             )
 
@@ -88,6 +87,7 @@ if __name__ == "__main__":
     )
 
     ppo = config.build_algo()
+    print("PPO ALGO BUILT")
     current_dir = os.getcwd()
     for i in range(20):
         pprint(f"Checkpoint info: \n {ppo.train()} \n")
