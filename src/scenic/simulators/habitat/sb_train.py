@@ -31,8 +31,24 @@ def scenic_env():
                        observation_space=obs_space, 
                        action_space=action_space
                        )
+    env = gym.wrappers.RecordEpisodeStatistics(env)
 
     return env
 
-
+if __name__ == "__main__":
+    env = gym.vector.AsyncVectorEnv([lambda: scenic_env() for _ in range(12)])
+    env.reset()
+    action = [[1,0] for _ in range(12)]
+    
+    for i in range(3):
+        print("New episode")
+        for j in range(100):
+            print(f"step number: {j}")
+            o, r, d, t, info = env.step(action)
+            if d or t:
+                break
+        env.reset()
+        print("finished reset")
+        
+        
 

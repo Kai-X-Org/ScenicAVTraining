@@ -489,12 +489,12 @@ class HabitatSimulation(Simulation):
     def get_obs(self):
         # use the env_observations rather than self.observations; the latter adds an extra dimension at -1 for some reason
         if len(self.env_observations) == 0:
-            return None
+            return 0
 
         return self.env_observations[-1]['agent_0_articulated_agent_jaw_rgb']
         
     def get_info(self):
-        return None
+        return dict()
 
     def get_reward(self):
         # for obj in self.scene.objects:
