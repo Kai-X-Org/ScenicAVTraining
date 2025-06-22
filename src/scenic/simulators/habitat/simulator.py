@@ -336,7 +336,8 @@ class HabitatSimulation(Simulation):
         super().__init__(scene, timestep=timestep, **kwargs)
 
     def setup(self):
-        self.env.reset() 
+        self.env_observations.append(self.env.reset())
+        # breakpoint()
         super().setup()  # Calls createObjectInSimulator for each object
         return
 
@@ -488,8 +489,8 @@ class HabitatSimulation(Simulation):
 
     def get_obs(self):
         # use the env_observations rather than self.observations; the latter adds an extra dimension at -1 for some reason
-        if len(self.env_observations) == 0:
-            return 0
+        # if len(self.env_observations) == 0:
+            # return 0
 
         return self.env_observations[-1]['agent_0_articulated_agent_jaw_rgb']
         
