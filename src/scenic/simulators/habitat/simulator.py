@@ -205,17 +205,17 @@ class HabitatSimulator(Simulator):
         lab_sensor_dict = dict()
         for obj in scene.objects:
             if obj.is_agent:
-                print("Setting up agent: ", obj.object_type)
+                # print("Setting up agent: ", obj.object_type)
                 self.habitat_agents.append(obj)
                 obj._agent_id = agent_count
-                print(f"obj agent id: {obj._agent_id}")
+                # print(f"obj agent id: {obj._agent_id}")
 
                 if not obj._only_agent:
                     obj.name = 'agent_' + str(agent_count)
                 else: 
                     obj.name = ""
 
-                print("Object name:", obj.name)
+                # print("Object name:", obj.name)
                 agent_count += 1
 
                 sim_sensors = get_sensor_dict(obj)
@@ -304,7 +304,7 @@ class HabitatSimulation(Simulation):
     """
 
     def __init__(self, scene, client, render, record, timestep=0.1, scenario_number=0, **kwargs):
-        print('initializing!')
+        # print('initializing!')
         self.client = client # FIXME, fix this
         self.render = True
         self.record = record
@@ -337,7 +337,6 @@ class HabitatSimulation(Simulation):
 
     def setup(self):
         self.env_observations.append(self.env.reset())
-        # breakpoint()
         super().setup()  # Calls createObjectInSimulator for each object
         return
 
@@ -354,13 +353,9 @@ class HabitatSimulation(Simulation):
         """
         # print(f"CREATING {obj.name}")
 
-        for action_name, action_space in self.env.action_space.items():
-            print(action_name, action_space)
+        # for action_name, action_space in self.env.action_space.items():
+            # print(action_name, action_space)
         if obj.is_agent:
-            # breakpoint()
-            # if self.scenario_number == 2:
-                # breakpoint()
-            # print(f"SCENARIO NUMBER: {self.scenario_number}")
             art_agent = self.env.sim.agents_mgr[obj._agent_id].articulated_agent  
 
             obj._articulated_agent = art_agent
@@ -434,7 +429,6 @@ class HabitatSimulation(Simulation):
 
         self.env_observations.append(self.env.step(self.step_action_dict))
         self.observations.append(self.sim.get_sensor_observations())  # for sim sensors (scene carmeras etc.)
-        # breakpoint()
         
         # TODO call articulated_agent.update to update camera angles...wait, might not need it
         self.step_action_dict = {
@@ -505,7 +499,7 @@ class HabitatSimulation(Simulation):
         
 
     def destroy(self):
-        print("FINISH SCENE, DESTROYING...")
+        # print("FINISH SCENE, DESTROYING...")
         # FIXME probably now need to destroy objects now???
         # self.env.reset()
         # self.env.close()

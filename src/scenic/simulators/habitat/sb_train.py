@@ -51,7 +51,7 @@ if __name__ == "__main__":
     eval_env = scenic_env()
 
     eval_callback = EvalCallback(eval_env, best_model_save_path=f"./sb_models/{model_folder_name}",
-                             log_path=f"./sb_models/{model_folder_name}", eval_freq=500,
+                             log_path=f"./sb_models/{model_folder_name}", eval_freq=300,
                              deterministic=True, render=False)
 
     model = PPO("CnnPolicy", env, verbose=1)
