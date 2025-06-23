@@ -47,8 +47,8 @@ def scenic_env():
     return env
 
 if __name__ == "__main__":
-
     print(f"Resume training: {args.resume}, model dir: {args.model}")
+
     
     now = datetime.datetime.now()    
     now = now.strftime("%m_%d_%H_%M")
