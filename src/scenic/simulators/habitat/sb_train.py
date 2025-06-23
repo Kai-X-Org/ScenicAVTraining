@@ -41,7 +41,7 @@ def scenic_env():
 
 if __name__ == "__main__":
     # env = gym.vector.AsyncVectorEnv([lambda: scenic_env() for _ in range(12)])
-    env = SubprocVecEnv([scenic_env for _ in range(12)])
+    env = SubprocVecEnv([scenic_env for _ in range(8)])
     eval_env = scenic_env()
 
     eval_callback = EvalCallback(eval_env, best_model_save_path="./sb_models/",
