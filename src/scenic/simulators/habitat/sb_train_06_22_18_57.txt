@@ -1,0 +1,23 @@
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+Traceback (most recent call last):
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/habitat/sb_train.py", line 3, in <module>
+    from scenic.gym import ScenicGymEnv
+  File "/home/kxu/ScenicGymClean/src/scenic/__init__.py", line 5, in <module>
+    from scenic.syntax.translator import scenarioFromFile, scenarioFromString
+  File "/home/kxu/ScenicGymClean/src/scenic/syntax/translator.py", line 39, in <module>
+    from scenic.core.dynamics.scenarios import DynamicScenario
+  File "/home/kxu/ScenicGymClean/src/scenic/core/dynamics/scenarios.py", line 16, in <module>
+    from scenic.core.requirements import (
+  File "/home/kxu/ScenicGymClean/src/scenic/core/requirements.py", line 16, in <module>
+    import scenic.syntax.relations as relations
+  File "/home/kxu/ScenicGymClean/src/scenic/syntax/relations.py", line 23, in <module>
+    from scenic.core.object_types import Object, Point
+  File "/home/kxu/ScenicGymClean/src/scenic/core/object_types.py", line 25, in <module>
+    import shapely
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/shapely/__init__.py", line 6, in <module>
+    from shapely._geometry import *  # NOQA
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/shapely/_geometry.py", line 6, in <module>
+    from shapely import _geometry_helpers, geos_version, lib
+  File "shapely/_geometry_helpers.pyx", line 40, in init shapely._geometry_helpers
+AttributeError: partially initialized module 'shapely' has no attribute 'lib' (most likely due to a circular import)

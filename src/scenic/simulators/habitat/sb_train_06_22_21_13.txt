@@ -1,0 +1,106 @@
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+2025-06-22 21:14:06,121 Initializing dataset RearrangeDataset-v0
+2025-06-22 21:14:06,124 initializing sim RearrangeSim-v0
+2025-06-22 21:14:06,131 Initializing dataset RearrangeDataset-v0
+2025-06-22 21:14:06,132 Initializing dataset RearrangeDataset-v0
+2025-06-22 21:14:06,132 Initializing dataset RearrangeDataset-v0
+2025-06-22 21:14:06,132 Initializing dataset RearrangeDataset-v0
+2025-06-22 21:14:06,132 Initializing dataset RearrangeDataset-v0
+2025-06-22 21:14:06,132 Initializing dataset RearrangeDataset-v0
+2025-06-22 21:14:06,133 initializing sim RearrangeSim-v0
+2025-06-22 21:14:06,134 initializing sim RearrangeSim-v0
+2025-06-22 21:14:06,134 initializing sim RearrangeSim-v0
+2025-06-22 21:14:06,134 initializing sim RearrangeSim-v0
+2025-06-22 21:14:06,134 initializing sim RearrangeSim-v0
+2025-06-22 21:14:06,134 initializing sim RearrangeSim-v0
+2025-06-22 21:14:06,151 Initializing dataset RearrangeDataset-v0
+2025-06-22 21:14:06,155 initializing sim RearrangeSim-v0
+[21:14:06:554481]:[Error]:[Scene] SemanticScene.cpp(139)::loadSemanticSceneDescriptor : SSD Load Failure! File with SemanticAttributes-provided name `../hssd-hab_semantic_lexicon.json` exists but failed to load.
+[21:14:06:557037]:[Error]:[Scene] SemanticScene.cpp(139)::loadSemanticSceneDescriptor : SSD Load Failure! File with SemanticAttributes-provided name `../hssd-hab_semantic_lexicon.json` exists but failed to load.
+[21:14:06:564419]:[Error]:[Scene] SemanticScene.cpp(139)::loadSemanticSceneDescriptor : SSD Load Failure! File with SemanticAttributes-provided name `../hssd-hab_semantic_lexicon.json` exists but failed to load.
+[21:14:06:573658]:[Error]:[Scene] SemanticScene.cpp(139)::loadSemanticSceneDescriptor : SSD Load Failure! File with SemanticAttributes-provided name `../hssd-hab_semantic_lexicon.json` exists but failed to load.
+[21:14:06:573969]:[Error]:[Scene] SemanticScene.cpp(139)::loadSemanticSceneDescriptor : SSD Load Failure! File with SemanticAttributes-provided name `../hssd-hab_semantic_lexicon.json` exists but failed to load.
+[21:14:06:583574]:[Error]:[Scene] SemanticScene.cpp(139)::loadSemanticSceneDescriptor : SSD Load Failure! File with SemanticAttributes-provided name `../hssd-hab_semantic_lexicon.json` exists but failed to load.
+[21:14:06:584644]:[Error]:[Scene] SemanticScene.cpp(139)::loadSemanticSceneDescriptor : SSD Load Failure! File with SemanticAttributes-provided name `../hssd-hab_semantic_lexicon.json` exists but failed to load.
+[21:14:06:587093]:[Error]:[Scene] SemanticScene.cpp(139)::loadSemanticSceneDescriptor : SSD Load Failure! File with SemanticAttributes-provided name `../hssd-hab_semantic_lexicon.json` exists but failed to load.
+2025-06-22 21:14:07,848 Initializing task RearrangeEmptyTask-v0
+2025-06-22 21:14:07,848 Initializing task RearrangeEmptyTask-v0
+2025-06-22 21:14:07,848 Initializing task RearrangeEmptyTask-v0
+2025-06-22 21:14:07,848 Initializing task RearrangeEmptyTask-v0
+2025-06-22 21:14:07,848 Initializing task RearrangeEmptyTask-v0
+2025-06-22 21:14:07,848 Initializing task RearrangeEmptyTask-v0
+2025-06-22 21:14:07,848 Initializing task RearrangeEmptyTask-v0
+2025-06-22 21:14:07,850 Initializing task RearrangeEmptyTask-v0
+2025-06-22 21:16:10,859 Initializing dataset RearrangeDataset-v0
+2025-06-22 21:16:10,860 initializing sim RearrangeSim-v0
+[21:16:10:982165]:[Error]:[Scene] SemanticScene.cpp(139)::loadSemanticSceneDescriptor : SSD Load Failure! File with SemanticAttributes-provided name `../hssd-hab_semantic_lexicon.json` exists but failed to load.
+2025-06-22 21:16:11,487 Initializing task RearrangeEmptyTask-v0
+Traceback (most recent call last; use -b to show Scenic internals):
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/habitat/sb_train.py", line 58, in <module>
+    model.learn(total_timesteps=100_000, callback=eval_callback)
+  File "/home/kxu/stable-baselines3/stable_baselines3/ppo/ppo.py", line 311, in learn
+    return super().learn(
+  File "/home/kxu/stable-baselines3/stable_baselines3/common/on_policy_algorithm.py", line 324, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+  File "/home/kxu/stable-baselines3/stable_baselines3/common/on_policy_algorithm.py", line 224, in collect_rollouts
+    if not callback.on_step():
+  File "/home/kxu/stable-baselines3/stable_baselines3/common/callbacks.py", line 114, in on_step
+    return self._on_step()
+  File "/home/kxu/stable-baselines3/stable_baselines3/common/callbacks.py", line 464, in _on_step
+    episode_rewards, episode_lengths = evaluate_policy(
+  File "/home/kxu/stable-baselines3/stable_baselines3/common/evaluation.py", line 97, in evaluate_policy
+    new_observations, rewards, dones, infos = env.step(actions)
+  File "/home/kxu/stable-baselines3/stable_baselines3/common/vec_env/base_vec_env.py", line 222, in step
+    return self.step_wait()
+  File "/home/kxu/stable-baselines3/stable_baselines3/common/vec_env/dummy_vec_env.py", line 71, in step_wait
+    obs, self.reset_infos[env_idx] = self.envs[env_idx].reset()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/gymnasium/wrappers/common.py", line 543, in reset
+    obs, info = super().reset(seed=seed, options=options)
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/gymnasium/core.py", line 328, in reset
+    return self.env.reset(seed=seed, options=options)
+  File "/home/kxu/ScenicGymClean/src/scenic/gym/envs/scenic_gym.py", line 88, in reset
+    observation, info = self.loop.throw(ResetException())
+  File "/home/kxu/ScenicGymClean/src/scenic/gym/envs/scenic_gym.py", line 48, in _make_run_loop
+    with self.simulator.simulateStepped(scene, maxSteps=self.max_steps) as simulation:
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/habitat/simulator.py", line 180, in createSimulation
+    return HabitatSimulation(
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/habitat/simulator.py", line 336, in __init__
+    super().__init__(scene, timestep=timestep, **kwargs)
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/habitat/simulator.py", line 339, in setup
+    self.env_observations.append(self.env.reset())
+  File "/home/kxu/habitat-lab/habitat-lab/habitat/core/env.py", line 263, in reset
+    observations = self.task.reset(episode=self.current_episode)
+  File "/home/kxu/habitat-lab/habitat-lab/habitat/tasks/rearrange/utils.py", line 652, in wrapper
+    ret = f(self, *args, **kwargs)
+  File "/home/kxu/habitat-lab/habitat-lab/habitat/tasks/rearrange/rearrange_task.py", line 248, in reset
+    self._set_articulated_agent_start(agent_idx)
+  File "/home/kxu/habitat-lab/habitat-lab/habitat/tasks/rearrange/rearrange_task.py", line 217, in _set_articulated_agent_start
+    ) = self._sim.set_articulated_agent_base_to_random_point(
+  File "/home/kxu/habitat-lab/habitat-lab/habitat/tasks/rearrange/rearrange_sim.py", line 446, in set_articulated_agent_base_to_random_point
+    did_collide, _ = rearrange_collision(
+  File "/home/kxu/habitat-lab/habitat-lab/habitat/tasks/rearrange/utils.py", line 162, in rearrange_collision
+    robot_scene_matches = [c for c in colls if coll_name_matches(c, agent_id)]
+  File "/home/kxu/habitat-lab/habitat-lab/habitat/tasks/rearrange/utils.py", line 162, in <listcomp>
+    robot_scene_matches = [c for c in colls if coll_name_matches(c, agent_id)]
+  File "/home/kxu/habitat-lab/habitat-lab/habitat/tasks/rearrange/utils.py", line 46, in coll_name_matches
+    return name in [coll.object_id_a, coll.object_id_b]
+KeyboardInterrupt

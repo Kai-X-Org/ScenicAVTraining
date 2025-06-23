@@ -1,0 +1,72 @@
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+2025-06-22 18:57:09,575 Initializing dataset RearrangeDataset-v0
+2025-06-22 18:57:09,576 Initializing dataset RearrangeDataset-v0
+2025-06-22 18:57:09,576 Initializing dataset RearrangeDataset-v0
+2025-06-22 18:57:09,577 initializing sim RearrangeSim-v0
+2025-06-22 18:57:09,578 Initializing dataset RearrangeDataset-v0
+2025-06-22 18:57:09,578 Initializing dataset RearrangeDataset-v0
+2025-06-22 18:57:09,578 initializing sim RearrangeSim-v0
+2025-06-22 18:57:09,578 Initializing dataset RearrangeDataset-v0
+2025-06-22 18:57:09,578 initializing sim RearrangeSim-v0
+2025-06-22 18:57:09,580 initializing sim RearrangeSim-v0
+2025-06-22 18:57:09,580 initializing sim RearrangeSim-v0
+2025-06-22 18:57:09,580 initializing sim RearrangeSim-v0
+2025-06-22 18:57:09,583 Initializing dataset RearrangeDataset-v0
+2025-06-22 18:57:09,586 initializing sim RearrangeSim-v0
+2025-06-22 18:57:09,594 Initializing dataset RearrangeDataset-v0
+2025-06-22 18:57:09,597 initializing sim RearrangeSim-v0
+[18:57:09:780442]:[Error]:[Scene] SemanticScene.cpp(139)::loadSemanticSceneDescriptor : SSD Load Failure! File with SemanticAttributes-provided name `../hssd-hab_semantic_lexicon.json` exists but failed to load.
+[18:57:09:791988]:[Error]:[Scene] SemanticScene.cpp(139)::loadSemanticSceneDescriptor : SSD Load Failure! File with SemanticAttributes-provided name `../hssd-hab_semantic_lexicon.json` exists but failed to load.
+[18:57:09:839039]:[Error]:[Scene] SemanticScene.cpp(139)::loadSemanticSceneDescriptor : SSD Load Failure! File with SemanticAttributes-provided name `../hssd-hab_semantic_lexicon.json` exists but failed to load.
+[18:57:09:896996]:[Error]:[Scene] SemanticScene.cpp(139)::loadSemanticSceneDescriptor : SSD Load Failure! File with SemanticAttributes-provided name `../hssd-hab_semantic_lexicon.json` exists but failed to load.
+[18:57:09:903551]:[Error]:[Scene] SemanticScene.cpp(139)::loadSemanticSceneDescriptor : SSD Load Failure! File with SemanticAttributes-provided name `../hssd-hab_semantic_lexicon.json` exists but failed to load.
+[18:57:10:061428]:[Error]:[Scene] SemanticScene.cpp(139)::loadSemanticSceneDescriptor : SSD Load Failure! File with SemanticAttributes-provided name `../hssd-hab_semantic_lexicon.json` exists but failed to load.
+[18:57:10:098276]:[Error]:[Scene] SemanticScene.cpp(139)::loadSemanticSceneDescriptor : SSD Load Failure! File with SemanticAttributes-provided name `../hssd-hab_semantic_lexicon.json` exists but failed to load.
+[18:57:10:121260]:[Error]:[Scene] SemanticScene.cpp(139)::loadSemanticSceneDescriptor : SSD Load Failure! File with SemanticAttributes-provided name `../hssd-hab_semantic_lexicon.json` exists but failed to load.
+2025-06-22 18:57:10,837 Initializing task RearrangeEmptyTask-v0
+2025-06-22 18:57:10,883 Initializing task RearrangeEmptyTask-v0
+2025-06-22 18:57:10,888 Initializing task RearrangeEmptyTask-v0
+2025-06-22 18:57:10,911 Initializing task RearrangeEmptyTask-v0
+2025-06-22 18:57:10,919 Initializing task RearrangeEmptyTask-v0
+2025-06-22 18:57:10,970 Initializing task RearrangeEmptyTask-v0
+2025-06-22 18:57:10,972 Initializing task RearrangeEmptyTask-v0
+2025-06-22 18:57:11,005 Initializing task RearrangeEmptyTask-v0
+Traceback (most recent call last; use -b to show Scenic internals):
+  File "/home/kxu/ScenicGymClean/src/scenic/simulators/habitat/sb_train.py", line 58, in <module>
+    model.learn(total_timesteps=100_000, callback=eval_callback)
+  File "/home/kxu/stable-baselines3/stable_baselines3/ppo/ppo.py", line 311, in learn
+    return super().learn(
+  File "/home/kxu/stable-baselines3/stable_baselines3/common/on_policy_algorithm.py", line 311, in learn
+    total_timesteps, callback = self._setup_learn(
+  File "/home/kxu/stable-baselines3/stable_baselines3/common/base_class.py", line 423, in _setup_learn
+    self._last_obs = self.env.reset()  # type: ignore[assignment]
+  File "/home/kxu/stable-baselines3/stable_baselines3/common/vec_env/vec_transpose.py", line 113, in reset
+    observations = self.venv.reset()
+  File "/home/kxu/stable-baselines3/stable_baselines3/common/vec_env/subproc_vec_env.py", line 145, in reset
+    results = [remote.recv() for remote in self.remotes]
+  File "/home/kxu/stable-baselines3/stable_baselines3/common/vec_env/subproc_vec_env.py", line 145, in <listcomp>
+    results = [remote.recv() for remote in self.remotes]
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt
