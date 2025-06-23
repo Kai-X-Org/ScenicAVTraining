@@ -51,10 +51,9 @@ if __name__ == "__main__":
     eval_env = scenic_env()
 
     eval_callback = EvalCallback(eval_env, best_model_save_path=f"./sb_models/{model_folder_name}",
-                             log_path=f"./sb_models/{model_folder_name}", eval_freq=300,
+                             log_path=f"./sb_models/{model_folder_name}", eval_freq=1000,
                              deterministic=True, render=False)
 
     model = PPO("CnnPolicy", env, verbose=1)
-    model.learn(total_timesteps=500_000, callback=eval_callback)
+    model.learn(total_timesteps=100_000, callback=eval_callback)
     model.save(f"habitat_nav_{now}")
-
