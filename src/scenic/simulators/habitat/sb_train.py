@@ -11,7 +11,7 @@ from scenic.simulators.habitat import HabitatSimulator
 import datetime
 from stable_baselines3.common.vec_env import SubprocVecEnv
 from stable_baselines3 import PPO
-from stable_baselines3.common.callbacks import EvalCallback
+from stable_baselines3.common.callbacks import EvalCallback, ProgressBarCallback, CallbackList, CheckpointCallback
 import datetime
 
 
@@ -53,7 +53,8 @@ if __name__ == "__main__":
     eval_callback = EvalCallback(eval_env, best_model_save_path=f"./sb_models/{model_folder_name}",
                              log_path=f"./sb_models/{model_folder_name}", eval_freq=1000,
                              deterministic=True, render=False)
+    # checkpoint_callback = CheckpointCallback(save_freq=1000, save_path="./logs/")
 
-    model = PPO("CnnPolicy", env, verbose=1)
-    model.learn(total_timesteps=100_000, callback=eval_callback)
+    model = PPO("CnnPolicy", env, verbose=2)
+    model.learn(total_timesteps=100_000, callback=eval_callback, progress_bar=True)
     model.save(f"habitat_nav_{now}")
