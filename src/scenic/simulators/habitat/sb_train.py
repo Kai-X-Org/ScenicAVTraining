@@ -19,6 +19,7 @@ parser = argparse.ArgumentParser()
 
 parser.add_argument('-m', '--model', type=str)
 parser.add_argument('-r', '--resume', action="store_true")
+parser.add_argument('-t', '--timesteps', type=int)
 args = parser.parse_args()
 
 def scenic_env():
@@ -47,20 +48,36 @@ def scenic_env():
     return env
 
 if __name__ == "__main__":
-
-    print(f"Resume training: {args.resume}, model dir: {args.model}")
     
+    assert args.timesteps is not None, "You did not provide how many timesteps to train"
+
+    if args.resume:
+        assert args.model is not None, "You did not provide a model from which to resume training"
+
+    if args.model is not None:
+        assert args.resume, "You provided a model path, but did not set the resume training flag, -r"
+
+    print(f"Resume training: {args.resume}, model dir: {args.model}, timesteps: {args.timesteps}")
+
     now = datetime.datetime.now()    
     now = now.strftime("%m_%d_%H_%M")
     model_folder_name = f"habitat_nav_{now}" 
+
     env = SubprocVecEnv([scenic_env for _ in range(6)])
     eval_env = scenic_env()
-
-    eval_callback = EvalCallback(eval_env, best_model_save_path=f"./sb_models/{model_folder_name}",
-                             log_path=f"./sb_models/{model_folder_name}", eval_freq=1000,
+    eval_callback = EvalCallback(eval_env, best_model_save_path=f"./sb_models/{model_folder_name}_eval",
+                             log_path=f"./sb_models/{model_folder_name}_eval", eval_freq=1000,
                              deterministic=True, render=False)
-    # checkpoint_callback = CheckpointCallback(save_freq=1000, save_path="./logs/")
+    if args.resume:
+        model = PPO.load(args.model, env=env)
+    else:
+        model = PPO("CnnPolicy", env, verbose=2)
 
-    model = PPO("CnnPolicy", env, verbose=2)
-    model.learn(total_timesteps=100_000, callback=eval_callback, progress_bar=True)
-    model.save(f"habitat_nav_{now}")
+    model.learn(total_timesteps=args.timesteps, callback=eval_callback, progress_bar=True)
+    model.save(f"./sb_models/trained_models/{model_folder_name}")
+
+    print(f"Time Stamp: {now}")
+
+    if args.resume:
+        print(f"Resumed Training From {args.model}")
+
