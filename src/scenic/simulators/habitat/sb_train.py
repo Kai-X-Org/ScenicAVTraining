@@ -12,6 +12,7 @@ import datetime
 from stable_baselines3.common.vec_env import SubprocVecEnv
 from stable_baselines3 import PPO
 from stable_baselines3.common.callbacks import EvalCallback
+import datetime
 
 
 def scenic_env():
@@ -41,14 +42,19 @@ def scenic_env():
 
 if __name__ == "__main__":
     # env = gym.vector.AsyncVectorEnv([lambda: scenic_env() for _ in range(12)])
+
+    
+    now = datetime.datetime.now()    
+    now = now.strftime("%m_%d_%H_%M")
+    model_folder_name = f"habitat_nav_{now}" 
     env = SubprocVecEnv([scenic_env for _ in range(8)])
     eval_env = scenic_env()
 
-    eval_callback = EvalCallback(eval_env, best_model_save_path="./sb_models/",
-                             log_path="./sb_models/", eval_freq=500,
+    eval_callback = EvalCallback(eval_env, best_model_save_path=f"./sb_models/{model_folder_name}",
+                             log_path=f"./sb_models/{model_folder_name}", eval_freq=500,
                              deterministic=True, render=False)
 
     model = PPO("CnnPolicy", env, verbose=1)
     model.learn(total_timesteps=500_000, callback=eval_callback)
-    model.save("habitat_nav_test")
+    model.save(f"habitat_nav_{now}")
 
