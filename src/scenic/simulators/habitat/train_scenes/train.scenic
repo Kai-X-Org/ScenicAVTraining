@@ -35,7 +35,7 @@ monitor Reward():
 
         distance_from_goal = (distance from spot to goal_point)
         d_distance = distance_from_goal - last_distance_from_goal
-        spot.reward += d_distance
+        spot.reward += -d_distance
         
         if (spot intersects goal_region):
             spot.reward += 10

@@ -506,7 +506,7 @@ class HabitatSimulation(Simulation):
         # print("closed env")
         # super().destroy()
         # return
-        make_vid = False
+        make_vid = True
         if make_vid:
             folder_name = "test_run_vids/"
 
