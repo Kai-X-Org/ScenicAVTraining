@@ -63,8 +63,9 @@ if __name__ == "__main__":
     now = now.strftime("%m_%d_%H_%M")
     model_folder_name = f"habitat_nav_{now}" 
 
-    env = SubprocVecEnv([scenic_env for _ in range(6)])
-    eval_env = SubprocVecEnv([scenic_env])
+    env = SubprocVecEnv([scenic_env for _ in range(5)])
+    # eval_env = SubprocVecEnv([scenic_env for _ in range(6)])
+    eval_env = scenic_env()
     eval_callback = EvalCallback(eval_env, best_model_save_path=f"./sb_models/{model_folder_name}_eval",
                              log_path=f"./sb_models/{model_folder_name}_eval", eval_freq=10_000,
                              deterministic=True, render=False)
