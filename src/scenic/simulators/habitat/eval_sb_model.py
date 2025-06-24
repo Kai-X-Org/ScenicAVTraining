@@ -36,6 +36,7 @@ if __name__ == "__main__":
         vec_env = model.get_env()
         obs = vec_env.reset()
         for i in range(1000):
+            print(f"Step {i}")
             action, _states = model.predict(obs, deterministic=True)
             obs, rewards, dones, info = vec_env.step(action)
             if any(dones):
