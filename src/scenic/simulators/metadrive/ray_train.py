@@ -9,8 +9,16 @@ import numpy as np
 import scenic
 from scenic.simulators.metadrive import MetaDriveSimulator
 import datetime
+import argparse
 
-def scenic_env():
+
+parser = argparse.ArgumentParser()
+
+parser.add_argument("-f", "--file", type=str)
+parser.add_argument("-r", "--resume", action="store_true")
+parser.add_argument("-m", "--model", type=str)
+
+def scenic_env(scenic_file):
     agents = ['agent0', 'agent1']
 
     root_user = os.path.expanduser("~")
@@ -21,7 +29,7 @@ def scenic_env():
     action_space_dict = {'agent0': gym.spaces.Box(-1.0, 1.0, (2,), np.float32),
                          'agent1': gym.spaces.Box(-1.0, 1.0, (2,), np.float32)}
 
-    scenic_file = "exp_uniform.scenic"
+    # scenic_file = "exp_uniform.scenic"
     # print("Making Scenario")
 
     scenario = scenic.scenarioFromFile(scenic_file,
@@ -40,11 +48,18 @@ def scenic_env():
     return env
 
 
-register_env("scenic", lambda cfg: ParallelPettingZooEnv(scenic_env()))
+# register_env("scenic", lambda cfg: ParallelPettingZooEnv(scenic_env()))
 
 if __name__ == "__main__":
 
-    # register_env("scenic", lambda cfg: scenic_env())
+    args = parser.parse_args()
+
+    assert args.file is not None, "You did not specify a Scenic program for training"
+    if args.resume:
+        assert args.model is not None, "You did not provide a model from which to resume training"
+
+    register_env("scenic", lambda cfg: ParallelPettingZooEnv(scenic_env(args.file)))
+
     now = datetime.datetime.now()    
     now = now.strftime("%m_%d_%H_%M")
 
