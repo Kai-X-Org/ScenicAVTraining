@@ -54,7 +54,9 @@ class ScenicZooEnv(ParallelEnv):
         while True:
             try:
                 # print(f"feedback result: {self.feedback_result}")
+                # breakpoint()
                 scene, _ = self.scenario.generate(feedback=self.feedback_result)
+                # print("Feedback SUCCESS")
                 with self.simulator.simulateStepped(scene, maxSteps=self.max_steps) as simulation:
                     steps_taken = 0
                     # this first block before the while loop is for the first reset call
@@ -73,6 +75,7 @@ class ScenicZooEnv(ParallelEnv):
                         reward = simulation.get_reward()
 
                         if done():
+                            # print("DONE")
                             result = simulation.result
                             self.simulation_results.append(result)
 
@@ -80,6 +83,7 @@ class ScenicZooEnv(ParallelEnv):
                                 self.simulation_results.append(simulation.result)
 
                             self.feedback_result = self.feedback_fn(result) 
+                            print(f"Feedback Computed: {self.feedback_result}")
 
                             #FIXME this part below needs to be refined for more general multiagent scenarios
 
