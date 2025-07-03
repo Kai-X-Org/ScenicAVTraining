@@ -34,7 +34,8 @@ class ScenicZooEnv(ParallelEnv):
         self.simulation_results = []
         self.max_deviation = 0
 
-        self.feedback_result = None
+        # self.feedback_result = None
+        self.feedback_result = 0
         self.loop = None
 
         self.agents = agents
@@ -68,6 +69,7 @@ class ScenicZooEnv(ParallelEnv):
                     simulation.actions = actions # TODO add action dict to simulation interfaces
 
                     while not done():
+                        # print("STEPPING")
                         simulation.advance()
                         steps_taken += 1
                         observation = simulation.get_obs()
@@ -83,7 +85,6 @@ class ScenicZooEnv(ParallelEnv):
                                 self.simulation_results.append(simulation.result)
 
                             self.feedback_result = self.feedback_fn(result) 
-                            print(f"Feedback Computed: {self.feedback_result}")
 
                             #FIXME this part below needs to be refined for more general multiagent scenarios
 
@@ -96,6 +97,7 @@ class ScenicZooEnv(ParallelEnv):
 
                         episode_done = done()
                         done_dict = {agent: episode_done for agent in self.agents}
+                        # assert not any(done_dict.values()), "ENDING TOO EARLY!"
 
                         actions = yield observation, reward, done_dict, done_dict, info
                         simulation.actions = actions # TODO add action dict to simulation interfaces
@@ -115,7 +117,8 @@ class ScenicZooEnv(ParallelEnv):
             observation, info = next(self.loop) # not doing self.scene.send(action) just yet
         else:
             observation, info = self.loop.throw(ResetException())
-
+        # print(f"OBS, {observation}")
+        # print(f"INFO, {info}")
         return observation, info
         
     def step(self, action):
