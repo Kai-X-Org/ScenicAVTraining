@@ -18,8 +18,20 @@ parser.add_argument("-f", "--file", type=str)
 parser.add_argument("-r", "--resume", action="store_true")
 parser.add_argument("-m", "--model", type=str)
 
-def cum_reward(results):
-    
+def max_cum_reward(result):
+    agent0_return = result.records["agent0_return"]
+    agent1_return = result.records["agent1_return"]
+
+    return max(agent0_return, agent1_return)
+
+def cum_reward(result):
+    """
+    For the mab sampler
+    """
+    agent0_return = result.records["agent0_return"]
+    agent1_return = result.records["agent1_return"]
+
+    return [agent0_return, agent1_return] 
 
 def scenic_env(scenic_file):
     agents = ['agent0', 'agent1']
@@ -46,7 +58,8 @@ def scenic_env(scenic_file):
                        max_steps=50, 
                        observation_space = obs_space_dict, 
                        action_space = action_space_dict, 
-                       agents=agents)
+                       agents=agents,
+                       feedback_fn = max_cum_reward)
     # print("ENV CREATED!!!!!")
     return env
 
@@ -94,12 +107,13 @@ if __name__ == "__main__":
         evaluation_duration=10,
     )
 
+    current_dir = os.getcwd()
     ppo = config.build_algo()
     if args.resume:
-        ppo.restore_from_path(args.model)
+        ppo.restore_from_path(current_dir + "/" + args.model)
     # print("FINISHED ALGO BUILD!")
     # ppo.save_to_path("ray_models/")
-    current_dir = os.getcwd()
+    # current_dir = os.getcwd()
     # checkpoint_dir = ppo.save_to_path(current_dir + f"/ray_models/test_checkpoints_{now}")
     for i in range(20):
         pprint(f"Checkpoint info: \n {ppo.train()} \n")
