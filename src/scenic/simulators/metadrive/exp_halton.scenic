@@ -5,7 +5,7 @@ import os
 import random
 from math import pi
 root_user = os.path.expanduser("~")
-param verifaiSamplerType = 'bo'
+param verifaiSamplerType = 'halton'
 param map = localPath(root_user + '/ScenicGymClean/assets/maps/CARLA/Town04.xodr')
 param carla_map = 'Town04'
 param time_step = 1.0/10
