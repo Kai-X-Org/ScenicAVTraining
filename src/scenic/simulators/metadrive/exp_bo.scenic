@@ -95,6 +95,9 @@ monitor Reward(car1, car2):
             car1.add_reward(crash_penalty)
             car2.add_reward(crash_penalty)
             done = True
+        
+        car1.episode_return += car1.reward
+        car2.episode_return += car2.reward
 
         if done:
             terminate
@@ -102,6 +105,8 @@ monitor Reward(car1, car2):
    
 
 require monitor Reward(ego, car2)
+record final ego.episode_return as agent0_return
+record final ego.episode_return as agent1_return
 
-record abs(ego.position.x - ego_x) as ego_drift
-record abs(car2.position.y - car2_y) as car2_drift
+# record abs(ego.position.x - ego_x) as ego_drift
+# record abs(car2.position.y - car2_y) as car2_drift

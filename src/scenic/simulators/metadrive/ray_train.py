@@ -18,6 +18,9 @@ parser.add_argument("-f", "--file", type=str)
 parser.add_argument("-r", "--resume", action="store_true")
 parser.add_argument("-m", "--model", type=str)
 
+def cum_reward(results):
+    
+
 def scenic_env(scenic_file):
     agents = ['agent0', 'agent1']
 
@@ -92,13 +95,15 @@ if __name__ == "__main__":
     )
 
     ppo = config.build_algo()
+    if args.resume:
+        ppo.restore_from_path(args.model)
     # print("FINISHED ALGO BUILD!")
     # ppo.save_to_path("ray_models/")
     current_dir = os.getcwd()
     # checkpoint_dir = ppo.save_to_path(current_dir + f"/ray_models/test_checkpoints_{now}")
     for i in range(20):
         pprint(f"Checkpoint info: \n {ppo.train()} \n")
-        checkpoint_dir = ppo.save_to_path(current_dir + f"/ray_models/test_checkpoints_{now}_{i}")
+        checkpoint_dir = ppo.save_to_path(current_dir + f"/ray_models/test_checkpoints_{now}/checkpoint_{i}")
         pprint(f"CHECKPOINT SAVED TO PATH: {checkpoint_dir}\n\n")
     # ppo.save_to_path()
     

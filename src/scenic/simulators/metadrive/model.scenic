@@ -92,6 +92,7 @@ class MetaDriveActor(DrivingObject):
     _reward: 0
     use_special_color: False
     goal: (0, 0, 0)
+    episode_return: 0
    
     @property
     def reward(self):
