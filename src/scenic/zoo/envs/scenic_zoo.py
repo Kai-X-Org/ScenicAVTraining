@@ -19,7 +19,9 @@ class ScenicZooEnv(ParallelEnv):
                  max_steps=1000,
                  observation_space : dict = dict(), 
                  action_space : dict = dict(),
-                 agents=[]): # empty string means just pure scenic???
+                 agents=[],
+                 record_scenic_sim_results : bool = True,
+                 feedback_fn : callable = lambda x: x): 
 
         assert render_mode is None or render_mode in self.metadata["render_modes"]
 
@@ -31,7 +33,6 @@ class ScenicZooEnv(ParallelEnv):
         self.scenario = scenario
         self.simulation_results = []
         self.max_deviation = 0
-        self.cumulative_rewards = dict()
 
         self.feedback_result = None
         self.loop = None
@@ -43,6 +44,8 @@ class ScenicZooEnv(ParallelEnv):
 
         self.terminations = {}
         self.truncations = {}
+        self.record_scenic_sim_results = record_scenic_sim_results
+        self.feedback_fn = feedback_fn
 
     def _make_run_loop(self):
         # TODO: need to figure out if we make the scene
@@ -53,9 +56,6 @@ class ScenicZooEnv(ParallelEnv):
                 # print(f"feedback result: {self.feedback_result}")
                 scene, _ = self.scenario.generate(feedback=self.feedback_result)
                 with self.simulator.simulateStepped(scene, maxSteps=self.max_steps) as simulation:
-                    self.cumulative_rewards['agent0'] = 0
-                    self.cumulative_rewards['agent1'] = 0
-                    # self.agents = simulation.learning_agents
                     steps_taken = 0
                     # this first block before the while loop is for the first reset call
                     done = lambda: not (simulation.result is None) # TODO maybe call this terminated in the future
@@ -66,40 +66,22 @@ class ScenicZooEnv(ParallelEnv):
                     simulation.actions = actions # TODO add action dict to simulation interfaces
 
                     while not done():
-                        # Probably good that we advance first before any action is set.
-                        # this is consistent with how reset works
                         simulation.advance()
                         steps_taken += 1
                         observation = simulation.get_obs()
                         info = simulation.get_info()
                         reward = simulation.get_reward()
 
-                        self.cumulative_rewards['agent0'] += reward['agent0']
-                        self.cumulative_rewards['agent1'] += reward['agent1']
-
-
                         if done():
-                            # print("DONE!")
-                            # self.feedback_result = simulation.result
                             result = simulation.result
                             self.simulation_results.append(result)
-                            simulation.destroy()
-                            # print("giving final obs, reward, etc")
-                            # print(f"ego drift: {result.records['ego_drift']}")
-                            # print(f"ego drift: {np.array(result.records['ego_drift'])}")
 
-                            cum_rew_0 = self.cumulative_rewards['agent0']
-                            cum_rew_1 = self.cumulative_rewards['agent1']
+                            if self.record_scenic_sim_results:
+                                self.simulation_results.append(simulation.result)
 
-                            self.feedback_result = min(cum_rew_0, cum_rew_1)
+                            self.feedback_result = self.feedback_fn(result) 
 
-                            # self.feedback_result = min(-np.max(np.array(result.records['ego_drift'])[:, 1]) - cum_rew_0,
-                                                       # -np.max(np.array(result.records['car2_drift'])[:, 1]) - cum_rew_1,)
-                            # Note: the yield statement really is the last part to be executed in this run
-                            # in an episode. Shouldn't put code after it
-                            # print("SETTING MAX DEV")
-                            self.max_deviation = max(np.max(np.array(result.records['ego_drift'])[:, 1]),
-                                                       np.max(np.array(result.records['car2_drift'])[:, 1]))
+                            #FIXME this part below needs to be refined for more general multiagent scenarios
 
                             episode_done = done()
                             done_dict = {agent: episode_done for agent in self.agents}
@@ -109,7 +91,6 @@ class ScenicZooEnv(ParallelEnv):
                             break # a little unclean right here
 
                         episode_done = done()
-                        # print(f"ZOO AGENTS: {self.agents}")
                         done_dict = {agent: episode_done for agent in self.agents}
 
                         actions = yield observation, reward, done_dict, done_dict, info
