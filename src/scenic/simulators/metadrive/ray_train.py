@@ -10,7 +10,8 @@ import scenic
 from scenic.simulators.metadrive import MetaDriveSimulator
 import datetime
 import argparse
-import pickle
+# import pickle
+import dill
 
 parser = argparse.ArgumentParser()
 
@@ -121,16 +122,19 @@ if __name__ == "__main__":
     # ppo.save_to_path("ray_models/")
     # current_dir = os.getcwd()
     # checkpoint_dir = ppo.save_to_path(current_dir + f"/ray_models/test_checkpoints_{now}")
-    pickle_dir = current_dir + f"/ray_models/{model_name}/pickles/"
+    # pickle_dir = current_dir + f"/ray_models/{model_name}/pickles/"
+    dill_dir = current_dir + f"/ray_models/{model_name}/dill/"
+    os.makedirs(dill_dir, exist_ok=True)
 
     for i in range(20):
         progress_dict = ppo.train()
+        # print(type(progress_dict))
         # pprint(f"Checkpoint info: \n {progress_dict} \n")
         checkpoint_dir = ppo.save_to_path(current_dir + f"/ray_models/{model_name}/checkpoint_{i}")
-        pickle_filename = pickle_dir + f"checkpoint_{i}.pkl"
+        dill_filename = dill_dir + f"checkpoint_{i}.pkl"
 
-        with open(pickle_filename, 'wb') as pickle_file:
-            pickle.dump(progress_dict, pickle_file)
+        with open(dill_filename, mode='wb') as dill_file:
+            dill.dump(progress_dict, dill_file)
 
         pprint(f"CHECKPOINT SAVED TO PATH: {checkpoint_dir}\n\n")
 

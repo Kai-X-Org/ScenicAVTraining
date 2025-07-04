@@ -1,4 +1,4 @@
-('Checkpoint info: \n'
+(
   {'env_runners': {'agent_episode_returns_mean': {'agent0': 
  7.827313371120389, 'agent1': 6.481140855737376}, 'agent_steps': {'agent0': 
  50.0, 'agent1': 50.0}, 'connector_pipeline_timer': 0.000792262072669057, 
@@ -289,11 +289,11 @@
  False, 'custom_eval_function': None, 'framework': 'torch'}, 
  'time_since_restore': 40.2715048789978, 'iterations_since_restore': 1, 
  'perf': {'cpu_util_percent': 42.043103448275865, 'ram_util_percent': 
- '42.42758620689656}} \n')
+ '42.42758620689656}} ')
 ('CHECKPOINT SAVED TO PATH: '
- '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_0\n'
- '\n')
-('Checkpoint info: \n'
+ '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_0'
+ '')
+(
   {'env_runners': {'agent_episode_returns_mean': {'agent0': 9.17039214813807, 
  'agent1': 8.115874260952586}, 'agent_steps': {'agent0': 50.0, 'agent1': 
  50.0}, 'connector_pipeline_timer': 0.0007928824144418041, 'env_reset_timer': 
@@ -584,11 +584,11 @@
  False, 'custom_eval_function': None, 'framework': 'torch'}, 
  'time_since_restore': 81.27145457267761, 'iterations_since_restore': 2, 
  'perf': {'cpu_util_percent': 44.02203389830509, 'ram_util_percent': 
- '44.71355932203391}} \n')
+ '44.71355932203391}} ')
 ('CHECKPOINT SAVED TO PATH: '
- '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_1\n'
- '\n')
-('Checkpoint info: \n'
+ '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_1'
+ '')
+(
   {'env_runners': {'agent_episode_returns_mean': {'agent0': 
  9.599647811111643, 'agent1': 8.734631802369284}, 'agent_steps': {'agent0': 
  50.0, 'agent1': 50.0}, 'connector_pipeline_timer': 0.0007934322760044606, 
@@ -878,11 +878,11 @@
  False, 'custom_eval_function': None, 'framework': 'torch'}, 
  'time_since_restore': 124.43787479400635, 'iterations_since_restore': 3, 
  'perf': {'cpu_util_percent': 43.19180327868851, 'ram_util_percent': 
- '46.870491803278696}} \n')
+ '46.870491803278696}} ')
 ('CHECKPOINT SAVED TO PATH: '
- '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_2\n'
- '\n')
-('Checkpoint info: \n'
+ '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_2'
+ '')
+(
   {'env_runners': {'agent_episode_returns_mean': {'agent0': 
  9.560257872748085, 'agent1': 7.357085419400644}, 'agent_steps': {'agent0': 
  49.666666666666664, 'agent1': 49.666666666666664}, 
@@ -1175,11 +1175,11 @@
  False, 'custom_eval_function': None, 'framework': 'torch'}, 
  'time_since_restore': 167.93832063674927, 'iterations_since_restore': 4, 
  'perf': {'cpu_util_percent': 42.329032258064515, 'ram_util_percent': 
- '48.9483870967742}} \n')
+ '48.9483870967742}} ')
 ('CHECKPOINT SAVED TO PATH: '
- '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_3\n'
- '\n')
-('Checkpoint info: \n'
+ '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_3'
+ '')
+(
   {'env_runners': {'agent_episode_returns_mean': {'agent0': 
  11.840487291442026, 'agent1': 12.574236860842776}, 'agent_steps': {'agent0': 
  50.0, 'agent1': 50.0}, 'connector_pipeline_timer': 0.000794351679185387, 
@@ -1469,11 +1469,11 @@
  False, 'custom_eval_function': None, 'framework': 'torch'}, 
  'time_since_restore': 215.27241373062134, 'iterations_since_restore': 5, 
  'perf': {'cpu_util_percent': 42.641176470588235, 'ram_util_percent': 
- '51.125000000000014}} \n')
+ '51.125000000000014}} ')
 ('CHECKPOINT SAVED TO PATH: '
- '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_4\n'
- '\n')
-('Checkpoint info: \n'
+ '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_4'
+ '')
+(
   {'env_runners': {'agent_episode_returns_mean': {'agent0': 
  11.982808885086795, 'agent1': 11.301142084558984}, 'agent_steps': {'agent0': 
  49.083333333333336, 'agent1': 49.083333333333336}, 
@@ -1765,11 +1765,11 @@
  False, 'custom_eval_function': None, 'framework': 'torch'}, 
  'time_since_restore': 263.10744071006775, 'iterations_since_restore': 6, 
  'perf': {'cpu_util_percent': 42.74411764705882, 'ram_util_percent': 
- '53.34705882352941}} \n')
+ '53.34705882352941}} ')
 ('CHECKPOINT SAVED TO PATH: '
- '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_5\n'
- '\n')
-('Checkpoint info: \n'
+ '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_5'
+ '')
+(
   {'env_runners': {'agent_episode_returns_mean': {'agent0': 
  13.802185665150839, 'agent1': 12.22710530584503}, 'agent_steps': {'agent0': 
  49.916666666666664, 'agent1': 49.916666666666664}, 
@@ -2061,11 +2061,11 @@
  False, 'custom_eval_function': None, 'framework': 'torch'}, 
  'time_since_restore': 311.9010260105133, 'iterations_since_restore': 7, 
  'perf': {'cpu_util_percent': 41.98, 'ram_util_percent': 
- '55.468571428571416}} \n')
+ '55.468571428571416}} ')
 ('CHECKPOINT SAVED TO PATH: '
- '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_6\n'
- '\n')
-('Checkpoint info: \n'
+ '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_6'
+ '')
+(
   {'env_runners': {'agent_episode_returns_mean': {'agent0': 
  13.69692019542651, 'agent1': 12.360557619690846}, 'agent_steps': {'agent0': 
  49.5, 'agent1': 49.5}, 'connector_pipeline_timer': 0.0007953748945736321, 
@@ -2356,11 +2356,11 @@
  False, 'custom_eval_function': None, 'framework': 'torch'}, 
  'time_since_restore': 362.2467272281647, 'iterations_since_restore': 8, 
  'perf': {'cpu_util_percent': 43.31527777777777, 'ram_util_percent': 
- '57.66944444444445}} \n')
+ '57.66944444444445}} ')
 ('CHECKPOINT SAVED TO PATH: '
- '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_7\n'
- '\n')
-('Checkpoint info: \n'
+ '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_7'
+ '')
+(
   {'env_runners': {'agent_episode_returns_mean': {'agent0': 
  10.684757655451014, 'agent1': 9.0562962434779}, 'agent_steps': {'agent0': 
  48.416666666666664, 'agent1': 48.416666666666664}, 
@@ -2652,11 +2652,11 @@
  False, 'custom_eval_function': None, 'framework': 'torch'}, 
  'time_since_restore': 414.44550347328186, 'iterations_since_restore': 9, 
  'perf': {'cpu_util_percent': 42.964864864864865, 'ram_util_percent': 
- '59.87162162162162}} \n')
+ '59.87162162162162}} ')
 ('CHECKPOINT SAVED TO PATH: '
- '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_8\n'
- '\n')
-('Checkpoint info: \n'
+ '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_8'
+ '')
+(
   {'env_runners': {'agent_episode_returns_mean': {'agent0': 
  14.331742273270262, 'agent1': 15.737065594466552}, 'agent_steps': {'agent0': 
  50.0, 'agent1': 50.0}, 'connector_pipeline_timer': 0.000795877952131111, 
@@ -2946,11 +2946,11 @@
  False, 'custom_eval_function': None, 'framework': 'torch'}, 
  'time_since_restore': 469.07724380493164, 'iterations_since_restore': 10, 
  'perf': {'cpu_util_percent': 42.879487179487185, 'ram_util_percent': 
- '62.06666666666668}} \n')
+ '62.06666666666668}} ')
 ('CHECKPOINT SAVED TO PATH: '
- '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_9\n'
- '\n')
-('Checkpoint info: \n'
+ '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_9'
+ '')
+(
   {'env_runners': {'agent_episode_returns_mean': {'agent0': 
  12.95933259292105, 'agent1': 12.539149424536298}, 'agent_steps': {'agent0': 
  49.5, 'agent1': 49.5}, 'connector_pipeline_timer': 0.0007960874752949177, 
@@ -3241,11 +3241,11 @@
  False, 'custom_eval_function': None, 'framework': 'torch'}, 
  'time_since_restore': 523.8214535713196, 'iterations_since_restore': 11, 
  'perf': {'cpu_util_percent': 41.94102564102565, 'ram_util_percent': 
- '64.23846153846152}} \n')
+ '64.23846153846152}} ')
 ('CHECKPOINT SAVED TO PATH: '
- '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_10\n'
- '\n')
-('Checkpoint info: \n'
+ '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_10'
+ '')
+(
   {'env_runners': {'agent_episode_returns_mean': {'agent0': 
  16.018034163676756, 'agent1': 17.29073087024025}, 'agent_steps': {'agent0': 
  49.5, 'agent1': 49.5}, 'connector_pipeline_timer': 0.00079627319345759, 
@@ -3536,11 +3536,11 @@
  False, 'custom_eval_function': None, 'framework': 'torch'}, 
  'time_since_restore': 580.6160924434662, 'iterations_since_restore': 12, 
  'perf': {'cpu_util_percent': 42.666666666666664, 'ram_util_percent': 
- '66.39876543209877}} \n')
+ '66.39876543209877}} ')
 ('CHECKPOINT SAVED TO PATH: '
- '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_11\n'
- '\n')
-('Checkpoint info: \n'
+ '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_11'
+ '')
+(
   {'env_runners': {'agent_episode_returns_mean': {'agent0': 
  11.319323428273696, 'agent1': 13.915300632760443}, 'agent_steps': {'agent0': 
  50.0, 'agent1': 50.0}, 'connector_pipeline_timer': 0.0007964378112273859, 
@@ -3831,11 +3831,11 @@
  False, 'custom_eval_function': None, 'framework': 'torch'}, 
  'time_since_restore': 638.8898129463196, 'iterations_since_restore': 13, 
  'perf': {'cpu_util_percent': 42.89156626506024, 'ram_util_percent': 
- '68.6144578313253}} \n')
+ '68.6144578313253}} ')
 ('CHECKPOINT SAVED TO PATH: '
- '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_12\n'
- '\n')
-('Checkpoint info: \n'
+ '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_12'
+ '')
+(
   {'env_runners': {'agent_episode_returns_mean': {'agent0': 
  14.32020701210403, 'agent1': 18.02309456777306}, 'agent_steps': {'agent0': 
  49.916666666666664, 'agent1': 49.916666666666664}, 
@@ -4127,11 +4127,11 @@
  False, 'custom_eval_function': None, 'framework': 'torch'}, 
  'time_since_restore': 698.4623870849609, 'iterations_since_restore': 14, 
  'perf': {'cpu_util_percent': 42.796470588235294, 'ram_util_percent': 
- '70.82117647058823}} \n')
+ '70.82117647058823}} ')
 ('CHECKPOINT SAVED TO PATH: '
- '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_13\n'
- '\n')
-('Checkpoint info: \n'
+ '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_13'
+ '')
+(
   {'env_runners': {'agent_episode_returns_mean': {'agent0': 
  16.24406873991714, 'agent1': 14.626578780383669}, 'agent_steps': {'agent0': 
  50.0, 'agent1': 50.0}, 'connector_pipeline_timer': 0.0007967130625114654, 
@@ -4421,11 +4421,11 @@
  False, 'custom_eval_function': None, 'framework': 'torch'}, 
  'time_since_restore': 760.6665437221527, 'iterations_since_restore': 15, 
  'perf': {'cpu_util_percent': 42.4247191011236, 'ram_util_percent': 
- '73.03370786516855}} \n')
+ '73.03370786516855}} ')
 ('CHECKPOINT SAVED TO PATH: '
- '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_14\n'
- '\n')
-('Checkpoint info: \n'
+ '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_14'
+ '')
+(
   {'env_runners': {'agent_episode_returns_mean': {'agent0': 
  14.762067368220325, 'agent1': 14.7028257115577}, 'agent_steps': {'agent0': 
  49.666666666666664, 'agent1': 49.666666666666664}, 
@@ -4717,11 +4717,11 @@
  False, 'custom_eval_function': None, 'framework': 'torch'}, 
  'time_since_restore': 821.3047158718109, 'iterations_since_restore': 16, 
  'perf': {'cpu_util_percent': 42.59540229885058, 'ram_util_percent': 
- '75.19195402298848}} \n')
+ '75.19195402298848}} ')
 ('CHECKPOINT SAVED TO PATH: '
- '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_15\n'
- '\n')
-('Checkpoint info: \n'
+ '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_15'
+ '')
+(
   {'env_runners': {'agent_episode_returns_mean': {'agent0': 
  16.581640917087253, 'agent1': 18.372779638607195}, 'agent_steps': {'agent0': 
  50.0, 'agent1': 50.0}, 'connector_pipeline_timer': 0.000796929321428596, 
@@ -5011,11 +5011,11 @@
  False, 'custom_eval_function': None, 'framework': 'torch'}, 
  'time_since_restore': 886.4722065925598, 'iterations_since_restore': 17, 
  'perf': {'cpu_util_percent': 42.49354838709677, 'ram_util_percent': 
- '77.4225806451613}} \n')
+ '77.4225806451613}} ')
 ('CHECKPOINT SAVED TO PATH: '
- '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_16\n'
- '\n')
-('Checkpoint info: \n'
+ '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_16'
+ '')
+(
   {'env_runners': {'agent_episode_returns_mean': {'agent0': 
  16.480217631420643, 'agent1': 18.829759742543164}, 'agent_steps': {'agent0': 
  50.0, 'agent1': 50.0}, 'connector_pipeline_timer': 0.0007970193931347953, 
@@ -5305,11 +5305,11 @@
  False, 'custom_eval_function': None, 'framework': 'torch'}, 
  'time_since_restore': 951.5209209918976, 'iterations_since_restore': 18, 
  'perf': {'cpu_util_percent': 42.77849462365591, 'ram_util_percent': 
- '79.63655913978495}} \n')
+ '79.63655913978495}} ')
 ('CHECKPOINT SAVED TO PATH: '
- '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_17\n'
- '\n')
-('Checkpoint info: \n'
+ '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_17'
+ '')
+(
   {'env_runners': {'agent_episode_returns_mean': {'agent0': 
  15.926803947801027, 'agent1': 14.76127308222497}, 'agent_steps': {'agent0': 
  50.0, 'agent1': 50.0}, 'connector_pipeline_timer': 0.0007970992313325402, 
@@ -5600,11 +5600,11 @@
  False, 'custom_eval_function': None, 'framework': 'torch'}, 
  'time_since_restore': 1017.8778629302979, 'iterations_since_restore': 19, 
  'perf': {'cpu_util_percent': 42.71808510638298, 'ram_util_percent': 
- '81.77659574468083}} \n')
+ '81.77659574468083}} ')
 ('CHECKPOINT SAVED TO PATH: '
- '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_18\n'
- '\n')
-('Checkpoint info: \n'
+ '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_18'
+ '')
+(
   {'env_runners': {'agent_episode_returns_mean': {'agent0': 
  16.705327095074608, 'agent1': 19.07470408711549}, 'agent_steps': {'agent0': 
  50.0, 'agent1': 50.0}, 'connector_pipeline_timer': 0.0007971699987032061, 
@@ -5894,7 +5894,4 @@
  False, 'custom_eval_function': None, 'framework': 'torch'}, 
  'time_since_restore': 1086.7872295379639, 'iterations_since_restore': 20, 
  'perf': {'cpu_util_percent': 42.0010101010101, 'ram_util_percent': 
- '83.94646464646465}} \n')
-('CHECKPOINT SAVED TO PATH: '
- '/home/kxu/ScenicGymClean/src/scenic/simulators/metadrive/ray_models/test_checkpoints_07_03_18_03/checkpoint_19\n'
- '\n')
+ '83.94646464646465}} ')
