@@ -1,0 +1,700 @@
+2025-07-03 16:30:06,656	WARNING algorithm_config.py:4968 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+/home/kxu/miniforge3/envs/drive/lib/python3.10/site-packages/ray/rllib/algorithms/algorithm.py:521: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+`UnifiedLogger` will be removed in Ray 2.7.
+  return UnifiedLogger(config, logdir, loggers=None)
+/home/kxu/miniforge3/envs/drive/lib/python3.10/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `JsonLogger interface is deprecated in favor of the `ray.tune.json.JsonLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+/home/kxu/miniforge3/envs/drive/lib/python3.10/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `CSVLogger interface is deprecated in favor of the `ray.tune.csv.CSVLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+/home/kxu/miniforge3/envs/drive/lib/python3.10/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `TBXLogger interface is deprecated in favor of the `ray.tune.tensorboardx.TBXLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+2025-07-03 16:30:07,956	INFO worker.py:1888 -- Started a local Ray instance.
+[36m(MultiAgentEnvRunner pid=2068659)[0m /home/kxu/ScenicGymClean/src/scenic/core/errors.py:271: UserWarning: unable to install sys.excepthook to format Scenic backtraces
+[36m(MultiAgentEnvRunner pid=2068659)[0m   warnings.warn("unable to install sys.excepthook to format Scenic backtraces")
+[36m(MultiAgentEnvRunner pid=2068657)[0m 2025-07-03 16:30:17,293	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future!
+[36m(MultiAgentEnvRunner pid=2068661)[0m /home/kxu/ScenicGymClean/src/scenic/core/errors.py:271: UserWarning: unable to install sys.excepthook to format Scenic backtraces[32m [repeated 11x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+[36m(MultiAgentEnvRunner pid=2068661)[0m   warnings.warn("unable to install sys.excepthook to format Scenic backtraces")[32m [repeated 11x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:30:17,876 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1437 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+2025-07-03 16:30:19,628	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future!
+[36m(MultiAgentEnvRunner pid=2068658)[0m 2025-07-03 16:30:19,427	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future![32m [repeated 11x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m /home/kxu/ScenicGymClean/src/scenic/core/errors.py:271: UserWarning: unable to install sys.excepthook to format Scenic backtraces[32m [repeated 2x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m   warnings.warn("unable to install sys.excepthook to format Scenic backtraces")[32m [repeated 2x across cluster][0m
+2025-07-03 16:30:27,892	INFO trainable.py:160 -- Trainable.setup took 21.030 seconds. If your trainable is slow to initialize, consider setting reuse_actors=True to reduce actor creation overheads.
+2025-07-03 16:30:27,893	WARNING util.py:61 -- Install gputil for GPU system monitoring.
+[33m(raylet)[0m [2025-07-03 16:30:27,886 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1436 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m 2025-07-03 16:30:27,253	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future![32m [repeated 2x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:adding kernel and likelihood as parameters
+[33m(raylet)[0m [2025-07-03 16:30:37,892 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1436 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068660)[0m INFO:GP:initializing Y[32m [repeated 28x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068660)[0m INFO:GP:initializing inference method[32m [repeated 28x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068660)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 28x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:30:47,900 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1436 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068670)[0m INFO:GP:initializing Y[32m [repeated 20x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068670)[0m INFO:GP:initializing inference method[32m [repeated 20x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068670)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 20x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:30:57,907 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1436 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters
+[33m(raylet)[0m [2025-07-03 16:31:07,914 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1435 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 17x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 17x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 17x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:31:17,921 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1402 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:initializing Y[32m [repeated 22x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:initializing inference method[32m [repeated 22x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 22x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing Y[32m [repeated 27x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing inference method[32m [repeated 27x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 27x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:31:27,927 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1402 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing Y[32m [repeated 18x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing inference method[32m [repeated 18x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 18x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:31:37,935 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1401 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing Y[32m [repeated 8x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing inference method[32m [repeated 8x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 8x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:31:47,941 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1401 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:adding kernel and likelihood as parameters
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing Y[32m [repeated 6x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing inference method[32m [repeated 6x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 6x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:31:57,951 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1401 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing Y[32m [repeated 9x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing inference method[32m [repeated 9x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 9x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068670)[0m INFO:GP:initializing Y[32m [repeated 27x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068670)[0m INFO:GP:initializing inference method[32m [repeated 27x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068670)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 27x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:32:07,957 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1368 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:initializing Y[32m [repeated 21x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:initializing inference method[32m [repeated 21x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 21x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:initializing Y[32m [repeated 23x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:initializing inference method[32m [repeated 23x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 23x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:32:17,964 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1367 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:initializing Y[32m [repeated 11x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:initializing inference method[32m [repeated 11x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 11x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:32:27,972 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1367 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[33m(raylet)[0m [2025-07-03 16:32:37,978 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1367 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 6x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 6x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 6x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:32:47,987 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1366 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing Y[32m [repeated 6x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing inference method[32m [repeated 6x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 6x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068662)[0m INFO:GP:initializing Y[32m [repeated 24x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068662)[0m INFO:GP:initializing inference method[32m [repeated 24x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068662)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 24x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:32:57,994 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1334 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:initializing Y[32m [repeated 20x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:initializing inference method[32m [repeated 20x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 20x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:initializing Y[32m [repeated 22x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:initializing inference method[32m [repeated 22x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 22x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:33:08,001 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1333 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing Y[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing inference method[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 13x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:33:18,009 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1331 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:adding kernel and likelihood as parameters
+[33m(raylet)[0m [2025-07-03 16:33:28,016 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1331 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 5x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 5x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 5x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:33:38,025 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1299 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing Y[32m [repeated 27x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing inference method[32m [repeated 27x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 27x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:33:48,032 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1299 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing Y[32m [repeated 18x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing inference method[32m [repeated 18x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 18x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068670)[0m INFO:GP:initializing Y[32m [repeated 20x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068670)[0m INFO:GP:initializing inference method[32m [repeated 20x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068670)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 20x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:33:58,039 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1299 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing Y[32m [repeated 18x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing inference method[32m [repeated 18x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 18x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:34:08,047 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1298 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:adding kernel and likelihood as parameters
+[33m(raylet)[0m [2025-07-03 16:34:18,054 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1296 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 5x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 5x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 5x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:34:28,064 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1296 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing Y[32m [repeated 23x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing inference method[32m [repeated 23x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 23x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:34:38,071 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1263 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing Y[32m [repeated 19x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing inference method[32m [repeated 19x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 19x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing Y[32m [repeated 17x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing inference method[32m [repeated 17x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 17x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:34:48,078 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1262 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:initializing Y[32m [repeated 19x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:initializing inference method[32m [repeated 19x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 19x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:34:58,086 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1262 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:35:08,093 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1262 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 5x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 5x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 5x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:35:18,102 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.126 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068670)[0m INFO:GP:initializing Y[32m [repeated 14x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068670)[0m INFO:GP:initializing inference method[32m [repeated 14x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068670)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 14x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:35:28,109 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1228 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing Y[32m [repeated 21x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing inference method[32m [repeated 21x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 21x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing Y[32m [repeated 21x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing inference method[32m [repeated 21x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 21x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:35:38,116 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1228 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068660)[0m INFO:GP:initializing Y[32m [repeated 17x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068660)[0m INFO:GP:initializing inference method[32m [repeated 17x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068660)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 17x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing Y[32m [repeated 12x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing inference method[32m [repeated 12x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 12x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:35:48,124 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1228 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[33m(raylet)[0m [2025-07-03 16:35:58,131 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1228 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:36:08,140 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1227 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:36:18,149 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1193 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing Y[32m [repeated 14x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing inference method[32m [repeated 14x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 14x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing Y[32m [repeated 21x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing inference method[32m [repeated 21x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 21x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:36:28,156 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1193 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:initializing Y[32m [repeated 20x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:initializing inference method[32m [repeated 20x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 20x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing Y[32m [repeated 16x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing inference method[32m [repeated 16x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 16x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:36:38,162 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1193 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing Y[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing inference method[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 13x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:36:48,170 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1193 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:adding kernel and likelihood as parameters
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters
+[33m(raylet)[0m [2025-07-03 16:36:58,177 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1193 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:37:08,187 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1192 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing Y[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing inference method[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068662)[0m INFO:GP:initializing Y[32m [repeated 16x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068662)[0m INFO:GP:initializing inference method[32m [repeated 16x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068662)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 16x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:37:18,195 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1159 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing Y[32m [repeated 20x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing inference method[32m [repeated 20x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 20x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:initializing Y[32m [repeated 18x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:initializing inference method[32m [repeated 18x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 18x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:37:28,201 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1158 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing Y[32m [repeated 16x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing inference method[32m [repeated 16x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 16x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:37:38,209 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1158 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing Y[32m [repeated 12x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing inference method[32m [repeated 12x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 12x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:37:48,216 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1158 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:adding kernel and likelihood as parameters
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:adding kernel and likelihood as parameters
+[33m(raylet)[0m [2025-07-03 16:37:58,224 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1158 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:38:08,232 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1125 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing Y[32m [repeated 15x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing inference method[32m [repeated 15x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 15x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:38:18,239 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1123 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:initializing Y[32m [repeated 19x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:initializing inference method[32m [repeated 19x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 19x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing Y[32m [repeated 14x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing inference method[32m [repeated 14x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 14x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:38:28,246 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1123 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing Y[32m [repeated 19x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing inference method[32m [repeated 19x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 19x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing Y[32m [repeated 16x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing inference method[32m [repeated 16x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 16x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:38:38,255 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1123 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:38:48,262 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1123 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:adding kernel and likelihood as parameters
+[33m(raylet)[0m [2025-07-03 16:38:58,270 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1123 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:39:08,279 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.109 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 15x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 15x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 15x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:39:18,286 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1088 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing Y[32m [repeated 18x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing inference method[32m [repeated 18x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 18x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068669)[0m INFO:GP:initializing Y[32m [repeated 16x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068669)[0m INFO:GP:initializing inference method[32m [repeated 16x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068669)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 16x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:39:28,293 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1088 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068660)[0m INFO:GP:initializing Y[32m [repeated 17x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068660)[0m INFO:GP:initializing inference method[32m [repeated 17x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068660)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 17x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing Y[32m [repeated 15x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing inference method[32m [repeated 15x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 15x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:39:38,301 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1088 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:adding kernel and likelihood as parameters
+[33m(raylet)[0m [2025-07-03 16:39:48,309 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1088 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters
+[33m(raylet)[0m [2025-07-03 16:39:58,317 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1088 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:40:08,327 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1087 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing Y[32m [repeated 15x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing inference method[32m [repeated 15x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 15x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:40:18,334 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1053 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:initializing Y[32m [repeated 19x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:initializing inference method[32m [repeated 19x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 19x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068669)[0m INFO:GP:initializing Y[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068669)[0m INFO:GP:initializing inference method[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068669)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 13x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:40:28,341 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1053 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068669)[0m INFO:GP:initializing Y[32m [repeated 19x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068669)[0m INFO:GP:initializing inference method[32m [repeated 19x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068669)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 19x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068660)[0m INFO:GP:initializing Y[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068660)[0m INFO:GP:initializing inference method[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068660)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 13x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:40:38,348 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1053 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing Y[32m [repeated 6x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing inference method[32m [repeated 6x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 6x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:40:48,355 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1053 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:adding kernel and likelihood as parameters
+[33m(raylet)[0m [2025-07-03 16:40:58,363 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1053 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 3x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:41:08,372 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1052 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing Y[32m [repeated 14x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing inference method[32m [repeated 14x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 14x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:41:18,381 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1018 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:initializing Y[32m [repeated 8x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:initializing inference method[32m [repeated 8x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 8x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068669)[0m INFO:GP:initializing Y[32m [repeated 15x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068669)[0m INFO:GP:initializing inference method[32m [repeated 15x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068669)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 15x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:41:28,388 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1018 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing Y[32m [repeated 18x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing inference method[32m [repeated 18x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 18x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:initializing Y[32m [repeated 14x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:initializing inference method[32m [repeated 14x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 14x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:41:38,395 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1018 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing Y[32m [repeated 12x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing inference method[32m [repeated 12x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 12x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:41:48,404 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1018 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:initializing Y[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:initializing inference method[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 3x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:41:58,411 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1018 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:42:08,420 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.1018 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:42:18,429 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0984 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:initializing Y[32m [repeated 11x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:initializing inference method[32m [repeated 11x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 11x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing Y[32m [repeated 12x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing inference method[32m [repeated 12x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 12x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:42:28,436 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0983 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:initializing Y[32m [repeated 14x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:initializing inference method[32m [repeated 14x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 14x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing Y[32m [repeated 19x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing inference method[32m [repeated 19x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 19x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:42:38,443 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0983 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing Y[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing inference method[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068670)[0m INFO:GP:initializing Y[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068670)[0m INFO:GP:initializing inference method[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068670)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 13x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:42:48,451 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0983 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:adding kernel and likelihood as parameters
+[33m(raylet)[0m [2025-07-03 16:42:58,458 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0983 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters
+[33m(raylet)[0m [2025-07-03 16:43:08,466 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0982 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:43:18,476 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0981 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:initializing Y[32m [repeated 10x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:initializing inference method[32m [repeated 10x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 10x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:43:28,484 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0949 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing Y[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing inference method[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:initializing Y[32m [repeated 15x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:initializing inference method[32m [repeated 15x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 15x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:43:38,491 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0949 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing Y[32m [repeated 18x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing inference method[32m [repeated 18x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 18x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing Y[32m [repeated 15x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing inference method[32m [repeated 15x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 15x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:43:48,498 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0948 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing Y[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing inference method[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 13x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:43:58,506 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0948 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:adding kernel and likelihood as parameters
+[33m(raylet)[0m [2025-07-03 16:44:08,513 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0946 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters
+[33m(raylet)[0m [2025-07-03 16:44:18,522 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0945 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing Y[32m [repeated 5x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing inference method[32m [repeated 5x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 5x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:44:28,531 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0945 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing Y[32m [repeated 9x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing inference method[32m [repeated 9x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 9x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing Y[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing inference method[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 13x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:44:38,538 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0913 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068662)[0m INFO:GP:initializing Y[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068662)[0m INFO:GP:initializing inference method[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068662)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 13x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:44:48,545 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0913 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:initializing Y[32m [repeated 15x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:initializing inference method[32m [repeated 15x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 15x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing Y[32m [repeated 18x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing inference method[32m [repeated 18x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 18x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:44:58,552 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0913 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:initializing Y[32m [repeated 14x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:initializing inference method[32m [repeated 14x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 14x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:45:08,561 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0911 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing Y[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing inference method[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 3x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:45:18,568 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0911 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters
+[33m(raylet)[0m [2025-07-03 16:45:28,578 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0832 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing Y[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing inference method[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 5x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 5x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 5x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:45:38,587 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.08 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing Y[32m [repeated 9x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing inference method[32m [repeated 9x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 9x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing Y[32m [repeated 14x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing inference method[32m [repeated 14x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 14x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:45:48,595 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.08 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:initializing Y[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:initializing inference method[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 13x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:45:58,602 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.08 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068660)[0m INFO:GP:initializing Y[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068660)[0m INFO:GP:initializing inference method[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068660)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:initializing Y[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:initializing inference method[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 13x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:46:08,609 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0797 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing Y[32m [repeated 11x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing inference method[32m [repeated 11x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 11x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:46:18,617 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0797 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:initializing Y[32m [repeated 11x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:initializing inference method[32m [repeated 11x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 11x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:46:28,623 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0797 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:46:38,634 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0797 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:46:48,643 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0765 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing Y[32m [repeated 8x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing inference method[32m [repeated 8x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 8x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 14x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 14x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 14x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:46:58,651 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0765 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing Y[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing inference method[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 13x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:47:08,658 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0763 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing Y[32m [repeated 12x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing inference method[32m [repeated 12x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 12x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068660)[0m INFO:GP:initializing Y[32m [repeated 15x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068660)[0m INFO:GP:initializing inference method[32m [repeated 15x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068660)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 15x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:47:18,665 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0763 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing Y[32m [repeated 12x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing inference method[32m [repeated 12x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 12x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing Y[32m [repeated 8x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing inference method[32m [repeated 8x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 8x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:47:28,673 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0763 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:adding kernel and likelihood as parameters
+[33m(raylet)[0m [2025-07-03 16:47:38,680 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0763 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters
+[33m(raylet)[0m [2025-07-03 16:47:48,690 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0762 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing Y[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing inference method[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 3x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:47:58,700 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0762 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:48:08,708 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0728 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing Y[32m [repeated 18x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:initializing inference method[32m [repeated 18x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068668)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 18x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing Y[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing inference method[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 13x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:48:18,716 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0727 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:initializing Y[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:initializing inference method[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068662)[0m INFO:GP:initializing Y[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068662)[0m INFO:GP:initializing inference method[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068662)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 13x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:48:28,723 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0727 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing Y[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing inference method[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 13x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:48:38,731 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0727 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:initializing Y[32m [repeated 10x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:initializing inference method[32m [repeated 10x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068661)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 10x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:48:48,739 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0727 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068657)[0m INFO:GP:adding kernel and likelihood as parameters
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters
+[33m(raylet)[0m [2025-07-03 16:48:58,748 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0727 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:49:08,758 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0725 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing Y[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing inference method[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 3x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:49:18,766 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0693 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing Y[32m [repeated 19x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing inference method[32m [repeated 19x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 19x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:49:28,773 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0693 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing Y[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:initializing inference method[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068672)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 13x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing Y[32m [repeated 12x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:initializing inference method[32m [repeated 12x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068673)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 12x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:49:38,780 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0693 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing Y[32m [repeated 12x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:initializing inference method[32m [repeated 12x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068659)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 12x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068669)[0m INFO:GP:initializing Y[32m [repeated 12x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068669)[0m INFO:GP:initializing inference method[32m [repeated 12x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068669)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 12x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:49:48,787 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0693 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing Y[32m [repeated 12x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:initializing inference method[32m [repeated 12x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068656)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 12x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:49:58,796 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.0692 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:initializing Y[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:initializing inference method[32m [repeated 3x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068658)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 3x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:50:08,804 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.069 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068670)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068670)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068670)[0m INFO:GP:adding kernel and likelihood as parameters
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters
+[33m(raylet)[0m [2025-07-03 16:50:18,812 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.069 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[33m(raylet)[0m [2025-07-03 16:50:28,822 E 2068574 2068603] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-07-03_16-30-06_909462_2068384 is over 95% full, available space: 70.069 GB; capacity: 1758.32 GB. Object creation will fail if spilling is required.
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing Y[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:initializing inference method[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068671)[0m INFO:GP:adding kernel and likelihood as parameters[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing Y
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:initializing inference method
+[36m(MultiAgentEnvRunner pid=2068663)[0m INFO:GP:adding kernel and likelihood as parameters

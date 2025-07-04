@@ -59,7 +59,7 @@ def scenic_env(scenic_file):
                        observation_space = obs_space_dict, 
                        action_space = action_space_dict, 
                        agents=agents,
-                       feedback_fn = cum_reward)
+                       feedback_fn = max_cum_reward)
     # print("ENV CREATED!!!!!")
     return env
 
