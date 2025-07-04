@@ -10,13 +10,14 @@ import scenic
 from scenic.simulators.metadrive import MetaDriveSimulator
 import datetime
 import argparse
-
+import pickle
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument("-f", "--file", type=str)
-parser.add_argument("-r", "--resume", action="store_true")
-parser.add_argument("-m", "--model", type=str)
+parser.add_argument("-f", "--file", type=str) # the scenic file used for training
+parser.add_argument("-r", "--resume", action="store_true") # resuming training from an existing model?
+parser.add_argument("-m", "--model", type=str) # from which model to resume training
+parser.add_argument("-n", "--name", type=str) # what to name the model dir
 
 def max_cum_reward(result):
     agent0_return = result.records["agent0_return"]
@@ -67,7 +68,7 @@ def scenic_env(scenic_file):
 # register_env("scenic", lambda cfg: ParallelPettingZooEnv(scenic_env()))
 
 if __name__ == "__main__":
-
+    model_name = "train"
     args = parser.parse_args()
 
     assert args.file is not None, "You did not specify a Scenic program for training"
@@ -78,6 +79,11 @@ if __name__ == "__main__":
 
     now = datetime.datetime.now()    
     now = now.strftime("%m_%d_%H_%M")
+
+    if args.name is not None:
+        model_name = args.name
+
+    model_name = f"{model_name}_{now}"
 
     config = (PPOConfig()
               # .get_default_config()
@@ -115,13 +121,16 @@ if __name__ == "__main__":
     # ppo.save_to_path("ray_models/")
     # current_dir = os.getcwd()
     # checkpoint_dir = ppo.save_to_path(current_dir + f"/ray_models/test_checkpoints_{now}")
-    for i in range(20):
-        pprint(f"Checkpoint info: \n {ppo.train()} \n")
-        checkpoint_dir = ppo.save_to_path(current_dir + f"/ray_models/test_checkpoints_{now}/checkpoint_{i}")
-        pprint(f"CHECKPOINT SAVED TO PATH: {checkpoint_dir}\n\n")
-    # ppo.save_to_path()
-    
+    pickle_dir = current_dir + f"/ray_models/{model_name}/pickles/"
 
-    # for _ in range(4):
-        # pass
-        # # pprint(ppo.train())
+    for i in range(20):
+        progress_dict = ppo.train()
+        # pprint(f"Checkpoint info: \n {progress_dict} \n")
+        checkpoint_dir = ppo.save_to_path(current_dir + f"/ray_models/{model_name}/checkpoint_{i}")
+        pickle_filename = pickle_dir + f"checkpoint_{i}.pkl"
+
+        with open(pickle_filename, 'wb') as pickle_file:
+            pickle.dump(progress_dict, pickle_file)
+
+        pprint(f"CHECKPOINT SAVED TO PATH: {checkpoint_dir}\n\n")
+
