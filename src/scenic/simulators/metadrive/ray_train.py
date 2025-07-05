@@ -19,6 +19,7 @@ parser.add_argument("-f", "--file", type=str) # the scenic file used for trainin
 parser.add_argument("-r", "--resume", action="store_true") # resuming training from an existing model?
 parser.add_argument("-m", "--model", type=str) # from which model to resume training
 parser.add_argument("-n", "--name", type=str) # what to name the model dir
+parser.add_argument("-e", "--epochs", type=int) # first set of experiments are 20 epochs
 
 def max_cum_reward(result):
     agent0_return = result.records["agent0_return"]
@@ -71,6 +72,7 @@ def scenic_env(scenic_file):
 if __name__ == "__main__":
     model_name = "train"
     args = parser.parse_args()
+    assert args.epochs is not None, "You need to specify how many epochs you want to run training"
 
     assert args.file is not None, "You did not specify a Scenic program for training"
     if args.resume:
@@ -126,7 +128,7 @@ if __name__ == "__main__":
     dill_dir = current_dir + f"/ray_models/{model_name}/dill/"
     os.makedirs(dill_dir, exist_ok=True)
 
-    for i in range(20):
+    for i in range(args.epochs):
         progress_dict = ppo.train()
         # print(type(progress_dict))
         # pprint(f"Checkpoint info: \n {progress_dict} \n")
