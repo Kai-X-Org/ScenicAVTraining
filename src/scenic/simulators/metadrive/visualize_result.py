@@ -11,13 +11,13 @@ def load_dill(file_name):
     return res 
 
 
-def process_results(model_name, env_timesteps, agent_returns, num_steps_start=0):
+def process_results(model_name, env_timesteps, agent_returns, num_epochs, num_steps_start=0):
     dill_dir = f"ray_models/{model_name}/dill"
     checkpoint_name = lambda i: f"{dill_dir}/checkpoint_{i}.pkl"
 
     num_steps = num_steps_start
 
-    for i in range(20):
+    for i in range(num_epochs):
         file_name = checkpoint_name(i)
         res = load_dill(file_name)
 
@@ -38,11 +38,12 @@ parser.add_argument("-m", "--model", type=str) # the model whose dill files you 
 parser.add_argument("-s", "--save", action="store_true")
 parser.add_argument("-r", "--resumed", action="store_true") # if a model should be graphed resumed from a pre-trained model
 parser.add_argument("-pm", "--pretrained_model", type=str)
+parser.add_arguments("-e", "--epochs", type=int) # how many epochs we trained this policy (thus how many checkpoints)
 
 args = parser.parse_args()
 
 assert args.model is not None, "You did not specify a model"
-
+assert args.epochs is not None, "You need to specify how many epochs (num checkpoints) you trained the agent"
 if args.resumed:
     assert args.pretrained_model is not None, "You did not specify a starting model to graph"
 
@@ -58,9 +59,9 @@ env_timesteps = list()
 pretrain_num_steps = 0
 
 if args.resumed:
-    pretrain_num_steps = process_results(args.pretrained_model, env_timesteps, agent_returns)
+    pretrain_num_steps = process_results(args.pretrained_model, env_timesteps, 20, agent_returns)
 
-num_steps = process_results(args.model, env_timesteps, agent_returns, num_steps_start=pretrain_num_steps)
+num_steps = process_results(args.model, env_timesteps, agent_returns, args.epochs, num_steps_start=pretrain_num_steps)
 
 
 assert len(env_timesteps) == len(agent_returns['agent0']), "mismatch between timesteps list length and returns list length"
