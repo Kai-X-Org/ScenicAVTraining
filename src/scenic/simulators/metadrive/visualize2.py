@@ -55,7 +55,10 @@ agent_returns = dict(agent0=list(),
 env_timesteps = list()
 
 # Can actually generalize this for a list of checkpoints...but let's do that for a later date
-pretrain_num_steps = process_results(args.pretrained_model, env_timesteps, agent_returns)
+pretrain_num_steps = 0
+
+if args.resumed:
+    pretrain_num_steps = process_results(args.pretrained_model, env_timesteps, agent_returns)
 
 num_steps = process_results(args.model, env_timesteps, agent_returns, num_steps_start=pretrain_num_steps)
 
