@@ -38,7 +38,7 @@ parser.add_argument("-m", "--model", type=str) # the model whose dill files you 
 parser.add_argument("-s", "--save", action="store_true")
 parser.add_argument("-r", "--resumed", action="store_true") # if a model should be graphed resumed from a pre-trained model
 parser.add_argument("-pm", "--pretrained_model", type=str)
-parser.add_arguments("-e", "--epochs", type=int) # how many epochs we trained this policy (thus how many checkpoints)
+parser.add_argument("-e", "--epochs", type=int) # how many epochs we trained this policy (thus how many checkpoints)
 
 args = parser.parse_args()
 
@@ -59,7 +59,7 @@ env_timesteps = list()
 pretrain_num_steps = 0
 
 if args.resumed:
-    pretrain_num_steps = process_results(args.pretrained_model, env_timesteps, 20, agent_returns)
+    pretrain_num_steps = process_results(args.pretrained_model, env_timesteps, agent_returns, 20)
 
 num_steps = process_results(args.model, env_timesteps, agent_returns, args.epochs, num_steps_start=pretrain_num_steps)
 
