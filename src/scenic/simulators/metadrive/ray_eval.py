@@ -5,6 +5,15 @@ from ray.rllib.core.rl_module import RLModule
 import dill
 from pathlib import Path
 import argparse
+import gymnasium as gym
+import scenic
+from scenic.zoo import ScenicZooEnv
+import dill
+
+from scenic.simulators.metadrive import MetaDriveSimulator
+# from ray.rllib.env.wrappers.pettingzoo_env import ParallelPettingZooEnv
+# from ray.tune.registry import register_env
+from pprint import pprint
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-m", "--model", type=str) # which model?
@@ -62,6 +71,9 @@ if __name__ == '__main__':
     assert args.checkpoint is not None, "You did not specify which checkpoint to use"
     assert args.scenic_file is not None, "You did not specify a scenic_file to evaluate"
 
+    agent0 = 'agent0'
+    agent1 = 'agent1'
+
     current_dir = os.getcwd()
 
     model_dir = f"{current_dir}/ray_models/{args.model}/checkpoint_{args.checkpoint}"
@@ -75,45 +87,72 @@ if __name__ == '__main__':
     )
 
     env = scenic_env(args.scenic_file)
-    episode_return = 0.0
-    done = False
+    all_returns_dict = dict(agent0=list(), agent1=list())
+    # TODO SET SEEDS!!!
+    for _ in range(30):
+        obs, info = env.reset()
+        episode_return = dict(agent0=0.0, agent1=0.0)
+        done = False
+        while not done:
 
-    obs, info = env.reset()
-    # FIXME need to run more than one episode
-    while not done:
+            # Compute the next action from a batch (B=1) of observations.
+            obs0 = obs[agent0]
+            obs1 = obs[agent1]
+            obs_batch0 = torch.from_numpy(obs0).unsqueeze(0)  # add batch B=1 dimension
+            obs_batch1 = torch.from_numpy(obs1).unsqueeze(0)  # add batch B=1 dimension
+            # TODO check if this works for multi-agent
+            model_outputs0 = rl_module.forward_inference({"obs": obs_batch0})
+            model_outputs1 = rl_module.forward_inference({"obs": obs_batch1})
 
-        # Compute the next action from a batch (B=1) of observations.
-        obs0 = obs['agent0']
-        obs1 = obs['agent1']
-        obs_batch0 = torch.from_numpy(obs0).unsqueeze(0)  # add batch B=1 dimension
-        obs_batch1 = torch.from_numpy(obs1).unsqueeze(0)  # add batch B=1 dimension
-        # TODO check if this works for multi-agent
-        model_outputs0 = rl_module.forward_inference({"obs": obs_batch0})
-        model_outputs1 = rl_module.forward_inference({"obs": obs_batch1})
+            # Extract the action distribution parameters from the output and dissolve batch dim.
+            action_dist_params0 = model_outputs0["action_dist_inputs"][0].numpy()
+            action_dist_params1 = model_outputs1["action_dist_inputs"][0].numpy()
 
-        # Extract the action distribution parameters from the output and dissolve batch dim.
-        action_dist_params0 = model_outputs0["action_dist_inputs"][0].numpy()
-        action_dist_params1 = model_outputs1["action_dist_inputs"][0].numpy()
+            # We have continuous actions -> take the mean (max likelihood).
+            greedy_action0 = [np.clip(
+                action_dist_params0[i],  # 0=mean, 1=log(stddev), [0:1]=use mean, but keep shape=(1,)
+                a_min=env.action_space(agent0).low[0],
+                a_max=env.action_space(agent0).high[0],
+            ) for i in [0, 1]]
+            greedy_action1 = [np.clip(
+                action_dist_params1[i],  # 0=mean, 1=log(stddev), [0:1]=use mean, but keep shape=(1,)
+                a_min=env.action_space(agent1).low[0],
+                a_max=env.action_space(agent1).high[0],
+            ) for i in [0, 1]]
 
-        # We have continuous actions -> take the mean (max likelihood).
-        greedy_action0 = np.clip(
-            action_dist_params0[0:1],  # 0=mean, 1=log(stddev), [0:1]=use mean, but keep shape=(1,)
-            a_min=env.action_space.low[0],
-            a_max=env.action_space.high[0],
-        )
-        greedy_action1 = np.clip(
-            action_dist_params1[0:1],  # 0=mean, 1=log(stddev), [0:1]=use mean, but keep shape=(1,)
-            a_min=env.action_space.low[0],
-            a_max=env.action_space.high[0],
-        )
-        breakpoint()
-        # For discrete actions, you should take the argmax over the logits:
-        # greedy_action = np.argmax(action_dist_params)
+            # For discrete actions, you should take the argmax over the logits:
+            # greedy_action = np.argmax(action_dist_params)
 
-        # Send the action to the environment for the next step.
-        obs, reward, terminated, truncated, info = env.step(greedy_action)
+            # Send the action to the environment for the next step.
+            action_dict = dict(agent0 = greedy_action0, agent1 = greedy_action1)
+            obs, reward, terminated, truncated, info = env.step(action_dict)
 
-        # Perform env-loop bookkeeping.
-        episode_return += reward
-        done = terminated or truncated
-        # TODO record stddev and mean across episodes run
+            # Perform env-loop bookkeeping.
+            episode_return[agent0] += reward[agent0]
+            episode_return[agent1] += reward[agent1]
+            done = any(terminated.values()) or any(truncated.values())
+
+        all_returns_dict[agent0].append(episode_return[agent0])
+        all_returns_dict[agent1].append(episode_return[agent1])
+
+    mean_return = dict()
+
+    mean_return[agent0] = np.mean(all_returns_dict[agent0])
+    mean_return[agent1] = np.mean(all_returns_dict[agent1])
+
+    std_return = dict()
+    std_return[agent0] = np.std(all_returns_dict[agent0])
+    std_return[agent1] = np.std(all_returns_dict[agent1])
+
+    print(f"MEAN RETURNS: {mean_return}")
+    print(f"Std RETURNS: {std_return}")
+
+    result_dict = dict(mean=mean_return, std=std_return)
+    
+    dill_dir = f"{current_dir}/ray_models/eval_results/{args.scenic_file}"
+    os.makedirs(dill_dir, exist_ok = True)
+
+    dill_file = f"{dill_dir}/{args.model}.pkl"
+    with open(dill_file, mode='wb') as f:
+        dill.dump(result_dict, f)
+
