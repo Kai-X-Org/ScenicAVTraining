@@ -108,7 +108,7 @@ class ScenicZooEnv(ParallelEnv):
     def reset(self, seed=None, options=None): # TODO will setting seed here conflict with VerifAI's setting of seed?
         # only setting enviornment seed, not torch seed?
         # super().reset(seed=seed)
-        if seed:
+        if seed is not None:
             np.random.seed(seed)
             random.seed(seed)
 
