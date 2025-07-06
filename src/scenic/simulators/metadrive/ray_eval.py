@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import torch
 from ray.rllib.core.rl_module import RLModule
@@ -6,8 +7,9 @@ from pathlib import Path
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-m", "--model", type=str)
-parser.add_argument("-sf", "--scenic_file", type=str)
+parser.add_argument("-m", "--model", type=str) # which model?
+parser.add_argument("-c", "--checkpoint", type=int) # which checkpoint?
+parser.add_argument("-sf", "--scenic_file", type=str) # which scenic program?
 
 def max_cum_reward(result):
     agent0_return = result.records["agent0_return"]
@@ -57,14 +59,19 @@ def scenic_env(scenic_file):
 if __name__ == '__main__':
     args = parser.parse_args()
     assert args.model is not None, "You did not specify a model to evaluate"
+    assert args.checkpoint is not None, "You did not specify which checkpoint to use"
     assert args.scenic_file is not None, "You did not specify a scenic_file to evaluate"
 
+    current_dir = os.getcwd()
+
+    model_dir = f"{current_dir}/ray_models/{args.model}/checkpoint_{args.checkpoint}"
+
     rl_module = RLModule.from_checkpoint(
-        Path(best_checkpoint.path)
+        Path(model_dir)
         / "learner_group"
         / "learner"
         / "rl_module"
-        / "default_policy"
+        / "p0"
     )
 
     env = scenic_env(args.scenic_file)
@@ -76,19 +83,30 @@ if __name__ == '__main__':
     while not done:
 
         # Compute the next action from a batch (B=1) of observations.
-        obs_batch = torch.from_numpy(obs).unsqueeze(0)  # add batch B=1 dimension
+        obs0 = obs['agent0']
+        obs1 = obs['agent1']
+        obs_batch0 = torch.from_numpy(obs0).unsqueeze(0)  # add batch B=1 dimension
+        obs_batch1 = torch.from_numpy(obs1).unsqueeze(0)  # add batch B=1 dimension
         # TODO check if this works for multi-agent
-        model_outputs = rl_module.forward_inference({"obs": obs_batch})
+        model_outputs0 = rl_module.forward_inference({"obs": obs_batch0})
+        model_outputs1 = rl_module.forward_inference({"obs": obs_batch1})
 
         # Extract the action distribution parameters from the output and dissolve batch dim.
-        action_dist_params = model_outputs["action_dist_inputs"][0].numpy()
+        action_dist_params0 = model_outputs0["action_dist_inputs"][0].numpy()
+        action_dist_params1 = model_outputs1["action_dist_inputs"][0].numpy()
 
         # We have continuous actions -> take the mean (max likelihood).
-        greedy_action = np.clip(
-            action_dist_params[0:1],  # 0=mean, 1=log(stddev), [0:1]=use mean, but keep shape=(1,)
+        greedy_action0 = np.clip(
+            action_dist_params0[0:1],  # 0=mean, 1=log(stddev), [0:1]=use mean, but keep shape=(1,)
             a_min=env.action_space.low[0],
             a_max=env.action_space.high[0],
         )
+        greedy_action1 = np.clip(
+            action_dist_params1[0:1],  # 0=mean, 1=log(stddev), [0:1]=use mean, but keep shape=(1,)
+            a_min=env.action_space.low[0],
+            a_max=env.action_space.high[0],
+        )
+        breakpoint()
         # For discrete actions, you should take the argmax over the logits:
         # greedy_action = np.argmax(action_dist_params)
 
