@@ -1,0 +1,1773 @@
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__main__:Starting PPO training...
+INFO:__main__:Environment: exp, Workers: 16, Total Timesteps: 150000
+INFO:__main__:Hyperparameters: gamma=0.9, lambda=0.9, clip_eps=0.2, lr=0.0003
+INFO:__main__:Batch Size (Workers * Steps): 4096
+INFO:__main__:Total PPO Updates: 36
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__main__:Update: 1/36, Timesteps: 4096/150000, FPS: 64, Episodes: 160, Avg Reward (Last 100): 14.80, Avg Length (Last 100): 48.60
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__main__:Update: 2/36, Timesteps: 8192/150000, FPS: 66, Episodes: 320, Avg Reward (Last 100): 14.34, Avg Length (Last 100): 47.62
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__main__:Update: 3/36, Timesteps: 12288/150000, FPS: 66, Episodes: 480, Avg Reward (Last 100): 15.58, Avg Length (Last 100): 47.46
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__main__:Update: 4/36, Timesteps: 16384/150000, FPS: 66, Episodes: 640, Avg Reward (Last 100): 15.15, Avg Length (Last 100): 48.32
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__main__:Update: 5/36, Timesteps: 20480/150000, FPS: 64, Episodes: 802, Avg Reward (Last 100): 15.37, Avg Length (Last 100): 47.78
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__main__:Update: 6/36, Timesteps: 24576/150000, FPS: 66, Episodes: 962, Avg Reward (Last 100): 15.86, Avg Length (Last 100): 48.30
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__main__:Update: 7/36, Timesteps: 28672/150000, FPS: 65, Episodes: 1122, Avg Reward (Last 100): 15.38, Avg Length (Last 100): 47.84
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__main__:Update: 8/36, Timesteps: 32768/150000, FPS: 66, Episodes: 1282, Avg Reward (Last 100): 16.65, Avg Length (Last 100): 49.00
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__main__:Update: 9/36, Timesteps: 36864/150000, FPS: 65, Episodes: 1442, Avg Reward (Last 100): 15.93, Avg Length (Last 100): 48.72
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__main__:Update: 10/36, Timesteps: 40960/150000, FPS: 66, Episodes: 1602, Avg Reward (Last 100): 16.69, Avg Length (Last 100): 48.76
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__main__:Update: 11/36, Timesteps: 45056/150000, FPS: 65, Episodes: 1762, Avg Reward (Last 100): 15.84, Avg Length (Last 100): 48.42
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__main__:Update: 12/36, Timesteps: 49152/150000, FPS: 65, Episodes: 1922, Avg Reward (Last 100): 16.66, Avg Length (Last 100): 48.58
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__main__:Update: 13/36, Timesteps: 53248/150000, FPS: 65, Episodes: 2082, Avg Reward (Last 100): 16.43, Avg Length (Last 100): 48.82
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__main__:Update: 14/36, Timesteps: 57344/150000, FPS: 65, Episodes: 2242, Avg Reward (Last 100): 15.73, Avg Length (Last 100): 48.86
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__main__:Update: 15/36, Timesteps: 61440/150000, FPS: 65, Episodes: 2402, Avg Reward (Last 100): 15.76, Avg Length (Last 100): 48.42
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__main__:Update: 16/36, Timesteps: 65536/150000, FPS: 66, Episodes: 2562, Avg Reward (Last 100): 16.33, Avg Length (Last 100): 48.66
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__main__:Update: 17/36, Timesteps: 69632/150000, FPS: 65, Episodes: 2722, Avg Reward (Last 100): 16.29, Avg Length (Last 100): 48.58
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__main__:Update: 18/36, Timesteps: 73728/150000, FPS: 65, Episodes: 2882, Avg Reward (Last 100): 16.93, Avg Length (Last 100): 48.82
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__main__:Update: 19/36, Timesteps: 77824/150000, FPS: 66, Episodes: 3042, Avg Reward (Last 100): 16.08, Avg Length (Last 100): 48.62
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__main__:Update: 20/36, Timesteps: 81920/150000, FPS: 65, Episodes: 3202, Avg Reward (Last 100): 14.85, Avg Length (Last 100): 48.26
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__main__:Update: 21/36, Timesteps: 86016/150000, FPS: 65, Episodes: 3362, Avg Reward (Last 100): 15.90, Avg Length (Last 100): 47.86
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__main__:Update: 22/36, Timesteps: 90112/150000, FPS: 66, Episodes: 3522, Avg Reward (Last 100): 15.21, Avg Length (Last 100): 48.02
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__main__:Update: 23/36, Timesteps: 94208/150000, FPS: 66, Episodes: 3682, Avg Reward (Last 100): 15.60, Avg Length (Last 100): 48.44
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__main__:Update: 24/36, Timesteps: 98304/150000, FPS: 65, Episodes: 3842, Avg Reward (Last 100): 16.01, Avg Length (Last 100): 48.40
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__main__:Update: 25/36, Timesteps: 102400/150000, FPS: 66, Episodes: 4002, Avg Reward (Last 100): 16.21, Avg Length (Last 100): 48.74
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__main__:Update: 26/36, Timesteps: 106496/150000, FPS: 66, Episodes: 4162, Avg Reward (Last 100): 17.24, Avg Length (Last 100): 49.00
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__main__:Update: 27/36, Timesteps: 110592/150000, FPS: 66, Episodes: 4322, Avg Reward (Last 100): 18.00, Avg Length (Last 100): 49.00
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__main__:Update: 28/36, Timesteps: 114688/150000, FPS: 65, Episodes: 4482, Avg Reward (Last 100): 20.29, Avg Length (Last 100): 48.38
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__main__:Update: 29/36, Timesteps: 118784/150000, FPS: 65, Episodes: 4642, Avg Reward (Last 100): 18.63, Avg Length (Last 100): 48.76
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__main__:Update: 30/36, Timesteps: 122880/150000, FPS: 66, Episodes: 4802, Avg Reward (Last 100): 17.78, Avg Length (Last 100): 48.58
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__main__:Update: 31/36, Timesteps: 126976/150000, FPS: 66, Episodes: 4962, Avg Reward (Last 100): 17.86, Avg Length (Last 100): 48.46
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__main__:Update: 32/36, Timesteps: 131072/150000, FPS: 65, Episodes: 5122, Avg Reward (Last 100): 18.41, Avg Length (Last 100): 48.22
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__main__:Update: 33/36, Timesteps: 135168/150000, FPS: 65, Episodes: 5286, Avg Reward (Last 100): 16.94, Avg Length (Last 100): 46.02
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__main__:Update: 34/36, Timesteps: 139264/150000, FPS: 65, Episodes: 5446, Avg Reward (Last 100): 15.84, Avg Length (Last 100): 47.80
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__main__:Update: 35/36, Timesteps: 143360/150000, FPS: 65, Episodes: 5606, Avg Reward (Last 100): 16.56, Avg Length (Last 100): 48.52
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/home/kxu/miniforge3/envs/sgym-hab/lib/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:__mp_main__:Worker 0: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 12: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 13: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 2: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 5: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 7: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 4: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 6: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 10: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 3: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 8: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 11: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 1: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 9: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 15: Finished collecting 256 steps.
+INFO:__mp_main__:Worker 14: Finished collecting 256 steps.
+INFO:__main__:Update: 36/36, Timesteps: 147456/150000, FPS: 65, Episodes: 5766, Avg Reward (Last 100): 17.32, Avg Length (Last 100): 48.84
+INFO:__main__:Training finished in 2239.23 seconds.
+INFO:__main__:Model saved to ppo_exp_model.pth
