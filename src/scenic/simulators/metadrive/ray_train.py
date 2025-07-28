@@ -10,7 +10,6 @@ import scenic
 from scenic.simulators.metadrive import MetaDriveSimulator
 import datetime
 import argparse
-# import pickle
 import dill
 
 parser = argparse.ArgumentParser()
@@ -27,15 +26,6 @@ def max_cum_reward(result):
 
     return max(agent0_return, agent1_return)
 
-def cum_reward(result):
-    """
-    For the mab sampler
-    """
-    agent0_return = result.records["agent0_return"]
-    agent1_return = result.records["agent1_return"]
-
-    return [agent0_return, agent1_return] 
-
 def scenic_env(scenic_file):
     agents = ['agent0', 'agent1']
 
@@ -43,18 +33,14 @@ def scenic_env(scenic_file):
     sumo_map = root_user + "/ScenicGymClean/assets/maps/CARLA/Town04.net.xml"
     obs_space_dict = {"agent0" :  gym.spaces.Box(-0.0, 1.0 , (252,), dtype=np.float32),
                      "agent1": gym.spaces.Box(-0.0, 1.0 , (252,), dtype=np.float32)}
-    # print(f"local decpared obs shape: {obs_space_dict['agent0'].shape}")
+    
     action_space_dict = {'agent0': gym.spaces.Box(-1.0, 1.0, (2,), np.float32),
                          'agent1': gym.spaces.Box(-1.0, 1.0, (2,), np.float32)}
-
-    # scenic_file = "exp_uniform.scenic"
-    # print("Making Scenario")
 
     scenario = scenic.scenarioFromFile(scenic_file,
                                    model="scenic.simulators.metadrive.model",
                                mode2D=True)
 
-    # print("Made Scenario")
     env = ScenicZooEnv(scenario, 
                        MetaDriveSimulator(sumo_map=sumo_map, render=False, real_time=False),
                        None, 
@@ -63,11 +49,7 @@ def scenic_env(scenic_file):
                        action_space = action_space_dict, 
                        agents=agents,
                        feedback_fn = max_cum_reward)
-    # print("ENV CREATED!!!!!")
     return env
-
-
-# register_env("scenic", lambda cfg: ParallelPettingZooEnv(scenic_env()))
 
 if __name__ == "__main__":
     model_name = "train"
@@ -95,23 +77,13 @@ if __name__ == "__main__":
                   policies = {"p0"},
                   policy_mapping_fn = (lambda aid, *args, **kwargs: "p0"),
               )
-              # .training(lr=0.0002,
-                # train_batch_size_per_learner=256,
-                # num_epochs=10,)
-              # .rl_module()
               .env_runners(num_env_runners=12)
 
             )
 
     config.evaluation(
-        # Run one evaluation round every iteration.
         evaluation_interval=1,
-
-        # Create 2 eval EnvRunners in the extra EnvRunnerGroup.
         evaluation_num_env_runners=2,
-
-        # Run evaluation for exactly 10 episodes. Note that because you have
-        # 2 EnvRunners, each one runs through 5 episodes.
         evaluation_duration_unit="episodes",
         evaluation_duration=10,
     )
@@ -120,11 +92,7 @@ if __name__ == "__main__":
     ppo = config.build_algo()
     if args.resume:
         ppo.restore_from_path(current_dir + "/" + args.model)
-    # print("FINISHED ALGO BUILD!")
-    # ppo.save_to_path("ray_models/")
-    # current_dir = os.getcwd()
-    # checkpoint_dir = ppo.save_to_path(current_dir + f"/ray_models/test_checkpoints_{now}")
-    # pickle_dir = current_dir + f"/ray_models/{model_name}/pickles/"
+
     dill_dir = current_dir + f"/ray_models/{model_name}/dill/"
     os.makedirs(dill_dir, exist_ok=True)
 

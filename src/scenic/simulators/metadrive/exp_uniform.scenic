@@ -1,6 +1,3 @@
-# Should there be a reward for total distance travelled foward? To give a denser signal?
-# but that's taken care of by the longitudinal reward
-
 import os
 import random
 from math import pi
@@ -12,101 +9,87 @@ param time_step = 1.0/10
 param camera_position = (311, 255, 0)
 model scenic.domains.driving.model
 
+
 success_reward = 10.0
 driving_reward = 1.0
 crash_penalty = -5.0
 out_of_road_penalty = -5.0
 speed_reward = 0.1
 
-car1_dir = 180
-car2_dir = -90
+ego_dir = 180
+car_dir = -90
 ego_x = 312
-car2_y = 247
+car_y = 247
 
 param ego_y = Range(255, 265)
-param car2_x = Range(290, 306)
-# param ego_y = Range(255, 265)
-# param car2_x = Range(290, 306)
+param car_x = Range(290, 306)
 
-# ego car is in the lane with the slight curve
-# moves in -y direction, or in +y???
-# (311, 255, 0) good test position
-ego = new Car on (ego_x, globalParameters.ego_y, 0), facing car1_dir deg,
+ego = new Car on (ego_x, globalParameters.ego_y, 0), facing ego_dir deg,
                                 with name "agent0",
                                 with goal (311, 235, 0),
-                                # with behavior FollowLaneBehavior(),
 
-# moves in +x
-# (300, 246, 0) good testing position 
-car2 = new Car on (globalParameters.car2_x, car2_y, 0), facing car2_dir deg, 
+car = new Car on (globalParameters.car_x, car_y, 0), facing car_dir deg, 
                                 with name "agent1",
                                 with goal (320, 246, 0),
-                                # with behavior FollowLaneBehavior(),
 
-monitor Reward(car1, car2):
-    # TODO, will there be race conditions when adding to the reward?
-    # TODO the timing of the variable setting in the grand scheme of things needs to be ascertained
-
+monitor Reward():
     done = False
-    car1_success = False
-    car2_success = False
+    ego_success = False
+    car_success = False
 
-    last_long_1 = car1.position[1]
-    last_long_2 = car2.position[0]
+    last_long_1 = ego.position[1]
+    last_long_2 = car.position[0]
 
-    drive_dir_1 = car1_dir * pi/180
-    drive_dir_2 = car2_dir * pi/180
+    drive_dir_1 = ego_dir * pi/180
+    drive_dir_2 = car_dir * pi/180
 
     while True:
 
-        car1.zero_reward()
-        car2.zero_reward()
+        ego.zero_reward()
+        car.zero_reward()
         
-        current_long_1 = car1.position[1] 
-        current_long_2 = car2.position[0] 
+        current_long_1 = ego.position[1] 
+        current_long_2 = car.position[0] 
 
-        car1.add_reward(driving_reward * (-1) * (current_long_1 - last_long_1)) # times -1 since car1 is going in -y direction
-        car2.add_reward(driving_reward * (current_long_2 - last_long_2))
+        ego.add_reward(driving_reward * (-1) * (current_long_1 - last_long_1)) # times -1 since ego is going in -y direction
+        car.add_reward(driving_reward * (current_long_2 - last_long_2))
         
         last_long_1 = current_long_1
         last_long_2 = current_long_2
 
-        car1.add_reward(speed_reward * car1.speed_km_h/car1.max_speed_km_h) 
-        car2.add_reward(speed_reward * car2.speed_km_h/car2.max_speed_km_h)
+        ego.add_reward(speed_reward * ego.speed_km_h/ego.max_speed_km_h) 
+        car.add_reward(speed_reward * car.speed_km_h/car.max_speed_km_h)
         
-        angle_rescale = lambda angle: angle + 2 * pi if angle < 0 else angle # makes sure angles are in [0, 2*pi)
+        angle_rescale = lambda angle: angle + 2 * pi if angle < 0 else angle 
 
-        car1.add_reward(-abs(angle_rescale(car1.yaw) - angle_rescale(drive_dir_1))/pi * 0.1)
-        car2.add_reward(-abs(angle_rescale(car2.yaw) - angle_rescale(drive_dir_2))/pi * 0.1)
+        ego.add_reward(-abs(angle_rescale(ego.yaw) - angle_rescale(drive_dir_1))/pi * 0.1)
+        car.add_reward(-abs(angle_rescale(car.yaw) - angle_rescale(drive_dir_2))/pi * 0.1)
         
-        if (distance from car1 to car1.goal) < 1:
-            car1_success = True
-            car1.add_reward(success_reward)
+        if (distance from ego to ego.goal) < 1:
+            ego_success = True
+            ego.add_reward(success_reward)
 
-        if (distance from car2 to car2.goal) < 1:
-            car2_success = True
-            car2.add_reward(success_reward)
+        if (distance from car to car.goal) < 1:
+            car_success = True
+            car.add_reward(success_reward)
 
-        if car1_success and car2_success:
+        if ego_success and car_success:
             done = True
         
         # can do this since the cars can only crash with each other if they do crash
-        if car1.metaDriveActor.crash_vehicle or car2.metaDriveActor.crash_vehicle:
-            car1.add_reward(crash_penalty)
-            car2.add_reward(crash_penalty)
+        if ego.metaDriveActor.crash_vehicle or car.metaDriveActor.crash_vehicle:
+            ego.add_reward(crash_penalty)
+            car.add_reward(crash_penalty)
             done = True
         
-        car1.episode_return += car1.reward
-        car2.episode_return += car2.reward
+        ego.episode_return += ego.reward
+        car.episode_return += car.reward
 
         if done:
             terminate
         wait
    
 
-require monitor Reward(ego, car2)
+require monitor Reward()
 record final ego.episode_return as agent0_return
 record final ego.episode_return as agent1_return
-
-# record abs(ego.position.x - ego_x) as ego_drift
-# record abs(car2.position.y - car2_y) as car2_drift
