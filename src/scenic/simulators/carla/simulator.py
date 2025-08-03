@@ -102,6 +102,8 @@ class CarlaSimulator(DrivingSimulator):
 
 class CarlaSimulation(DrivingSimulation):
     def __init__(self, scene, client, tm, render, record, scenario_number, **kwargs):
+        # FIXME check for duplicate names in the case where you are doing multi-agent traiing and 
+        # has dicts indexed by objects' name
         self.client = client
         self.world = self.client.get_world()
         self.map = self.world.get_map()
@@ -115,10 +117,17 @@ class CarlaSimulation(DrivingSimulation):
         self.reward = None
         self.info = None
         self.actions = None
+        self.learning_agents = []
 
         super().__init__(scene, **kwargs)
 
     def setup(self):
+        for obj in self.scene.objects:
+            assert not obj.name in self.learning_agents
+            if obj.is_learning_agent:
+                assert not obj.name in self.learning_agents, "learning agents cannot have duplicate names"
+                self.learning_agents.append(obj)
+
         weather = self.scene.params.get("weather")
         if weather is not None:
             if isinstance(weather, str):

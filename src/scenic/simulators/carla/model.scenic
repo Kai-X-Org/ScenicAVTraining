@@ -125,6 +125,10 @@ class CarlaActor(DrivingObject):
         snapToGround (bool): Whether or not to snap this object to the ground when placed in CARLA.
             The default is set by the ``snapToGroundDefault`` global parameter above.
     """
+    name: ""
+    is_learning_agent: False
+    reward: 0.0
+    episode_return: 0.0
     carlaActor: None
     blueprint: None
     rolename: None
@@ -203,8 +207,9 @@ class LidarCar(Car):
         blueprint.set_attribute("dropoff_general_rate", dropoff_general_rate)
         carla_transform = _utils.scenicToCarlaLocation(transform)
         return blueprint
-    
 
+class LidarAgentCar(LidarCar):
+    is_learning_agent: True
 
 class NPCCar(Car):  # no distinction between these in CARLA
     pass
