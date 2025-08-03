@@ -36,7 +36,7 @@ def cum_reward(result):
 
     return [agent0_return, agent1_return] 
 
-def scenic_env(scenic_file):
+def scenic_env(scenic_file, stored_scene_data=None):
     agents = ['agent0', 'agent1']
 
     root_user = os.path.expanduser("~")
@@ -99,6 +99,7 @@ if __name__ == "__main__":
                 # train_batch_size_per_learner=256,
                 # num_epochs=10,)
               # .rl_module()
+              # checkpointing(export_native_model_files=True)
               .env_runners(num_env_runners=12)
 
             )
@@ -137,6 +138,8 @@ if __name__ == "__main__":
 
         with open(dill_filename, mode='wb') as dill_file:
             dill.dump(progress_dict, dill_file)
+
+        # we should get an evaluation thing going on here!
 
         pprint(f"CHECKPOINT SAVED TO PATH: {checkpoint_dir}\n\n")
 

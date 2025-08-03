@@ -32,7 +32,7 @@ def process_results(model_name, env_timesteps, agent_returns, num_epochs, num_st
     return num_steps
 
 
-def graph_model(model, resumed, epochs, save=False, pretrained_model=""):
+def get_train_curve(model : str, resumed : bool, epochs : int, save : bool = False, pretrained_model : str = ""):
     if resumed:
         assert pretrained_model is not "", "You did not specify a starting model to graph"
         
@@ -55,23 +55,36 @@ def graph_model(model, resumed, epochs, save=False, pretrained_model=""):
     assert len(env_timesteps) == len(agent_returns['agent0']), "mismatch between timesteps list length and returns list length"
     assert len(env_timesteps) == len(agent_returns['agent1']), "mismatch between timesteps list length and returns list length"
 
-    plt.figure()
+    return env_timesteps, agent_returns
 
-    if args.resumed:
-        plt.title(f"Training Curve of {model}, Resumed at Step {pretrain_num_steps}")
-    else:
-        plt.title(f"Training Curve of {model}")
+    # plt.figure()
 
-    # plt.title(f"Training Curve of {args.model}")
+    # if args.resumed:
+        # plt.title(f"Training Curve of {model}, Resumed at Step {pretrain_num_steps}")
+    # else:
+        # plt.title(f"Training Curve of {model}")
 
-    plt.plot(env_timesteps, agent_returns['agent0'], label='agen0')
-    plt.xlabel("Num Steps")
-    plt.ylabel("Avg Episode Return")
-    plt.plot(env_timesteps, agent_returns['agent1'], label='agent1')
-    plt.legend()
-    plt.show()
+    # # plt.title(f"Training Curve of {args.model}")
 
-    if args.save:
-        plt.savefig(f"{dill_dir}/{model}.png")
+    # plt.plot(env_timesteps, agent_returns['agent0'], label='agen0')
+    # plt.xlabel("Num Steps")
+    # plt.ylabel("Avg Episode Return")
+    # plt.plot(env_timesteps, agent_returns['agent1'], label='agent1')
+    # plt.legend()
+    # plt.show()
 
+    # if args.save:
+        # plt.savefig(f"{dill_dir}/{model}.png")
 
+# def plot_for_agent(agent : str, env_timesteps, agent_returns):
+    # plt.figure()
+
+    # plt.plot(env_timesteps, agent_returns['agent0'], label='agen0')
+    # plt.xlabel("Num Steps")
+    # plt.ylabel("Avg Episode Return")
+    # plt.plot(env_timesteps, agent_returns['agent1'], label='agent1')
+    # plt.legend()
+    # plt.show()
+
+    # if args.save:
+        # plt.savefig(f"{dill_dir}/{model}.png")

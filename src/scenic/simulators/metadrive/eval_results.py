@@ -8,6 +8,7 @@ args = parser.parse_args()
 
 if __name__ == "__main__":
     filename = args.filename
+    assert filename is not None, "You did not provide a file name"
     with open(filename, "rb") as file:
         loaded_dict = pickle.load(file)
 
