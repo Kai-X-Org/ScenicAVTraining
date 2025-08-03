@@ -111,6 +111,10 @@ class CarlaSimulation(DrivingSimulation):
         self.record = record
         self.scenario_number = scenario_number
         self.cameraManager = None
+        self.obs = None
+        self.reward = None
+        self.info = None
+        self.actions = None
 
         super().__init__(scene, **kwargs)
 
@@ -224,6 +228,16 @@ class CarlaSimulation(DrivingSimulation):
         if carlaActor is None:
             raise SimulationCreationError(f"Unable to spawn object {obj}")
         obj.carlaActor = carlaActor
+
+        for s in obj.sensor_cfgs:
+            sensor_transform = utils.scenicToCarlaLocation(s['transform'], 
+                                                           world=self.world,
+                                                           blueprint=s['blueprint'])
+
+            obj.lidar_actor = self.world.try_spawn_actor(s['blueprint'], 
+                                                         sensor_transform, 
+                                                         attach_to=obj.carlaActor)
+            
 
         carlaActor.set_simulate_physics(obj.physics)
 

@@ -47,6 +47,7 @@ from scenic.domains.driving.model import *
 import scenic.simulators.carla.blueprints as blueprints
 from scenic.simulators.carla.behaviors import *
 from scenic.simulators.utils.colors import Color
+from scenic.core.vectors import Vector
 
 try:
     from scenic.simulators.carla.simulator import CarlaSimulator    # for use in scenarios
@@ -130,6 +131,7 @@ class CarlaActor(DrivingObject):
     color: None
     physics: True
     snapToGround: globalParameters.snapToGroundDefault
+    sensors: []
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -183,6 +185,26 @@ class Car(Vehicle):
     @property
     def isCar(self):
         return True
+
+class LidarCar(Car):
+    sensor_cfgs: [dict(blueprint=self.setup_lidar(), transform=Vector(0, 0, 0))]
+    lidar_actor: None
+    
+    def setup_lidar(self, 
+                    channels=240,
+                    distance=50.0,
+                    noise_stddev=0.0,
+                    dropoff_general_rate=0.0,
+                    ):
+        blueprint = world.get_blueprint_library().find('sensor.lidar.ray_cast')
+        blueprint.set_attribute("channels", channels).
+        blueprint.set_attribute("distance", distance)
+        blueprint.set_attribute("noise_stddev", noise_stddev)
+        blueprint.set_attribute("dropoff_general_rate", dropoff_general_rate)
+        carla_transform = _utils.scenicToCarlaLocation(transform)
+        return blueprint
+    
+
 
 class NPCCar(Car):  # no distinction between these in CARLA
     pass
