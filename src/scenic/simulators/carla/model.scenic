@@ -132,6 +132,7 @@ class CarlaActor(DrivingObject):
     physics: True
     snapToGround: globalParameters.snapToGroundDefault
     sensors: []
+    sensor_actors: dict()
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -187,8 +188,7 @@ class Car(Vehicle):
         return True
 
 class LidarCar(Car):
-    sensor_cfgs: [dict(blueprint=self.setup_lidar(), transform=Vector(0, 0, 0))]
-    lidar_actor: None
+    sensor_cfgs: [dict(blueprint=self.setup_lidar(), transform=Vector(0, 0, 0), name='lidar')]
     
     def setup_lidar(self, 
                     channels=240,

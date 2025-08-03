@@ -111,7 +111,7 @@ class CarlaSimulation(DrivingSimulation):
         self.record = record
         self.scenario_number = scenario_number
         self.cameraManager = None
-        self.obs = None
+        self.obs = dict()
         self.reward = None
         self.info = None
         self.actions = None
@@ -234,7 +234,7 @@ class CarlaSimulation(DrivingSimulation):
                                                            world=self.world,
                                                            blueprint=s['blueprint'])
 
-            obj.lidar_actor = self.world.try_spawn_actor(s['blueprint'], 
+            obj.sensor_actors[s["name"]] = self.world.try_spawn_actor(s['blueprint'], 
                                                          sensor_transform, 
                                                          attach_to=obj.carlaActor)
             
@@ -313,7 +313,17 @@ class CarlaSimulation(DrivingSimulation):
             roll=roll,
             elevation=elevation,
         )
+        for k in obj.sensor_actors.keys():
+            k.listen(lambda data: self.get_sensor_data(obj, data))
+
+
         return values
+
+    def get_sensor_data(self, obj, data):
+        self.obs[obj.name] = data
+
+    def get_obs(self):
+        return self.obs
 
     def destroy(self):
         for obj in self.objects:
