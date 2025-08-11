@@ -21,7 +21,8 @@ class ScenicZooEnv(ParallelEnv):
                  action_space : dict = dict(),
                  agents=[],
                  record_scenic_sim_results : bool = True,
-                 feedback_fn : callable = lambda x: x): 
+                 feedback_fn : callable = lambda x: x,
+                 seed=None): 
 
         assert render_mode is None or render_mode in self.metadata["render_modes"]
 
@@ -47,6 +48,11 @@ class ScenicZooEnv(ParallelEnv):
         self.truncations = {}
         self.record_scenic_sim_results = record_scenic_sim_results
         self.feedback_fn = feedback_fn
+        self.seed = seed
+        if self.seed is not None:
+            np.random.seed(seed)
+            random.seed(seed)
+
 
     def _make_run_loop(self):
         # TODO: need to figure out if we make the scene
@@ -109,8 +115,10 @@ class ScenicZooEnv(ParallelEnv):
         # only setting enviornment seed, not torch seed?
         # super().reset(seed=seed)
         if seed is not None:
-            np.random.seed(seed)
-            random.seed(seed)
+            # print(f"SEED BEING SET {seed}")
+            if self.seed is None:
+                np.random.seed(seed)
+                random.seed(seed)
 
         if self.loop is None:
             self.loop = self._make_run_loop()
