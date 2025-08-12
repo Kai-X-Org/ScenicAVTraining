@@ -98,12 +98,12 @@ if __name__ == "__main__":
               .env_runners(num_env_runners=12)
             )
 
-    # config.evaluation(
-        # evaluation_interval=1,
-        # evaluation_num_env_runners=2,
-        # evaluation_duration_unit="episodes",
-        # evaluation_duration=10,
-    # )
+    config.evaluation(
+        evaluation_interval=1,
+        evaluation_num_env_runners=2,
+        evaluation_duration_unit="episodes",
+        evaluation_duration=10,
+    )
 
     current_dir = os.getcwd()
     ppo = config.build_algo()
