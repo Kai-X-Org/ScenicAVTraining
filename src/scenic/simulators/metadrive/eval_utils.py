@@ -84,56 +84,56 @@ def run_eval(env, model_dir, model_name, checkpoint_num):
     # env = scenic_env(scenic_file)
     all_returns_dict = dict(agent0=list(), agent1=list())
     # TODO SET SEEDS!!!
-    for seed in range(3):
-        for i in range(30):
-            if i == 0:
-                obs, info = env.reset(seed=seed)
-            else:
-                obs, info = env.reset()
+    seed = 0
+    for i in range(10):
+        if i == 0:
+            obs, info = env.reset(seed=seed)
+        else:
+            obs, info = env.reset()
 
-            episode_return = dict(agent0=0.0, agent1=0.0)
-            done = False
-            while not done:
+        episode_return = dict(agent0=0.0, agent1=0.0)
+        done = False
+        while not done:
 
-                # Compute the next action from a batch (B=1) of observations.
-                obs0 = obs[agent0]
-                obs1 = obs[agent1]
-                obs_batch0 = torch.from_numpy(obs0).unsqueeze(0)  # add batch B=1 dimension
-                obs_batch1 = torch.from_numpy(obs1).unsqueeze(0)  # add batch B=1 dimension
-                # TODO check if this works for multi-agent
-                model_outputs0 = rl_module.forward_inference({"obs": obs_batch0})
-                model_outputs1 = rl_module.forward_inference({"obs": obs_batch1})
+            # Compute the next action from a batch (B=1) of observations.
+            obs0 = obs[agent0]
+            obs1 = obs[agent1]
+            obs_batch0 = torch.from_numpy(obs0).unsqueeze(0)  # add batch B=1 dimension
+            obs_batch1 = torch.from_numpy(obs1).unsqueeze(0)  # add batch B=1 dimension
+            # TODO check if this works for multi-agent
+            model_outputs0 = rl_module.forward_inference({"obs": obs_batch0})
+            model_outputs1 = rl_module.forward_inference({"obs": obs_batch1})
 
-                # Extract the action distribution parameters from the output and dissolve batch dim.
-                action_dist_params0 = model_outputs0["action_dist_inputs"][0].numpy()
-                action_dist_params1 = model_outputs1["action_dist_inputs"][0].numpy()
+            # Extract the action distribution parameters from the output and dissolve batch dim.
+            action_dist_params0 = model_outputs0["action_dist_inputs"][0].numpy()
+            action_dist_params1 = model_outputs1["action_dist_inputs"][0].numpy()
 
-                # We have continuous actions -> take the mean (max likelihood).
-                greedy_action0 = [np.clip(
-                    action_dist_params0[i],  # 0=mean, 1=log(stddev), [0:1]=use mean, but keep shape=(1,)
-                    a_min=env.action_space(agent0).low[0],
-                    a_max=env.action_space(agent0).high[0],
-                ) for i in [0, 1]]
-                greedy_action1 = [np.clip(
-                    action_dist_params1[i],  # 0=mean, 1=log(stddev), [0:1]=use mean, but keep shape=(1,)
-                    a_min=env.action_space(agent1).low[0],
-                    a_max=env.action_space(agent1).high[0],
-                ) for i in [0, 1]]
+            # We have continuous actions -> take the mean (max likelihood).
+            greedy_action0 = [np.clip(
+                action_dist_params0[i],  # 0=mean, 1=log(stddev), [0:1]=use mean, but keep shape=(1,)
+                a_min=env.action_space(agent0).low[0],
+                a_max=env.action_space(agent0).high[0],
+            ) for i in [0, 1]]
+            greedy_action1 = [np.clip(
+                action_dist_params1[i],  # 0=mean, 1=log(stddev), [0:1]=use mean, but keep shape=(1,)
+                a_min=env.action_space(agent1).low[0],
+                a_max=env.action_space(agent1).high[0],
+            ) for i in [0, 1]]
 
-                # For discrete actions, you should take the argmax over the logits:
-                # greedy_action = np.argmax(action_dist_params)
+            # For discrete actions, you should take the argmax over the logits:
+            # greedy_action = np.argmax(action_dist_params)
 
-                # Send the action to the environment for the next step.
-                action_dict = dict(agent0 = greedy_action0, agent1 = greedy_action1)
-                obs, reward, terminated, truncated, info = env.step(action_dict)
+            # Send the action to the environment for the next step.
+            action_dict = dict(agent0 = greedy_action0, agent1 = greedy_action1)
+            obs, reward, terminated, truncated, info = env.step(action_dict)
 
-                # Perform env-loop bookkeeping.
-                episode_return[agent0] += reward[agent0]
-                episode_return[agent1] += reward[agent1]
-                done = any(terminated.values()) or any(truncated.values())
+            # Perform env-loop bookkeeping.
+            episode_return[agent0] += reward[agent0]
+            episode_return[agent1] += reward[agent1]
+            done = any(terminated.values()) or any(truncated.values())
 
-            all_returns_dict[agent0].append(episode_return[agent0])
-            all_returns_dict[agent1].append(episode_return[agent1])
+        all_returns_dict[agent0].append(episode_return[agent0])
+        all_returns_dict[agent1].append(episode_return[agent1])
 
     mean_return = dict()
 

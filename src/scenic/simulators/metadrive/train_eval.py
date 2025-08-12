@@ -77,7 +77,7 @@ if __name__ == "__main__":
     if args.resume:
         assert args.model is not None, "You did not provide a model from which to resume training"
 
-    register_env("scenic", lambda cfg: ParallelPettingZooEnv(scenic_env(args.file, seed=args.seedseed)))
+    register_env("scenic", lambda cfg: ParallelPettingZooEnv(scenic_env(args.file, seed=args.seed)))
     eval_env = scenic_env("exp_uniform.scenic")
 
     now = datetime.datetime.now()
