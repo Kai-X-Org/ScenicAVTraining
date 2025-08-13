@@ -1,5 +1,1 @@
-python show_eval_results_2.py -m uniform_finetune_20e_uniform_eval_s0_08_12_13_27 -o uniform_s0
-python show_eval_results_2.py -m uniform_finetune_20e_uniform_eval_s1_08_12_13_57 -o uniform_s1
-python show_eval_results_2.py -m uniform_finetune_20e_uniform_eval_s2_08_12_14_29 -o uniform_s2
-python show_eval_results_2.py -m uniform_finetune_20e_uniform_eval_s3_08_12_15_01 -o uniform_s3
-python show_eval_results_2.py -m uniform_finetune_20e_uniform_eval_s4_08_12_15_31 -o uniform_s4
+python show_eval_results_2.py -m uniform_pretrain_20_uniform_eval_08_11_16_38 -o pretrain

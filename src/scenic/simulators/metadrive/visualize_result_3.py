@@ -59,14 +59,15 @@ for s in samplers:
     # print(f"{d[agent0]}")
 # print(f"res dict {res_dict}")
 # print(len(res_dict["halton"][agent0]))
-for s in samplers:
-    for a in [agent0, agent1]:
-        plt.figure()
-        plt.title(f"Training of {s} Sampler Training")
-        plt.xlabel("timesteps")
-        plt.ylabel("rewards")
+for a in [agent0, agent1]:
+    plt.figure()
+    plt.title(f"Training of {s} Sampler Training")
+    plt.xlabel("timesteps")
+    plt.ylabel("rewards")
+    for s in samplers:
         rewards = np.hstack((res_dict['pretrain'][a][0], np.mean(res_dict[s][a], axis=0)))
-        plt.plot(times, rewards)
-        plt.savefig(f"{a}_{s}_train.png") 
+        plt.plot(times, rewards, label=s)
+    plt.legend()
+    plt.savefig(f"{a}_training.png") 
     
 
