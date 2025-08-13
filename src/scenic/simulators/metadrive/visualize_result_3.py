@@ -1,3 +1,8 @@
+"""
+For each agent, graph all curve in one for comparison
+"""
+
+
 import dill
 import os
 import argparse
@@ -61,7 +66,7 @@ for s in samplers:
 # print(len(res_dict["halton"][agent0]))
 for a in [agent0, agent1]:
     plt.figure()
-    plt.title(f"Training of {s} Sampler Training")
+    plt.title(f"Training of {a}")
     plt.xlabel("timesteps")
     plt.ylabel("rewards")
     for s in samplers:
@@ -69,5 +74,6 @@ for a in [agent0, agent1]:
         plt.plot(times, rewards, label=s)
     plt.legend()
     plt.savefig(f"{a}_training.png") 
+
     
 

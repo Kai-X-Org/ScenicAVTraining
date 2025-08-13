@@ -69,14 +69,15 @@ assert len(env_timesteps) == len(agent_returns['agent1']), "mismatch between tim
 
 plt.figure()
 
-if args.resumed:
-    plt.title(f"Training Curve of {args.model}, Resumed at Step {pretrain_num_steps}")
-else:
-    plt.title(f"Training Curve of {args.model}")
+plt.title(f"Training Curve of {args.model}")
+# if args.resumed:
+    # plt.title(f"Training Curve of {args.model}")
+# else:
+    # plt.title(f"Training Curve of {args.model}")
 
 # plt.title(f"Training Curve of {args.model}")
 
-plt.plot(env_timesteps, agent_returns['agent0'], label='agen0')
+plt.plot(env_timesteps, agent_returns['agent0'], label='agent0')
 plt.xlabel("Num Steps")
 plt.ylabel("Avg Episode Return")
 plt.plot(env_timesteps, agent_returns['agent1'], label='agent1')
@@ -84,7 +85,8 @@ plt.legend()
 plt.show()
 
 if args.save:
-    plt.savefig(f"{dill_dir}/{args.model}.png")
+    # plt.savefig(f"{dill_dir}/{args.model}.png")
+    plt.savefig(f"fig/{args.model}_native_eval.png")
 
 # FIXME those are dictionaries, need to enter the agent name
 
