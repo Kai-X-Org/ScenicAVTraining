@@ -43,6 +43,7 @@ class CarlaSimulator(DrivingSimulator):
         verbosePrint(f"Connecting to CARLA on port {port}")
         self.client = carla.Client(address, port)
         self.client.set_timeout(timeout)  # limits networking operations (seconds)
+        # breakpoint()
         if carla_map is not None:
             try:
                 self.world = self.client.load_world(carla_map)
@@ -279,6 +280,7 @@ class CarlaSimulation(DrivingSimulation):
         # Apply control updates which were accumulated while executing the actions
         for obj in self.agents:
             ctrl = obj._control
+            print(f"ctrl: {control}")
             if ctrl is not None:
                 obj.carlaActor.apply_control(ctrl)
                 obj._control = None

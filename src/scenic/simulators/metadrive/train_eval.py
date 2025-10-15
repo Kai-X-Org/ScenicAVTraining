@@ -13,6 +13,7 @@ import argparse
 # import pickle
 import dill
 from scenic.simulators.metadrive.eval_utils import run_eval
+from multiprocessing import Process
 
 parser = argparse.ArgumentParser()
 
@@ -79,6 +80,7 @@ if __name__ == "__main__":
 
     register_env("scenic", lambda cfg: ParallelPettingZooEnv(scenic_env(args.file, seed=args.seed)))
     eval_env = scenic_env("exp_uniform.scenic")
+    eval_env_sampler = scenic_env(args.file)
 
     now = datetime.datetime.now()
     now = now.strftime("%m_%d_%H_%M")
@@ -121,6 +123,10 @@ if __name__ == "__main__":
             dill.dump(progress_dict, dill_file)
 
         run_eval(eval_env, checkpoint_dir, model_name, i)
+        # run_eval(eval_env_sampler, checkpoint_dir, model_name + f"_{args.file}", i)
+        # p = Process(target=run_eval, args=(eval_env_sampler, checkpoint_dir, model_name + f"_{args.file}", i))
+        # p.start()
+        # p.join()
 
         # we should get an evaluation thing going on here!
 

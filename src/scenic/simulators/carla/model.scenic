@@ -158,6 +158,12 @@ class CarlaActor(DrivingObject):
         else:
             self.carlaActor.set_velocity(cvel)
 
+    def zero_reward(self):
+        self.reward = 0
+
+    def add_reward(self, amount):
+        self.reward += amount
+
 class Vehicle(Vehicle, CarlaActor, Steers, _CarlaVehicle):
     """Abstract class for steerable vehicles."""
 
@@ -201,7 +207,7 @@ class LidarCar(Car):
                     dropoff_general_rate=0.0,
                     ):
         blueprint = world.get_blueprint_library().find('sensor.lidar.ray_cast')
-        blueprint.set_attribute("channels", channels).
+        blueprint.set_attribute("channels", channels)
         blueprint.set_attribute("distance", distance)
         blueprint.set_attribute("noise_stddev", noise_stddev)
         blueprint.set_attribute("dropoff_general_rate", dropoff_general_rate)
